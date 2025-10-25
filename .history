@@ -1,0 +1,968 @@
+sudo apt install unzip
+sudo apt install tree
+sudo apt install snap
+sudo apt install curl
+sudo apt install ripgrep
+sudo apt install htop gzip fzf fd-find build-essential
+sudo apt install pdffonts
+sudo apt install poppler-utils
+pdffonts /mnt/c/Users/asish/OneDrive/Desktop/Resume\ \(1\).pdf
+pdffonts /mnt/c/Users/asish/OneDrive/Desktop/Resume.pdf
+pdffonts Resume.pdf
+mkdir .config
+cd .
+mkdir zsh
+cd zsh/
+vi .zshrc
+rm -rf ~/nvim-linux64.tar.gz
+sudo apt install unzip tree tmux snap curl ripgrep htop gzip fzf fd-find build-essential
+sudo apt install unzip tree tmux curl htop fzf fd-find build-essential
+sudo apt install unzip tmux curl htop fzf fd-find build-essential
+sudo apt install && sudo apt update
+sudo apt install unzip tmux curl htop build-essential
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+file nvim-linux64.tar.gz
+which tar
+sudo tar -C /opt -xzf nvim-linux64.tar.gz
+rm nvim-linux-x86_64.tar.gz nvim-linux64.tar.gz 
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz 
+sudo mv /opt/nvim-linux64 /opt/nvim
+cd opt/
+sudo mv /opt/nvim-linux-x86_64 /opt/nvim
+rm nvim-linux-x86_64.tar.gz 
+git clone https://github.com/AshuNotes/dotfiles.git
+cp ~/dotfiles/.config/nvim ~/.config/
+cp ~/dotfiles/.config/nvim ~/.config/ -r
+sudo apt install zsh
+sudo chsh -s $(which zsh)
+cp ~/dotfiles/zsh ~/.config/
+cd dotfiles/
+cp ~/dotfiles/.config/zsh ~/.config
+cp ~/dotfiles/.config/zsh ~/.config -r
+rm ~/.zshrc
+ln -s ~/.config/zsh/.zshrc ~/.zshrc
+rm -f ~/.zhistory
+ln -s ~/.config/zsh/.zhistory ~/.zhistory
+zsh
+time nvim --headless +q
+so\
+
+vi ~/.zshrc
+git commit -m "made changes"
+git credential-manager --version
+git push -u origin main
+rm temp
+cd temp -p
+git clone https://github.com/craftzdog/dotfiles-public.git.
+git clone https://github.com/craftzdog/dotfiles-public.git .
+udpate
+sudo apt-get install fish
+chsh -s /bin/fish
+sudo apt remove fish
+udapte
+hoem
+sudo apt upgrade && sudo apt update -y
+apt list --upgradable
+rm -rf ~/.config/nvim ~/.local/{share,state}/nvim ~/.cache/nvim 
+git clone https://github.com/lazyvim/starter ~/.config/nvim
+rm -rf .git
+git commit -m "added lazyvim plugin"
+git push 
+vi gitPass
+rm nvim
+cp old_nvim.bak nvim -rf
+cd lua/
+rm -rf plugins
+code .
+mv nvim-linux-x86_64 nvim
+sudo mv nvim /opt
+mv nvim neovim
+echo 'export PATH="/opt/neovim/bin:$PATH"' | sudo tee /etc/profile.d/neovim.sh
+sudo chmod +x /etc/profile.d/neovim.sh
+whcih nvim
+snap uninstall nvim
+snap help
+snap remove nvim
+sudo snap remove nvim
+cd /etc/profile.d
+neovim.sh
+neovim
+sudo rm /etc/profile.d/neovim.sh
+source /etc/profile
+cd /usr/bin
+\:q
+cd ~!
+open init.lua
+view init.lua
+cat init.lua
+cat lua/config/options.lua
+cd lua/co
+vi .
+rm lazy.lua
+rm -rf lua
+cd old_nvim.bak
+cd lua/config
+cp | cat options.lua
+vi options.lua
+mkdir lua
+mkdir config
+vi config
+cd config
+cp old_nvim.bak/lua/config/{options.lua,keymaps.lua} nvim/lua/config
+cd nvim/lua/config
+nvim options.lua
+nvim keymaps.lua
+sudo ln -s /opt/neovim/bin/nvim /usr/local/bin/nvim
+which nvim
+unlink /opt/neovim/bin/nvim
+cd /opt
+cd neovim/bin
+wget https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-linux-x86_64.tar.gz
+rm /opt/neovim
+!
+where nvim
+unlink /usr/local/bin/nvim
+sudo unlink /usr/local/bin/nvim
+rm init.lua lazy-lock.json lua -rf
+vi init.lua
+opt.signcolumn = "yes" -- always show the sign column to prevent text shifting
+sudo apt install ffpeg
+cd /mnt/c/Users/asish/Downloads/3319303515_VSTHEMES-ORG
+ffmpeg -i Red-Samurai-4K.mp4 -ss 00:00:08 -frames:v 1 output.png
+where config
+nvim .aliases
+ealias
+vi lua/plugins/treesitter.lua
+mv nvim nvim.bak
+cp old_nvim.bak nvim
+cp old_nvim.bak nvim -r
+jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+rm nvim -rf
+cp nvim.bak nvim -rf
+cat git
+rm .vscode-server .zcompdump .wget-hsts .viminfo .something .lesshst -rf
+rm .zhistory .bash_history 
+config
+nvim ~
+ga
+gc "configured neovim (
+gc "configured neovim (\!lsp)"
+gp
+nvim nvim
+nvim .zshrc
+where python3
+sudo apt install ffmpeg
+sudo apt remove ffmpeg
+cd python
+nvim m
+cd CollegeGrade
+nvim main.py
+sudo rm -rf /opt/neovim
+wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+tar xzvf nvim-linux-x86_64.tar.gz
+mv nvim-linux-x86_64 neovim
+mv neovim /opt
+sudo mv neovim /opt
+nvim
+szh
+c:q
+cd b:q
+cd ...
+cd ~/
+home
+rm -rf *
+rm images -rf ISSUE_TEMPLATE.md README.md
+rm lua/plugins/nvim-cmp.lua
+rm lua/plugins/lsp -rf
+rm -rf ~/.local/{share,state}/nvim ~/.cache/nvim 
+vi lua/config/lazy.lua
+~/.local/share/nvim/mason/bin/lua-language-server --version
+mkdir lua/lsp
+rm -rf lua/lsp
+mkdir lua/plugins/lsp
+cd lua/plugins/lsp
+tree .
+cd .local/share/nvim/mason/bin
+lua-language-server
+nvimm .
+nvim. 
+gc "modified colorscheme"
+cat ~/gitPass
+vi lua/config/options.lua
+rm so
+cd ~/projects/fullstack-mern/Auth/d
+nvim ,
+python3
+rm tailwindcss.lua
+npm install -g typescript
+lsa
+nvim .'
+mkdir lab/dva -p
+cd lab/dva
+sudo apt remove python3
+sudo apt install python3.14
+sudo apt install python3
+python3 -V
+pip
+python3 -m ensurepip --upgrade
+sudo apt install python3-pip -y
+pip -V
+python3 -m venv venv
+sourec venv/bin/activate
+source venv/bin/activate
+pip install pandas matplotlib seabornd
+pip install pandas matplotlib seaborn
+python3 main.py
+activate
+
+cd projects/python
+source playground/venv/bin/activate
+pip install aiohttp
+pip install bs4
+python3 CollegeGrade/main.py
+ping rvrjcce.ac.in
+nvim CollegeGrade/main.py
+deactivate
+cd ~/projects/fullstack-mern
+mkdir check 
+mkdir backend
+npm i express jsonwebtoken bcryptjs cookie-parser nodemon mongoose
+tree
+nvim --startuptime startup.logf
+rm startup.logf
+cd nvim | nvim .
+cat gitPass
+cd ~/.config
+git add .
+git commit -m "fuck what have i done"
+git push
+exit
+git status
+l
+lllllll
+mv * ../../chatbot-dev/ -p
+mkdir chatbot-dev
+mv chatbot/frontend/* chatbot-dev -r
+mv chatbot/frontend/* chatbot-dev/ -r
+mv chatbot/frontend/* chatbot-dev/
+ls chatbot-dev
+cd projects/frontend
+rm .env
+cp * ../chatbot/frontend
+cp * ../chatbot/frontend/ -r
+cd projects/frontend/chatbot
+cd chatbot-dev
+cat ../chatbot/backend/.env
+cd ../chatbot/backend/.env
+cd ../chatbot/backend/
+cd -
+echo "VITE_API_KEY=AIzaSyDSbSRt2bH-1y2Q2nmIkxKYVrEiEDoaOg8" > .env
+cat .env
+cp ../chatbot/backend/server.js sample.js
+cat sample.js
+rm startup.log
+mv lua/plugins/colorscheme.lua ...
+find colorscheme.lua
+find color
+find "color"
+cd ls
+rm matplotlib -r
+cd plugins
+find / --name "colorscheme.lua"
+find / -name "colorscheme.lua"
+find ~/ -name "colorscheme.lua"
+cd temp/.config/nvim/lua/plugins
+cat treesitter.lua
+cat colorscheme.lua
+nvim --startuptime startup.log
+nvim startup.log
+git restore .
+cd plugins/lsp
+cd lsp
+rm * -rf
+chsh -s /bin/bash
+love
+nvim.
+nvim .llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+nvim .config/nvim
+tmux
+d
+tmux -V
+tmux new -s Session
+tmux x
+tmux d
+tmux detach
+cat ~/.tmux.conf
+nvim 
+mv tmux.conf .tmux.conf
+rm .tmux.conf
+sudo apt remove tmux
+which make
+rm temp -rf
+mkdir temp
+git clone https://github.com/tmux/tmux.git
+cd tmux
+sh autogen.sh
+./configure && make
+sudo make install
+rm tmux -rf 
+sudo apt update\
+sudo apt install -y build-essential libevent-dev ncurses-dev bison pkg-config git\
+
+git clone -b 3.5 https://github.com/tmux/tmux.git\
+cd tmux\
+
+sh autogen.sh\
+./configure\
+make\
+sudo make install\
+
+which tmux
+rm -rf temp/tmux 
+touch .tmux.conf
+ls -s .tmux.conf ~/.tmux.conf
+ll .tmux.conf -h
+ll .tmux.conf
+ls -l .tmux.conf
+find / -type l -lname '~/.config/tmux/.tmux.conf' 2>/dev/null
+find / -type l -lname '/home/ashunotes/.tmux.conf' 2>/dev/null
+find ~ -type l -exec ls -l {} \;
+rm ~/.config/tmux/.tmux.conf
+touch ~/.config/tmux/.tmux.conf
+chmod 600 ~/.tmux.conf
+\:qa
+q
+cd~
+cd dev
+cd net
+cat nul
+cat null
+cat sda
+sudo cat sda
+celar
+cd wsl
+cd wslg
+cd ProgramData
+cd PlayGround/
+cd Projects
+cd NewsAggregator
+npm run dve
+cd /mnt/c/PlayGround/Projects/NewsAggregator
+cd projects/frontend/newsAggregator
+kk
+npm clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+tmux ls
+ls .config/tmux/plugins/tpm
+cd ashunotes
+ls media
+ls mnt
+nvim ..
+cd check
+cd check/backend/
+...
+cd Auth
+rm vite-project -rf
+rm package-lock.json
+clea
+npm craete vite@latest
+cd l
+sudo apt install java
+cd projects/fullstack-mern/Auth
+sudo apt update && sudo apt upgrade -y
+ja
+jaav
+sudo systemctl disable --now snapd.socket snapd.service snapd.seeded.service
+sudo apt remove --purge snapd -y
+sudo rm -rf ~/snap /snap /var/snap /var/lib/snapd
+cd projects/frontend/chatbot-dev
+mkdir intern
+cp projects/frontend/chatbot-dev intern -rf
+cp /mnt/c/PlayGround/Projects/Portfolio intern -rf
+mv intern/chatbot-dev intern/chatbot
+cp /mnt/c/PlayGround/Projects/groceryecom intern -rf
+a
+source ~/.tmux.conf
+tmux kill-session code
+cd intern/chatbot
+cd intern/groceryecom
+npm rund ev
+nvimm.
+npm run de
+rm intern/Portfolio -rf
+cp /mnt/c/PlayGround/Projects/Portfolio intern -r
+cd intern/Portfolio
+rm node_modules -rf
+rm node_modules package-lock.json -rf
+rm -rf node_modules package-lock.json
+rm -rf node_modules/.vite
+npm install
+cd intern/
+cp chatbot /mnt/c/PlayGround/Projects/temp
+rm -rf node_modules
+cp chatbot /mnt/c/PlayGround/Projects/temp -r
+jfdk
+systemctl start
+systemctl list
+systemctl list-jobs
+systemctl start ssh
+wsl --list
+cd temp
+touch server.js
+rm ~/.local/{state, share}/nvim -rf
+nvim server.js
+npm init 
+npm init -y
+npm i express
+node server.js
+vi ~/.config/.aliases
+find ~ -type l -lname '/home/ashunotes/.tmux.conf'
+sudo apt add-repository ppa:fish-shell/release-3
+git clone https://github.com/fish-shell/fish-shell.git
+cd fish-shell
+sudo apt-get install git cmake build-essential
+cmake .
+ rm fish-shell -rf
+sudo apt install software-properties-common
+sudo apt remove cmake
+sudo apt-add-repository ppa:fish-shell/release-3
+sudo apt install fish
+fish -V
+fish --version
+which fish
+chsh -s /usr/bin/fish
+sudo apt purge fish
+udo apt-add-repository --remove ppa:fish-shell/release-3
+sudo apt-add-repository --remove ppa:fish-shell/release-3
+sudo apt update
+sudo apt autoremove
+ffmpeg -i Red-Samurai-4K.mp4 -ss 00:00:08 -frames:v 1 -vf scale=1920:1080 output.png
+cd .config/
+rm fish -rf
+ga .
+rm dotfiles -rf
+rm -rf ~/.local/{share, state}/nvim ~/.cache/nvim 
+cd .c
+git submodule update --init --recursive
+source ~/.zshrc
+git config submodule.recurse true
+cat .gitmodules
+sudo mount -t drvfs D: .
+ls usb
+cd usb
+ls .
+sudo umount usb
+cd zsh
+rm zsh-autosuggestions -rf
+rm zsh-history-substring-search -rf
+rm zsh-syntax-highlighting -rf
+git clone https://github.com/zsh-users/zsh-autosuggestions.git 
+cd zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone https://github.com/zsh-users/zsh-history-substring-search.git
+https://github.com/zsh-users/zsh-history-substring-search.githttps://github.com/zsh-users/zsh-history-substring-search.githttps://github.com/zsh-users/zsh-history-substring-search.githttps://github.com/zsh-users/zsh-history-substring-search.githttps://github.com/zsh-users/zsh-history-substring-search.githttps://github.com/zsh-users/zsh-history-substring-search.githttps://github.com/zsh-users/zsh-history-substring-search.githttps://github.com/zsh-users/zsh-history-substring-search.githttps://github.com/zsh-users/zsh-history-substring-search.githttps://github.com/zsh-users/zsh-history-substring-search.githttps://github.com/zsh-users/zsh-history-substring-search.githttps://github.com/zsh-users/zsh-history-substring-search.githttps://github.com/zsh-users/zsh-history-substring-search.githttps://github.com/zsh-users/zsh-history-substring-search.githttps://github.com/zsh-users/zsh-history-substring-search.git
+https://github.com/zsh-users/zsh-history-substring-search.git
+https://github.com/zsh-users/zsh-history-substring-search.git;5Bhttps://github.com/zsh-users/zsh-history-substring-search.gi
+cat -v
+nvim ~/.zshrc
+git config --global user.name "asish"
+git config --global user.email "asishathota@gmail.com"
+git config --global user.email "asishathota@gmail.com
+ezsh
+szsh
+ffmpeg -i Red-Samurai-4K.mp4 -ss 00:00:08 -frames:v 1 -vf sca
+gs
+git config --global init.defaultBranch main
+cd .config
+git init
+git remote add origin https://github.com/asishathota/dotfiles.git
+git remote -v
+cd nvim
+gi
+rm .git -rf
+cd mnt
+cd c
+ll -h
+ls -lh
+nvim ~/.config/.aliases
+help ls
+sudo apt install man
+man ls
+cd f
+ls -l
+ls -h
+find ~ -name "intern"
+ll
+mkdir test
+cd test
+ln -s /mnt/c/PlayGround/__DSA_gfg ~/test/ 
+cd __DSA_gfg
+cat "Striver's A2Z DSA Sheet.txt"
+cd /mnt
+cd /
+cd intern
+cd chatbot
+cp cd src
+cd src
+cp App.jsx ~/test
+cd ~/test
+nvim App.jsx
+nvim ~/.config/nvim
+cd ~/.config/nvim
+cd ~/projects/fullstack-mern/Auth
+systemctl ssh enable
+systemctl ssh start
+update
+sudo apt install openssh-server
+sudo systemctl start ssh
+sudo systemctl status ssh
+ip addr
+whoami
+sudo apt install tmux
+h
+tm nvim-linux-x86_64.tar.gz
+rm nvim-linux-x86_64.tar.gz
+ln -s .tmux.conf ~/.tmux.conf
+rm ~/.tmux.conf
+ln -s ~/.config/tmux/.tmux.conf ~/.tmux.conf
+cd .config/tmux/plugins/tpm
+rm tpm
+rm tpm -rf
+tmux source-file ~/.tmux.conf
+nvim ~/.tmux.conf
+vi ~/.tmux.conf
+nvm
+node
+nvm ls
+nvm -V
+nvm ls-remote
+nvm install 22.20.0
+la ~
+cd .t
+cat ~/.tmux
+mv ~/.tmux/plugins/* plugins -rf
+rm plugins
+mv ~/.tmux/plugins/* plugins 
+rm plugins -rf
+rm ~/.tmux -rf
+nvm install node
+node -V
+node --version
+sudo apt install default-jdk
+java
+javac
+..
+cd learn_dsa
+cd 2.\ Arrays
+java LeaderInAnArray.java
+javac MajorityElement.java
+java MajorityElement
+cd lua
+nvim tmux.conf
+nvim .tmux.conf
+cd .config/tmux
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+tmux attach
+tmux new -s code
+tmux kill-session
+cd .config/nvim
+cd ~
+cd projects
+cd fullstack-mern/Auth
+npm i
+cd ..
+tmux new -s auth
+cd backend
+npm run dev
+cd frontend
+rm *
+rm public src -rf
+rm .gitignore
+ls
+la
+clear
+nvim .
+npm create vite@latest
+: 1760885532:0;clear
+: 1760885535:0;npm run dev
+: 1760885677:0;npm create vite@latest
+: 1760885758:0;clear
+: 1760885761:0;npm run dev
+: 1760885835:0;nvim .
+: 1760885860:0;cd ~/.local/state/nvim/
+: 1760885862:0;ls
+: 1760885866:0;cat lsp.log
+: 1760885882:0;cd -
+: 1760885887:0;nvim .
+: 1760885939:0;cd ~/.config/nvim
+: 1760885941:0;nvim .
+: 1760886032:0;cd -
+: 1760886041:0;cd ~/.local/state/nvim/
+: 1760886044:0;cat lsp.log
+: 1760886191:0;cd ~/.config/nvim
+: 1760886193:0;nvim .
+: 1760916771:0;ls
+: 1760916775:0;nvim .
+: 1760916795:0;cd ~
+: 1760916805:0;cd projects/fullstack-mern/Auth
+: 1760916829:0;nvim .
+: 1760916989:0;cd ~/.config/nvim
+: 1760916991:0;nvim .
+: 1760917425:0;cd ~/projects/fullstack-mern/Auth
+: 1760917426:0;nvim .
+: 1760917461:0;gs
+: 1760917473:0;gm 
+: 1760917480:0;home
+: 1760917483:0;cd -
+: 1760917504:0;cat ~/.config/.aliases
+: 1760917513:0;gs
+: 1760917551:0;tmux attach
+: 1760917561:0;gs
+: 1760917596:0;gc "initialized frontend-react"
+: 1760917602:0;git add .
+: 1760917608:0;gc "initialized frontend-react"
+: 1760917618:0;cat ~/gitPass
+: 1760917622:0;git push
+: 1760917696:0;nvim .
+: 1760917733:0;cd -
+: 1760917739:0;cd ~/.config/nvim
+: 1760917740:0;nvim .
+: 1760917790:0;cd -
+: 1760917793:0;nvim .
+: 1760917881:0;nvim ~/.local/state/nvim/lsp.log
+: 1760917917:0;nvim .
+: 1760917931:0;nvim ~/.local/state/nvim/lsp.log
+: 1760918832:0;nvim .
+: 1760920152:0;cd ~
+: 1760920153:0;ls
+: 1760920156:0;cd test
+: 1760920157:0;ls
+: 1760920167:0;unlink __DSA_gfg
+: 1760920168:0;ls
+: 1760920169:0;la
+: 1760920174:0;rm App.jsx
+: 1760920178:0;git clone https://github.com/dracula/terminal-app.git
+: 1760920313:0;cd terminal-app
+: 1760920314:0;ls
+: 1760920342:0;vi Dracula.terminal
+: 1760920504:0;cd terminal-app
+: 1760920507:0;cd ~
+: 1760920507:0;ls
+: 1760920510:0;cd learn_dsa
+: 1760920511:0;nvim .
+: 1760921049:0;cd ~
+: 1760921054:0;cd .config/nvim
+: 1760921055:0;nvim .
+: 1760921615:0;cd ~/test
+: 1760921616:0;ls
+: 1760921624:0;nvim test.pyt
+: 1760921629:0;nvim test.py
+: 1760922866:0;mv test.py ~/projects/python
+: 1760922867:0;ls
+: 1760922875:0;cd ~/projects
+: 1760922877:0;cd python
+: 1760922878:0;ls
+: 1760922886:0;python venv venv
+: 1760922891:0;python3 venv venv
+: 1760922906:0;python3 -m venv venv
+: 1760922933:0;sudo apt install python3-venv
+: 1760922945:0;python3 -m venv venv
+: 1760922951:0;ls
+: 1760924413:0;source venv/bin/activate
+: 1760924423:0;python3 test.py
+: 1760924433:0;pip install matplotlib
+: 1760924518:0;python3 test.py
+: 1760924525:0;pip install skimage
+: 1760924553:0;pip install scikit-image
+: 1760924618:0;clear
+: 1760924654:0;python3 test.py
+: 1760924665:0;pip install sklearn
+: 1760924698:0;pip install scikit-learn
+: 1760924743:0;python3 test.py
+: 1760925313:0;clear
+: 1760925315:0;cd 
+: 1760925318:0;cd ~
+: 1760925318:0;LS
+: 1760925322:0;clear
+: 1760925335:0;cd projects/fullstack-mern/Auth
+: 1760925337:0;nvim .
+: 1760925416:0;mv ~/.config/nvim ~/.config/nvim.cfk
+: 1760925419:0;nvim .
+: 1760925490:0;mv ~/.config/nvim.cfk ~/.config/nvim
+: 1760925492:0;nvim .
+: 1760925879:0;cd ~/.config/nvim
+: 1760925881:0;nvim .
+: 1760926147:0;nvim.
+: 1760926149:0;nvim .
+: 1760926257:0;deactivate
+: 1760926264:0;clear
+: 1760926267:0;nvim .
+: 1760926403:0;ezsh
+: 1760926414:0;nvim ~/.zshrc
+: 1760926445:0;clear
+: 1760926468:0;cat lua/plugins/colorscheme.lua
+: 1760926473:0;cat -v
+: 1760926521:0;pwd
+: 1760926784:0;cd -
+: 1760926788:0;nvim .
+: 1760935496:0;tmux attach
+: 1760935508:0;nvim .
+: 1760940263:0;lls
+: 1760940270:0;clear
+: 1760940282:0;cd .config
+: 1760940351:0;cd ~/projects/fullstack-mern/Auth
+: 1760940352:0;nvim .
+: 1761023038:0;ls
+: 1761023040:0;cd projects
+: 1761023042:0;cd intern
+: 1761023044:0;cd chatbot
+: 1761023046:0;nvim .
+: 1761023398:0;npm run dev
+: 1761023406:0;npm i
+: 1761023431:0;npm run dev
+: 1761023491:0;nvim .
+: 1761023672:0;npm run dev
+: 1761023714:0;nvim .
+: 1761023742:0;npm run dev
+: 1761023799:0;nvim .
+: 1761023819:0;npm run dev
+: 1761023862:0;nvim .
+: 1761023910:0;cd ~/.local/state/nvim/
+: 1761023913:0;nvim lsp.log
+: 1761023962:0;cd -
+: 1761023965:0;nvim .
+: 1761023987:0;cd -
+: 1761023992:0;nvim lsp.log
+: 1761026981:0;cd -
+: 1761026982:0;ls
+: 1761026986:0;nvim .
+: 1761027102:0;npm run dev
+: 1761027170:0;nvim .
+: 1761027188:0;npm run dev
+: 1761027199:0;nvim .
+: 1761027271:0;npm run dev
+: 1761027285:0;nvim .
+: 1761027306:0;npm run dev
+: 1761027315:0;nvim .
+: 1761027333:0;npm run dev
+: 1761028316:0;nvim .
+: 1761028395:0;npm i react-icons
+: 1761028484:0;nvim .
+: 1761028645:0;npm i tailwindcss @tailwindcss/vite
+: 1761028688:0;nvim .
+: 1761028758:0;npm run dev
+: 1761028799:0;nvim .
+: 1761028845:0;npm run dev
+: 1761028872:0;nvim .
+: 1761029013:0;npm run dev
+: 1761029025:0;nvim .
+: 1761029050:0;npm run dev
+: 1761029061:0;nvim .
+: 1761029120:0;npm run dev
+: 1761029135:0;nvim .
+: 1761029161:0;npm run dev
+: 1761029186:0;nvim .
+: 1761029913:0;sudo apt update\
+sudo apt install wget unzip -y\
+wget https://github.com/equalsraf/win32yank/releases/download/v0.1.1/win32yank-x64.zip\
+unzip win32yank-x64.zip -d ~/.local/bin\
+chmod +x ~/.local/bin/win32yank.exe
+: 1761029962:0;vi ~/.zshrc
+: 1761029977:0;source ~/.zshrc
+: 1761029985:0;win32yank.exe -?
+: 1761030005:0;win32yank.exe -V
+: 1761030011:0;nvim .
+: 1761030092:0;npm run dev
+: 1761030126:0;nvim .
+: 1761030231:0;npm run dev
+: 1761030244:0;nvim .
+: 1761030765:0;npm run dev
+: 1761030787:0;nvim .
+: 1761030858:0;npm run dev
+: 1761030874:0;nvim .
+: 1761030916:0;npm run dev
+: 1761030934:0;nvim .
+: 1761031056:0;npm run dev
+: 1761031069:0;nvim .
+: 1761031105:0;npm run dev
+: 1761031172:0;nvim .
+: 1761031216:0;npm run dev
+: 1761031228:0;nvim .
+: 1761031246:0;npm run dev
+: 1761031287:0;nvim .
+: 1761031676:0;npm run dev
+: 1761031722:0;nvim .
+: 1761031755:0;npm run dev
+: 1761031790:0;nvim .
+: 1761031923:0;npm run dev
+: 1761031962:0;nvim .
+: 1761042943:0;npm run dev
+: 1761042973:0;nvim .
+: 1761043014:0;npm run dev
+: 1761043042:0;tmux new -s chat
+: 1761043045:0;10;rgb:d3d3/d7d7/cfcf
+: 1761043060:0;tmux attach
+: 1761043065:0;clear
+: 1761043074:0;npm run dev
+: 1761043078:0;nvim .
+: 1761051179:0;cd projects/intern/chatbot
+: 1761051184:0;tmux attach
+: 1761051189:0;tmux new -s chat
+: 1761051198:0;nvim .
+: 1761051203:0;npm run dev
+: 1761153419:0;tmux new -s chat
+: 1761153436:0;cd ~/.config/nvim
+: 1761153442:0;nvim .
+: 1761155452:0;nv 
+: 1761155456:0;nvim .
+: 1761155583:0;ls ~/.local/share/nvim/lazy/lazy.nvim
+: 1761155623:0;nvim .
+: 1761155716:0;cd ~/.config/nvim
+: 1761155718:0;nvim .
+: 1761155793:0;npm install -g neovim
+: 1761155803:0;nvim .
+: 1761155840:0;cp lua/lazy.lua lua/config
+: 1761155842:0;nvim .
+: 1761155867:0;rm lua/lazy.lua
+: 1761155869:0;nvim .
+: 1761156585:0;rm ~/.local/{state, share}/nvim -rf
+: 1761156594:0;rm ~/.cache/nvim
+: 1761156597:0;rm ~/.cache/nvim -rf
+: 1761156600:0;nvim .
+: 1761156837:0;rm -rf ~/.local/{share, state}/nvim ~/.cache/nvim 
+: 1761156842:0;nvim .
+: 1761156860:0;:qa
+: 1761156863:0;cd ~
+: 1761156875:0;nvim .
+: 1761156892:0;cd .local/share/nvim
+: 1761156892:0;ls
+: 1761156896:0;cd ..
+: 1761156900:0;rm nvim -rf
+: 1761156908:0;cd ..
+: 1761156909:0;..
+: 1761156913:0;cd .local/state
+: 1761156914:0;ls
+: 1761156917:0;rm nvim -rf
+: 1761156919:0;cd ..
+: 1761156926:0;cd .cache
+: 1761156927:0;ls
+: 1761156936:0;rm nvim -rf matplotlib 
+: 1761156940:0;cd ~
+: 1761156941:0;ls
+: 1761156944:0;nvim .
+: 1761157350:0;cd ~/.config/nvim
+: 1761157351:0;nvim .
+: 1761183819:0;cd ~/.config/nvim
+: 1761183821:0;nvim .
+: 1761185786:0;nvi 
+: 1761185789:0;nvim .
+: 1761186623:0;cd ~/.config/nvim
+: 1761186625:0;nvim .
+: 1761200754:0;cd ~
+: 1761200755:0;ls
+: 1761200758:0;cd projects
+: 1761200758:0;ls
+: 1761200878:0;cd fullstack -p
+: 1761200894:0;mkdir fullstack
+: 1761200896:0;cd fullstack
+: 1761200903:0;mkdir auth
+: 1761200904:0;cd auth
+: 1761200906:0;cd ..
+: 1761200916:0;mv auth Auth
+: 1761200919:0;cd a
+: 1761200921:0;cd Auth
+: 1761200923:0;nvim .
+: 1761200947:0;tmux new -s chat
+: 1761200954:0;nvim ..
+: 1761200960:0;clear
+: 1761200961:0;nvim .
+: 1761200978:0;cd backend
+: 1761201180:0;npm install express jsonwebtoken nodemon mongoose cookie-parser bcryptjs
+: 1761201187:0;ls
+: 1761201188:0;la
+: 1761201193:0;npm init -y
+: 1761201206:0;npm install express jsonwebtoken nodemon mongoose cookie-parser bcryptjs
+: 1761201505:0;nvim .
+: 1761205423:0;npm run dev
+: 1761205439:0;npm i cors
+: 1761206443:0;clear
+: 1761219154:0;cd .c
+: 1761219164:0;cd ~/.config/nvim
+: 1761219167:0;cd ~
+: 1761219168:0;ls
+: 1761219170:0;cd projects
+: 1761219171:0;ls
+: 1761219177:0;cd fullstack/Auth
+: 1761219180:0;cd ~
+: 1761219185:0;tmux attach
+: 1761219193:0;tmux new -s chat
+: 1761219208:0;cd ~/projects/fullstack/Auth
+: 1761219223:0;clear
+: 1761219228:0;nvim .
+: 1761219237:0;cd backend
+: 1761219251:0;npm i dotenv
+: 1761219259:0;npm run dev
+: 1761223333:0;nvim .
+: 1761223373:0;cd ..
+: 1761223376:0;cd frontend
+: 1761223383:0;npm create vite@latest
+: 1761223399:0;npm i
+: 1761223524:0;nvim ~/.config/nvim
+: 1761225534:0;nvim ~/.config/nvim 
+: 1761270749:0;nvim ~/test/
+: 1761270912:0;nvim ~/.config/nvim 
+: 1761295783:0;clear
+: 1761298756:0;cd -
+: 1761298763:0;cd ~/.config/nvim
+: 1761298765:0;nvim .
+: 1761303599:0;nv
+: 1761303602:0;nvim .
+: 1761305609:0;cd ~
+: 1761305615:0;cd projects/fullstack-mern/Auth
+: 1761305617:0;nvim .
+: 1761305626:0;cd ..
+: 1761305635:0;cd intern/chatbot
+: 1761305636:0;nvim .
+: 1761305946:0;cd -
+: 1761305951:0;cd ~/.config/nvim
+: 1761305953:0;nvim .
+: 1761306019:0;cd -
+: 1761306021:0;nvim .
+: 1761306082:0;cd -
+: 1761306084:0;nvim .
+: 1761308963:0;cp ~/projects/frontend/newsAggregator /mnt/c/playGround/_projects/temp
+: 1761308966:0;cp ~/projects/frontend/newsAggregator /mnt/c/playGround/_projects/temp -r
+: 1761311068:0;cd projects/intern
+: 1761311070:0;ls
+: 1761311080:0;cp chatbot /mnt/c/PlayGround/Projects/temp -r
+: 1761311135:0;cd chatbot
+: 1761311136:0;ls
+: 1761311142:0;rm node_modules -rf
+: 1761311146:0;cd ..
+: 1761311178:0;cp chatbot /mnt/c/playGround/_projects/temp -rf
+: 1761312766:0;cd .config/nvim
+: 1761312766:0;nvim 
+: 1761312770:0;nvim .
+: 1761313719:0;cd ~/projects/fullstack/Auth
+: 1761313721:0;nvim .
+: 1761313731:0;cd ..
+: 1761313739:0;cd fullstack-mern/Auth
+: 1761313741:0;nvim .
+: 1761314145:0;cd backend
+: 1761314147:0;npm i
+: 1761314153:0;cd ..
+: 1761314155:0;nvim .
+: 1761322493:0;cd .config/nvim
+: 1761322495:0;nvim .
+: 1761323929:0;nvim ~/projects/fullstack-mern/Auth
+: 1761324493:0;nvim .
+: 1761391673:0;cd .config/nvim
+: 1761391673:0;nvim .
+: 1761391679:0;nvi 
+: 1761391681:0;nvim .
+: 1761391850:0;cd ..
+: 1761391860:0;git remote add origin https://github.com/asishathota/dotfiles.git
+: 1761391903:0;git commit -m "added nvim-mini/mini.indentscope"
+: 1761391906:0;git add .

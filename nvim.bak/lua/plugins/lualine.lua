@@ -1,0 +1,77 @@
+-- return {
+--   "nvim-lualine/lualine.nvim",
+--
+--   dependencies = {
+--     "nvim-tree/nvim-web-devicons",
+--   },
+--
+--   opts = {
+--     theme = "tokyonight-night",
+--   },
+--
+--   config = function()
+--     local lualine = require("lualine")
+--
+--     local function datetime()
+--       return os.date("%H:%M")  -- Example: 2025-10-10 14:45:00
+--     end
+--
+--     local colors = {
+--       blue = "#65D1FF",
+--       green = "#3EFFDC",
+--       violet = "#FF61EF",
+--       yellow = "#FFDA7B",
+--       red = "#FF4A4A",
+--       fg = "#c3ccdc",
+--       bg = "#112638",
+--       inactive_bg = "#2c3043",
+--     }
+--
+--     local my_lualine_theme = {
+--       normal = {
+--         a = { bg = colors.blue, fg = colors.bg, gui = "bold" },
+--         b = { bg = colors.bg, fg = colors.fg },
+--         c = { bg = colors.bg, fg = colors.fg },
+--       },
+--       insert = {
+--         a = { bg = colors.green, fg = colors.bg, gui = "bold" },
+--         b = { bg = colors.bg, fg = colors.fg },
+--         c = { bg = colors.bg, fg = colors.fg },
+--       },
+--       visual = {
+--         a = { bg = colors.violet, fg = colors.bg, gui = "bold" },
+--         b = { bg = colors.bg, fg = colors.fg },
+--         c = { bg = colors.bg, fg = colors.fg },
+--       },
+--       command = {
+--         a = { bg = colors.yellow, fg = colors.bg, gui = "bold" },
+--         b = { bg = colors.bg, fg = colors.fg },
+--         c = { bg = colors.bg, fg = colors.fg },
+--       },
+--       replace = {
+--         a = { bg = colors.red, fg = colors.bg, gui = "bold" },
+--         b = { bg = colors.bg, fg = colors.fg },
+--         c = { bg = colors.bg, fg = colors.fg },
+--       },
+--       inactive = {
+--         a = { bg = colors.inactive_bg, fg = colors.blue, gui = "bold" },
+--         b = { bg = colors.inactive_bg, fg = colors.blue },
+--         c = { bg = colors.inactive_bg, fg = colors.blue },
+--       },
+--     }
+--
+--     lualine.setup({
+--       options = {
+--         theme = my_lualine_theme,
+--       },
+--       sections = {
+--         lualine_a = {'mode'},
+--         lualine_b = {'branch', 'diff', 'diagnostics'},
+--         lualine_c = {'filename'},
+--         lualine_x = {'filetype'},
+--         lualine_y = {'progress'},
+--         lualine_z = {datetime}
+--       },
+--     })
+--   end,
+-- }
