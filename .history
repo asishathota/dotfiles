@@ -966,3 +966,48 @@ chmod +x ~/.local/bin/win32yank.exe
 : 1761391860:0;git remote add origin https://github.com/asishathota/dotfiles.git
 : 1761391903:0;git commit -m "added nvim-mini/mini.indentscope"
 : 1761391906:0;git add .
+: 1761391909:0;git commit -m "added nvim-mini/mini.indentscope"
+: 1761391920:0;cat ~/gitPass
+: 1761391924:0;git push
+: 1761391939:0;git help config
+: 1761391974:0;git config --global user.email "asishathota@gmail.com\
+"
+: 1761391985:0;git config --global user.name "asish"
+: 1761391990:0;git push
+: 1761392006:0;git push -u origin main
+: 1761392038:0;git push --help
+: 1761392169:0;git push -f origin main
+: 1761392266:0;clear
+: 1761392271:0;cd nvim
+: 1761392273:0;nvim .
+: 1761393735:0;time nvim --headless +q
+: 1761393740:0;nvim .
+: 1761394210:0;rm ~/.cache/nvim -rf
+: 1761394214:0;nvim .
+: 1761415327:0;cd .config/nvim
+: 1761415329:0;nvim .
+: 1761417420:0;cd ~/projects/fullstack/Auth
+: 1761417422:0;nvim .
+: 1761417441:0;cd -
+: 1761417452:0;cd ~/projects/fullstack-mern/Auth
+: 1761417453:0;nvim .
+: 1761417528:0;cd -
+: 1761417530:0;nvim .
+: 1761444099:0;cd -
+: 1761444101:0;nvim .
+: 1761444126:0;cd -
+: 1761444127:0;nvim .
+: 1761445800:0;git status
+: 1761445812:0;cd lua/plugins
+: 1761445813:0;ls
+: 1761445819:0;nvim .
+: 1761445835:0;git status
+: 1761445846:0;cd ~
+: 1761445850:0;cd .config
+: 1761445851:0;ls
+: 1761445860:0;rm old_nvim.bak nvim.bak -rf
+: 1761445867:0;mv nvim nvim.bak
+: 1761445867:0;ls
+: 1761445876:0;rm ~/.cache/nvim -rf
+: 1761445884:0;rm ~/.local/{state, share}/nvim -rf
+: 1761445914:0;git add .
