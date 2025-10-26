@@ -65,18 +65,6 @@ vim.g.netrw_banner = 1
 vim.g.netrw_winsize = 25
 vim.g.netrw_liststyle = 3
 
-local severity = vim.diagnostic.severity
-vim.diagnostic.config({
-    signs = {
-        text = {
-            [severity.ERROR] = " ",
-            [severity.WARN] = " ",
-            [severity.HINT] = "󰠠 ",
-            [severity.INFO] = " ",
-        },
-    },
-})
-
 vim.diagnostic.config({
     virtual_text = {
         spacing = 2,

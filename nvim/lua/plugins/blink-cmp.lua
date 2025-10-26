@@ -1,7 +1,7 @@
 return {
     "saghen/blink.cmp",
     event = "VimEnter",
-    version = "1.*",
+    version = "v0.11.0",
     build = "cargo build --release",
     dependencies = {
         {
@@ -41,6 +41,33 @@ return {
             nerd_font_variant = "mono",
         },
 
+        enabled = function()
+            local blacklist_ft = {
+                "TelescopePrompt",
+                "NvimTree",
+                "lazy",
+                "mason",
+                "alpha",
+                "toggleterm",
+                -- *** ADDING CORE FILE EXPLORER FILETYPES ***
+                "neo-tree",
+                "dirbuf",
+                -- *** ADDING DRESSING/DIALOG RELATED FILETYPES ***
+                "DressingInput",
+                "DressingSelect",
+            }
+            local bufnr = vim.api.nvim_get_current_buf()
+            local filetype = vim.api.nvim_buf_get_option(bufnr, "filetype")
+
+            for _, ft in ipairs(blacklist_ft) do
+                if ft == filetype then
+                    return false
+                end
+            end
+
+            return true
+        end,
+
         completion = {
             accept = { auto_brackets = { enabled = true } },
             documentation = { auto_show = true, auto_show_delay_ms = 500 },
@@ -55,15 +82,21 @@ return {
         },
 
         sources = {
-            default = { "lsp", "path", "snippets", "lazydev" },
+            default = { "lsp", "lazydev", "snippets", "path", "buffer" },
             providers = {
-                lazydev = { module = "lazydev.integrations.blink", score_offset = 100 },
+                lsp = { score_offset = 1000 },
+                lazydev = { module = "lazydev.integrations.blink", score_offset = 700 },
+                snippets = { score_offset = 500 },
+                path = { score_offset = 250 },
+                buffer = { score_offset = 100 },
             },
         },
 
         snippets = { preset = "luasnip" },
 
-        fuzzy = { implementation = "lua" },
+        fuzzy = {
+            implementation = "lua",
+        },
 
         signature = { enabled = true },
     },

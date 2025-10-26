@@ -720,3 +720,29 @@ nvim .
 : 1761482890:0;cd -
 : 1761482894:0;cd ~/.config
 : 1761482901:0;ga .
+: 1761482916:0;gc "configured blink-cmp"
+: 1761482921:0;cat ~/gitPass
+: 1761482924:0;git push
+: 1761482950:0;gs
+: 1761483503:0;cd nvim
+: 1761483508:0;n
+: 1761483713:0;nvim .
+: 1761485983:0;nvim
+: 1761486116:0;nvim 
+: 1761486158:0;nvim .
+: 1761487622:0;cd ~/projects/fullstack-mern/Auth
+: 1761487624:0;nvim .
+: 1761488698:0;cd -
+: 1761488701:0;nvim .
+: 1761491261:0;nvim
+: 1761491509:0;nvim 
+: 1761491656:0;nvim .
+: 1761491830:0;ls ~/.local/share/nvim/lazy/blink.cmp/build.rs 
+: 1761491834:0;ls ~/.local/share/nvim/lazy/blink.cmp/
+: 1761491840:0;nvim .
+: 1761491895:0;time nvim --headless +q
+: 1761492009:0;lazygit
+: 1761492028:0;cat ~/gitPass
+: 1761492031:0;ga .
+: 1761492033:0;cd ..
+: 1761492035:0;ga .
