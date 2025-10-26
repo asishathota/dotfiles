@@ -49,7 +49,7 @@ opt.foldmethod = "indent" -- use indentation for folding
 opt.foldlevel = 99 -- open all folds by default
 
 -- scrolling and context
-opt.scrolloff = 4 -- lines of context around the cursor
+opt.scrolloff = 8 -- lines of context around the cursor
 opt.sidescrolloff = 8 -- columns of context for horizontal scrolling
 
 -- miscellaneous
@@ -94,12 +94,23 @@ vim.diagnostic.config({
     update_in_insert = false,
 })
 
--- -- hightlight on yank
--- vim.api.nvim_create_autocmd('TextYankPost', {
---     desc = "Highlight when yanking(copying) text",
---     group = vim.api.nvim_create_augroup('kickstart-highlight-yank', {clear = true}),
+vim.lsp.config("lua_ls", {
+    settings = {
+        Lua = {
+            diagnostics = {
+                globals = {
+                    "vim",
+                },
+            },
+        },
+    },
+})
+
+-- vim.api.nvim_create_autocmd("TextYankPost", {
+--     desc = "Highlight when yanking (copying) text",
+--     group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
 --     callback = function()
---         vim.highlight.on_yank({ higroup = "YankHighlight", timeout = 200 })
+--         vim.hl.on_yank()
 --     end,
 -- })
 
