@@ -1011,3 +1011,166 @@ chmod +x ~/.local/bin/win32yank.exe
 : 1761445876:0;rm ~/.cache/nvim -rf
 : 1761445884:0;rm ~/.local/{state, share}/nvim -rf
 : 1761445914:0;git add .
+: 1761445935:0;git commit -m "nvim -> nvim.bak"
+: 1761445959:0;cat ~/gitPass
+: 1761445963:0;git push
+: 1761445983:0;git push --ser-upstream origin main
+: 1761445990:0;cat ~/gitPass
+: 1761445992:0;git push
+: 1761446070:0;git push -u origin main
+: 1761446264:0;vi ~/gitPass
+: 1761446281:0;cat ~/gitPass
+: 1761446290:0;vi ~/gitPass
+: 1761446313:0;nvim ~/gitPass
+: 1761446623:0;cat ~/gitPass
+: 1761446629:0;git push -u origin main
+: 1761446644:0;git push
+: 1761446707:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761446716:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
+: 1761446722:0;rm -rf ~/.config/nvim/.git
+: 1761446727:0;nvim
+: 1761446808:0;cd nvim
+: 1761446812:0;nvim .
+: 1761447303:0;update
+: 1761447333:0;sudo apt install build-essentials
+: 1761447336:0;sudo apt install build-essential
+: 1761447342:0;nvim .
+: 1761447415:0;npm install -g tree-sitter-cli
+: 1761447424:0;nvim .
+: 1761448085:0;cd ~/.local/share/nvim
+: 1761448087:0;nvim .
+: 1761448148:0;cd ..
+: 1761448151:0;cd state
+: 1761448157:0;cd nvim
+: 1761448159:0;nvim .
+: 1761448164:0;cd ..
+: 1761448166:0;ls
+: 1761448169:0;cd share
+: 1761448171:0;ls
+: 1761448173:0;cd nvim
+: 1761448175:0;ls
+: 1761448178:0;cd ..
+: 1761448179:0;..
+: 1761448182:0;cd state
+: 1761448183:0;ls
+: 1761448186:0;cd nvim
+: 1761448187:0;ls
+: 1761448194:0;cd shada
+: 1761448195:0;ls
+: 1761448199:0;cd ..
+: 1761448201:0;cd lazy
+: 1761448202:0;ls
+: 1761448214:0;cd ..
+: 1761448334:0;ls
+: 1761448337:0;cd .config
+: 1761448338:0;ls
+: 1761448342:0;cd nvim
+: 1761448343:0;ls
+: 1761448346:0;nvim .
+: 1761448442:0;cd ~/.local/share/nvim
+: 1761448444:0;la
+: 1761448446:0;cd lazy
+: 1761448447:0;ls
+: 1761448463:0;la
+: 1761448465:0;ll
+: 1761448477:0;cd lazyVim
+: 1761448506:0;la
+: 1761448535:0;cd LazyVim
+: 1761448536:0;ls
+: 1761448540:0;cd lua
+: 1761448542:0;ls
+: 1761448544:0;cd lazyvim
+: 1761448545:0;ls
+: 1761448548:0;cd plugins
+: 1761448549:0;ls
+: 1761448557:0;cd extras
+: 1761448558:0;ls
+: 1761448562:0;cd ..
+: 1761448565:0;..
+: 1761448570:0;nvim .
+: 1761448822:0;cd -
+: 1761448832:0;cd ~/.config/nvim
+: 1761448834:0;nvim .
+: 1761448847:0;rm -rf ~/.local/{share, state}/nvim ~/.cache/nvim 
+: 1761448848:0;nvim .
+: 1761448866:0;rm -rf ~/.local/{share, state}/nvim ~/.cache/nvim 
+: 1761448890:0;rm -f ~/.local/share/nvim ~/.local/state/nvim
+: 1761448894:0;rm -f ~/.local/share/nvim ~/.local/state/nvim -rf
+: 1761448899:0;nvim .
+: 1761449114:0;cd ~/.local/share/nvim
+: 1761449119:0;ls
+: 1761449123:0;cd lazy/LazyVim
+: 1761449125:0;ls
+: 1761450362:0;:qa
+: 1761450996:0;cd ~/.config/nvim
+: 1761450998:0;nvim .
+: 1761451271:0;ls
+: 1761451285:0;cat lazyvim.json
+: 1761451362:0;tree ../nvim.bak/
+: 1761451366:0;sudo apt install tree
+: 1761451376:0;tree ../nvim.bak/
+: 1761451622:0;cd ~/.local/share/nvim/lazy/LazyVim
+: 1761451623:0;ls
+: 1761451634:0;cd lua
+: 1761451634:0;ls
+: 1761451636:0;cd lazyvim
+: 1761451636:0;ls
+: 1761451640:0;cd plugins
+: 1761451641:0;la
+: 1761451642:0;ls
+: 1761451644:0;ll
+: 1761451648:0;cd lsp
+: 1761451648:0;ls
+: 1761451654:0;cd ..
+: 1761451662:0;nvim .
+: 1761452371:0;cd ~
+: 1761452422:0;mv ~/.local/share/nvim{,.bak}
+: 1761452431:0;cd .config
+: 1761452432:0;ls
+: 1761452449:0;mv nvim lazyNVIM.bak
+: 1761452454:0;mv nvim.bak nvim 
+: 1761452467:0;rm -f ~/.local/share/nvim ~/.local/state/nvim -rf
+: 1761452473:0;rm ~/.cache/nvim -rf
+: 1761452476:0;nvim . 
+: 1761453456:0;nvim .
+: 1761453527:0;cd nvim
+: 1761453532:0;cd ..
+: 1761453535:0;nvim .aliases
+: 1761453557:0;szsh
+: 1761453569:0;cd nvim
+: 1761453570:0;n
+: 1761454139:0;nvim .aliases
+: 1761454143:0;n
+: 1761454751:0;nvim .
+: 1761456925:0;n
+: 1761459097:0;nvim .
+: 1761462095:0;rm ~/.cache/nvim -rf
+: 1761462097:0;nvim .
+: 1761462122:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761462130:0;nvim .
+: 1761462571:0;cd ~/projects/fullstack-mern/Auth
+: 1761462573:0;nvim .
+: 1761462983:0;npm install eslint
+: 1761462991:0;ls
+: 1761463000:0;rm package.json package-lock.json node_modules
+: 1761463005:0;rm package.json package-lock.json node_modules -rf
+: 1761463010:0;cd frontend
+: 1761463018:0;npm install eslint
+: 1761463024:0;nvim .
+: 1761463337:0;cd -
+: 1761463350:0;cd ~/.config/nvim
+: 1761463352:0;nvim .
+: 1761463789:0;cd -
+: 1761463790:0;nvim. 
+: 1761463792:0;nvim .
+: 1761464943:0;cd backend
+: 1761464945:0;npm i
+: 1761464951:0;npm i eslint
+: 1761464961:0;cd ..
+: 1761464962:0;nvim .
+: 1761465409:0;cd ~/.config/nvim
+: 1761465411:0;nvim .
+: 1761466257:0;ls
+: 1761466266:0;git add .
+: 1761466274:0;cd ~/.config
+: 1761466276:0;git add .

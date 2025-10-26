@@ -27,6 +27,19 @@ return {
                 async = false,
                 timeout_ms = 500,
             },
+            formatters = {
+                prettier = {
+                    prepend_args = function()
+                        return {
+                            "--single-quote",
+                            "--print-width=120",
+                            "--tab-width=4",
+                            "--semi=true",
+                            "--jsx-single-quote=false",
+                        }
+                    end,
+                },
+            },
         })
 
         vim.keymap.set({ "n", "v" }, "<leader>mp", function()
