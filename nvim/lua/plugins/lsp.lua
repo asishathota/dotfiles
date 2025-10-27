@@ -59,33 +59,6 @@ return {
             end,
         })
 
-        vim.diagnostic.config({
-            severity_sort = true,
-            float = { border = "rounded", source = "if_many" },
-            underline = { severity = vim.diagnostic.severity.ERROR },
-            signs = vim.g.have_nerd_font and {
-                text = {
-                    [vim.diagnostic.severity.ERROR] = "󰅚 ",
-                    [vim.diagnostic.severity.WARN] = "󰀪 ",
-                    [vim.diagnostic.severity.INFO] = "󰋽 ",
-                    [vim.diagnostic.severity.HINT] = "󰌶 ",
-                },
-            } or {},
-            virtual_text = {
-                source = "if_many",
-                spacing = 2,
-                format = function(diagnostic)
-                    local diagnostic_message = {
-                        [vim.diagnostic.severity.ERROR] = diagnostic.message,
-                        [vim.diagnostic.severity.WARN] = diagnostic.message,
-                        [vim.diagnostic.severity.INFO] = diagnostic.message,
-                        [vim.diagnostic.severity.HINT] = diagnostic.message,
-                    }
-                    return diagnostic_message[diagnostic.severity]
-                end,
-            },
-        })
-
         local capabilities = require("blink.cmp").get_lsp_capabilities()
 
         local servers = {
@@ -96,22 +69,7 @@ return {
             tailwindcss = {},
             ts_ls = {},
             jdtls = {},
-
-            lua_ls = {
-                settings = {
-                    Lua = {
-                        completion = {
-                            callSnippet = "Replace",
-                        },
-                        diagnostics = {
-                            globals = { "vim" },
-                        },
-                        telemetry = {
-                            enable = false,
-                        },
-                    },
-                },
-            },
+            lua_ls = {},
         }
 
         local ensure_installed = vim.tbl_keys(servers or {})
@@ -125,7 +83,18 @@ return {
         require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
         require("mason-lspconfig").setup({
-            ensure_installed = {},
+            ensure_installed = {
+                "ts_ls",
+                "html",
+                "cssls",
+                "tailwindcss",
+                "svelte",
+                "lua_ls",
+                "graphql",
+                "emmet_ls",
+                "prismals",
+                "pyright",
+            },
             automatic_installation = false,
             handlers = {
                 function(server_name)
@@ -134,6 +103,106 @@ return {
                     vim.lsp[server_name].setup(server)
                 end,
             },
+        })
+
+        vim.diagnostic.config({
+            severity_sort = true,
+            float = { border = "rounded", source = "if_many" },
+            underline = { severity = vim.diagnostic.severity.ERROR },
+            update_in_insert = false,
+            signs = vim.g.have_nerd_font and {
+                text = {
+                    [vim.diagnostic.severity.ERROR] = "󰅚 ",
+                    [vim.diagnostic.severity.WARN] = "󰀪 ",
+                    [vim.diagnostic.severity.INFO] = "󰋽 ",
+                    [vim.diagnostic.severity.HINT] = "󰌶 ",
+                },
+            } or {},
+            virtual_text = {
+                source = "if_many",
+                severity = { min = vim.diagnostic.severity.WARN },
+                prefix = "", -- ■ 
+                suffix = "",
+                spacing = 2,
+                format = function(diagnostic)
+                    -- local diagnostic_message = {
+                    --     [vim.diagnostic.severity.ERROR] = diagnostic.message,
+                    --     [vim.diagnostic.severity.WARN] = diagnostic.message,
+                    --     [vim.diagnostic.severity.INFO] = diagnostic.message,
+                    --     [vim.diagnostic.severity.HINT] = diagnostic.message,
+                    -- }
+                    -- return " " .. diagnostic_message[diagnostic.severity] .. " "
+                    return " " .. diagnostic.message .. " "
+                end,
+            },
+        })
+
+        vim.lsp.config("lua_ls", {
+            settings = {
+                Lua = {
+                    completion = {
+                        callSnippet = "Replace",
+                    },
+                    diagnostics = {
+                        globals = { "vim" },
+                    },
+                    telemetry = {
+                        enable = false,
+                    },
+                },
+            },
+        })
+
+        local keymap = vim.keymap
+
+        vim.api.nvim_create_autocmd("LspAttach", {
+            group = vim.api.nvim_create_augroup("UserLspConfig", {}),
+            callback = function(ev)
+                local opts = { buffer = ev.buf, silent = true }
+
+                opts.desc = "Show LSP references"
+                keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts)
+
+                opts.desc = "Go to declaration"
+                keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
+
+                opts.desc = "Show LSP definition"
+                keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+
+                opts.desc = "Show LSP implementations"
+                keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts)
+
+                opts.desc = "Show LSP type definitions"
+                keymap.set("n", "gt", "<cmd>Telescope lsp_type_definitions<CR>", opts)
+
+                opts.desc = "See available code actions"
+                keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
+
+                opts.desc = "Smart rename"
+                keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
+
+                opts.desc = "Show buffer diagnostics"
+                keymap.set("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<CR>", opts)
+
+                opts.desc = "Show line diagnostics"
+                keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts)
+
+                opts.desc = "Go to previous diagnostic"
+                keymap.set("n", "[d", function()
+                    vim.diagnostic.jump({ count = -1, float = true })
+                end, opts)
+
+                opts.desc = "Go to next diagnostic"
+                keymap.set("n", "]d", function()
+                    vim.diagnostic.jump({ count = 1, float = true })
+                end, opts)
+
+                opts.desc = "Show documentation for what is under cursor"
+                keymap.set("n", "K", vim.lsp.buf.hover, opts)
+
+                opts.desc = "Restart LSP"
+                keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts)
+            end,
         })
     end,
 }
