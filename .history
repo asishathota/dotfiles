@@ -746,3 +746,142 @@ nvim .
 : 1761492031:0;ga .
 : 1761492033:0;cd ..
 : 1761492035:0;ga .
+: 1761492043:0;gc "added some functionality"
+: 1761492050:0;git push
+: 1761492310:0;cd nvim
+: 1761492312:0;nvim .
+: 1761494811:0;cd projects
+: 1761494817:0;cd fullstack-mern/Auth
+: 1761494818:0;nvim .
+: 1761494993:0;cd projects/fullstack-mern/Auth
+: 1761494996:0;nvim .
+: 1761563367:0;cleaar
+: 1761563370:0;clear
+: 1761563371:0;ls
+: 1761563386:0;cd .config/
+: 1761563387:0;ls
+: 1761563404:0;mv nvim myNVIM.bak
+: 1761563421:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761563435:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
+: 1761563442:0;cd nvim 
+: 1761563446:0;n
+: 1761563529:0;nvim .
+: 1761563740:0;tmux new -s neovim
+: 1761563753:0;cd ..
+: 1761563757:0;cd myNVIM.bak
+: 1761563761:0;n
+: 1761563766:0;nvim .
+: 1761564588:0;n
+: 1761565021:0;update
+: 1761565030:0;apt install cmake g++ pkg-config libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
+: 1761565039:0;sudo apt install cmake g++ pkg-config libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
+: 1761565124:0;git clone https://github.com/alacritty/alacritty.git
+: 1761565144:0;cd alacritty
+: 1761565163:0;cargo --version
+: 1761565168:0;curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+: 1761565324:0;rustup override set stable
+: 1761565357:0;nvim ~/.zshrc
+: 1761565373:0;szsh
+: 1761565377:0;rustup override set stable
+: 1761565385:0;rustup update stable
+: 1761565398:0;apt install cmake g++ pkg-config libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
+: 1761565401:0;sudo apt install cmake g++ pkg-config libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
+: 1761565428:0;cargo build --release
+: 1761565544:0;sudo cp target/release/alacritty /usr/local/bin
+: 1761565564:0;nvim ~/.zshrc
+: 1761565581:0;cp extra/completions/_alacritty ${ZDOTDIR:-~}/.zsh_functions/_alacritty
+: 1761565684:0;${ZDOTDIR:-~}
+: 1761565726:0;echo "${ZDOTDIR: -~}"
+: 1761565737:0;echo "${ZDOTDIR}"
+: 1761565753:0;szsh
+: 1761565757:0;cp extra/completions/_alacritty ${ZDOTDIR:-~}/.zsh_functions/_alacritty
+: 1761565776:0;alacritty
+: 1761565864:0;nvim ~/.zshrc
+: 1761565875:0;szsh
+: 1761566405:0;alacritty
+: 1761566408:0;cd
+: 1761566410:0;ls
+: 1761566413:0;nvim .
+: 1761566430:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761566434:0;cd .config
+: 1761566435:0;ls
+: 1761566444:0;rm nvim -rf
+: 1761566457:0;cp myNVIM.bak nvim 
+: 1761566461:0;cp myNVIM.bak nvim -rf
+: 1761566464:0;nvim .
+: 1761566568:0;sudo apt remove alacritty
+: 1761566576:0;cd ..
+: 1761566577:0;ls
+: 1761566578:0;cd alacritty
+: 1761566579:0;ls
+: 1761566581:0;cd ..
+: 1761566587:0;rm alacritty -rm
+: 1761566595:0;rm alacritty -rf
+: 1761566597:0;ls
+: 1761566605:0;which alacritty
+: 1761566610:0;alacritty
+: 1761566623:0;nvim .zshr
+: 1761566629:0;nvim .zshrc
+: 1761566645:0;ls
+: 1761566647:0;la
+: 1761566670:0;rm .zsh_functions -rf
+: 1761566678:0;ls
+: 1761566681:0;la
+: 1761566682:0;ll
+: 1761566705:0;szh
+: 1761566708:0;szsh
+: 1761566713:0;which alacritty
+: 1761566733:0;cat /usr/local/bin/alacritty
+: 1761566746:0;rm /usr/local/bin/alacritty -rf
+: 1761566765:0;sudo rm /usr/local/bin/alacritty -rf
+: 1761566769:0;which alacritty
+: 1761571063:0;cd .config
+: 1761571064:0;l
+: 1761571065:0;sls
+: 1761571066:0;ls
+: 1761571068:0;cd nvim
+: 1761571070:0;n
+: 1761571410:0;nvim
+: 1761571414:0;n
+: 1761572218:0;nvim
+: 1761572227:0;nvim .
+: 1761574195:0;sudo apt-cache search neovide
+: 1761574207:0;apt-cache search neovide
+: 1761574215:0;sudo apt install neovide
+: 1761574273:0;cargo install --git https://github.com/neovide/neovide
+: 1761574892:0;cd ~/.cargo
+: 1761574893:0;ls
+: 1761574896:0;cd bin
+: 1761574896:0;ls
+: 1761574909:0;rm neovide -rf
+: 1761574920:0;cd ~
+: 1761574921:0;ls
+: 1761574932:0;cd .config/nvim
+: 1761574934:0;n
+: 1761575077:0;cd ~/projects/fullstack-mern/Auth
+: 1761575079:0;nvim .
+: 1761575137:0;cd -
+: 1761575139:0;nvim .
+: 1761576116:0;cat /home/ashu/.local/state/nvim/lsp.log
+: 1761576124:0;cat -help
+: 1761576129:0;cat --help
+: 1761576171:0;cat /home/ashu/.local/state/nvim/lsp.log
+: 1761576176:0;nvim /home/ashu/.local/state/nvim/lsp.log
+: 1761576245:0;clear
+: 1761576248:0;nvim .
+: 1761577109:0;n
+: 1761577326:0;nvim ,
+: 1761577331:0;nvim .
+: 1761577692:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761577705:0;nvim .
+: 1761578141:0;nv 
+: 1761578143:0;nvim .
+: 1761579388:0;n
+: 1761579552:0;ls
+: 1761579554:0;nvim .
+: 1761580480:0;n
+: 1761580556:0;nvim .
+: 1761580599:0;nvim /home/ashu/.local/state/nvim/conform.log
+: 1761580608:0;nvim .
+: 1761581269:0;cd ..
+: 1761581275:0;git add .

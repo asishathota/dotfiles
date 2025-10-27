@@ -16,13 +16,3 @@ return {
         })
     end,
 }
-
---    ◍ svelte-language-server svelte (keywords: svelte)
---    ◍ jdtls (keywords: java)
---    ◍ emmet-language-server emmet_language_server (keywords: emmet)
---    ◍ css-lsp cssls (keywords: css, scss, less)
---    ◍ html-lsp html (keywords: html)
---    ◍ lua-language-server lua_ls (keywords: lua)
---    ◍ stylua (keywords: lua, luau)
---    ◍ tailwindcss-language-server tailwindcss (keywords: css)
---    ◍ typescript-language-server ts_ls (keywords: typescript, javascript)

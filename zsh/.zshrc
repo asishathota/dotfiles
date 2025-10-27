@@ -70,6 +70,9 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="/opt/neovim/bin:$PATH"
 export PATH="$PATH:$HOME/.local/bin"
 
+. "$HOME/.cargo/env"
+
+
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 export NVM_DIR="$HOME/.nvm"
@@ -133,3 +136,8 @@ $(prompt_dir)  ${vcs_info_msg_0_}
 '$PROMPT_END_SYMBOL'%f '
 
 RPROMPT='$(venv_prompt)'
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+fpath+=${ZDOTDIR:-~}/.zsh_functions

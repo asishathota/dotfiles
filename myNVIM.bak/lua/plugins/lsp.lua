@@ -29,7 +29,11 @@ return {
                 local client = vim.lsp.get_client_by_id(event.data.client_id)
                 if
                     client
-                    and client_supports_method(client, vim.lsp.protocol.Methods.textDocument_documentHighlight, event.buf)
+                    and client_supports_method(
+                        client,
+                        vim.lsp.protocol.Methods.textDocument_documentHighlight,
+                        event.buf
+                    )
                 then
                     local highlight_augroup = vim.api.nvim_create_augroup("kickstart-lsp-highlight", { clear = false })
                     vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
@@ -41,7 +45,6 @@ return {
                     vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, {
                         buffer = event.buf,
                         group = highlight_augroup,
-
                         callback = vim.lsp.buf.clear_references,
                     })
 
@@ -116,25 +119,13 @@ return {
             "stylua",
             "prettier",
             "black",
-            "isort",
             "pylint",
             "eslint_d",
         })
         require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
         require("mason-lspconfig").setup({
-            ensure_installed = {
-                "ts_ls",
-                "html",
-                "cssls",
-                "tailwindcss",
-                "svelte",
-                "lua_ls",
-                "graphql",
-                "emmet_ls",
-                "prismals",
-                "pyright",
-            },
+            ensure_installed = {},
             automatic_installation = false,
             handlers = {
                 function(server_name)

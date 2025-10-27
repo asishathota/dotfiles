@@ -94,13 +94,8 @@ return {
 
         snippets = { preset = "luasnip" },
 
-        -- fuzzy = {
-        --     -- implementation = "lua",
-        --     implementation = "prefer_rust_with_warning",
-        -- },
-
         fuzzy = {
-                implementation = "prefer_rust_with_warning",
+            implementation = "lua",
         },
 
         signature = { enabled = true },

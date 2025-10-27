@@ -8,10 +8,10 @@ opt.mouse = ""
 opt.cursorline = false
 
 -- tabs & indentation
-opt.tabstop = 4        -- 4 spaces for tabs
-opt.shiftwidth = 4     -- 4 spaces for indent width
-opt.expandtab = true   -- expand tab to spaces
-opt.autoindent = true  -- copy indent from current line when starting a new one
+opt.tabstop = 4 -- 4 spaces for tabs
+opt.shiftwidth = 4 -- 4 spaces for indent width
+opt.expandtab = true -- expand tab to spaces
+opt.autoindent = true -- copy indent from current line when starting a new one
 opt.smartindent = true -- insert indents automatically
 
 -- wrapping
@@ -19,12 +19,12 @@ opt.wrap = false -- disable line wrapping
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
-opt.smartcase = true  -- use case-sensitive search if uppercase letters are present
+opt.smartcase = true -- use case-sensitive search if uppercase letters are present
 opt.signcolumn = "no"
 
 -- colors and ui
 opt.termguicolors = true -- enable true color support
-opt.background = "dark"  -- use dark background for colorschemes
+opt.background = "dark" -- use dark background for colorschemes
 opt.winborder = "rounded"
 
 -- backspace
@@ -41,19 +41,19 @@ opt.splitbelow = true -- horizontal splits open below
 opt.swapfile = false -- turn off swapfile
 
 -- undo and backup
-opt.undofile = true   -- enable persistent undo
+opt.undofile = true -- enable persistent undo
 opt.undolevels = 5000 -- maximum undo levels
 
 -- folding
 opt.foldmethod = "indent" -- use indentation for folding
-opt.foldlevel = 99        -- open all folds by default
+opt.foldlevel = 99 -- open all folds by default
 
 -- scrolling and context
-opt.scrolloff = 8     -- lines of context around the cursor
+opt.scrolloff = 8 -- lines of context around the cursor
 opt.sidescrolloff = 8 -- columns of context for horizontal scrolling
 
 -- miscellaneous
-opt.autowrite = true  -- enable auto write
+opt.autowrite = true -- enable auto write
 opt.splitright = true -- vertical splits to the right
 opt.showmode = false
 opt.cmdheight = 1
@@ -133,16 +133,16 @@ function _G.lsp_diagnostics()
 
     local res = {}
     if e > 0 then
-        table.insert(res, "󰅚 " .. e)
+        table.insert(res, " " .. e)
     end
     if w > 0 then
-        table.insert(res, "󰀪 " .. w)
+        table.insert(res, " " .. w)
     end
     if h > 0 then
-        table.insert(res, "󰋽 " .. h)
+        table.insert(res, " " .. h)
     end
     if i > 0 then
-        table.insert(res, "󰌶 " .. i)
+        table.insert(res, " " .. i)
     end
     return table.concat(res, " ")
 end

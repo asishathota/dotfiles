@@ -135,3 +135,4 @@ $(venv_prompt)$(prompt_dir)$(git_branch)\n${prompt_color}${PROMPT_END_SYMBOL}\[\
 
 PROMPT_COMMAND=set_prompt
 
+. "$HOME/.cargo/env"
