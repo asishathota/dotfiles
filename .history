@@ -885,3 +885,29 @@ nvim .
 : 1761580608:0;nvim .
 : 1761581269:0;cd ..
 : 1761581275:0;git add .
+: 1761581333:0;gc "added surround.lua auto-session.lua"
+: 1761581339:0;cat ~/gitPass
+: 1761581351:0;git push
+: 1761581360:0;cd nvim
+: 1761581363:0;n
+: 1761584106:0;nvim .
+: 1761587726:0;cd ..
+: 1761587731:0;mv nvim myNVIM.bak
+: 1761587734:0;ls
+: 1761587751:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
+: 1761587759:0;nvim .
+: 1761587800:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761587811:0;nvim .
+: 1761587877:0;cd nvim
+: 1761587878:0;nvim .
+: 1761587895:0;cd ..
+: 1761587902:0;cd myNVIM.bak
+: 1761587904:0;nvim .
+: 1761588067:0;cd ..
+: 1761588069:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761588079:0;mv nvim lazyNVIM.bak
+: 1761588090:0;cp myNVIM.bak nvim -rf
+: 1761588091:0;ls
+: 1761588104:0;ga .
+: 1761588122:0;rm lazyNVIM.bak -rf
+: 1761588124:0;ga .

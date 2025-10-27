@@ -20,7 +20,6 @@ opt.wrap = false -- disable line wrapping
 -- search settings
 opt.ignorecase = true -- ignore case when searching
 opt.smartcase = true -- use case-sensitive search if uppercase letters are present
-opt.signcolumn = "no"
 
 -- colors and ui
 opt.termguicolors = true -- enable true color support
@@ -65,34 +64,34 @@ vim.g.netrw_banner = 1
 vim.g.netrw_winsize = 25
 vim.g.netrw_liststyle = 3
 
-vim.diagnostic.config({
-    virtual_text = {
-        spacing = 2,
-        severity = { min = vim.diagnostic.severity.WARN },
-        prefix = "", -- ■ 
-        suffix = "",
-        format = function(diagnostic)
-            return " " .. diagnostic.message .. " "
-        end,
-    },
-    signs = false,
-    underline = {
-        severity = vim.diagnostic.severity.ERROR,
-    },
-    update_in_insert = false,
-})
-
-vim.lsp.config("lua_ls", {
-    settings = {
-        Lua = {
-            diagnostics = {
-                globals = {
-                    "vim",
-                },
-            },
-        },
-    },
-})
+-- vim.diagnostic.config({
+--     virtual_text = {
+--         spacing = 2,
+--         severity = { min = vim.diagnostic.severity.WARN },
+--         prefix = "", -- ■ 
+--         suffix = "",
+--         format = function(diagnostic)
+--             return " " .. diagnostic.message .. " "
+--         end,
+--     },
+--     signs = false,
+--     underline = {
+--         severity = vim.diagnostic.severity.ERROR,
+--     },
+--     update_in_insert = false,
+-- })
+--
+-- vim.lsp.config("lua_ls", {
+--     settings = {
+--         Lua = {
+--             diagnostics = {
+--                 globals = {
+--                     "vim",
+--                 },
+--             },
+--         },
+--     },
+-- })
 
 -- vim.api.nvim_create_autocmd("TextYankPost", {
 --     desc = "Highlight when yanking (copying) text",
@@ -133,16 +132,16 @@ function _G.lsp_diagnostics()
 
     local res = {}
     if e > 0 then
-        table.insert(res, " " .. e)
+        table.insert(res, "󰅚 " .. e)
     end
     if w > 0 then
-        table.insert(res, " " .. w)
+        table.insert(res, "󰀪 " .. w)
     end
     if h > 0 then
-        table.insert(res, " " .. h)
+        table.insert(res, "󰋽 " .. h)
     end
     if i > 0 then
-        table.insert(res, " " .. i)
+        table.insert(res, "󰌶 " .. i)
     end
     return table.concat(res, " ")
 end

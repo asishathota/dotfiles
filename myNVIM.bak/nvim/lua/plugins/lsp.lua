@@ -45,6 +45,7 @@ return {
                     vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, {
                         buffer = event.buf,
                         group = highlight_augroup,
+
                         callback = vim.lsp.buf.clear_references,
                     })
 
@@ -57,33 +58,6 @@ return {
                     })
                 end
             end,
-        })
-
-        vim.diagnostic.config({
-            severity_sort = true,
-            float = { border = "rounded", source = "if_many" },
-            underline = { severity = vim.diagnostic.severity.ERROR },
-            signs = vim.g.have_nerd_font and {
-                text = {
-                    [vim.diagnostic.severity.ERROR] = "󰅚 ",
-                    [vim.diagnostic.severity.WARN] = "󰀪 ",
-                    [vim.diagnostic.severity.INFO] = "󰋽 ",
-                    [vim.diagnostic.severity.HINT] = "󰌶 ",
-                },
-            } or {},
-            virtual_text = {
-                source = "if_many",
-                spacing = 2,
-                format = function(diagnostic)
-                    local diagnostic_message = {
-                        [vim.diagnostic.severity.ERROR] = diagnostic.message,
-                        [vim.diagnostic.severity.WARN] = diagnostic.message,
-                        [vim.diagnostic.severity.INFO] = diagnostic.message,
-                        [vim.diagnostic.severity.HINT] = diagnostic.message,
-                    }
-                    return diagnostic_message[diagnostic.severity]
-                end,
-            },
         })
 
         local capabilities = require("blink.cmp").get_lsp_capabilities()
@@ -103,9 +77,6 @@ return {
                         completion = {
                             callSnippet = "Replace",
                         },
-                        diagnostics = {
-                            globals = { "vim" },
-                        },
                         telemetry = {
                             enable = false,
                         },
@@ -119,13 +90,25 @@ return {
             "stylua",
             "prettier",
             "black",
+            "isort",
             "pylint",
             "eslint_d",
         })
         require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
         require("mason-lspconfig").setup({
-            ensure_installed = {},
+            ensure_installed = {
+                "ts_ls",
+                "html",
+                "cssls",
+                "tailwindcss",
+                "svelte",
+                "lua_ls",
+                "graphql",
+                "emmet_ls",
+                "prismals",
+                "pyright",
+            },
             automatic_installation = false,
             handlers = {
                 function(server_name)
@@ -133,6 +116,52 @@ return {
                     server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
                     vim.lsp[server_name].setup(server)
                 end,
+            },
+        })
+
+        vim.diagnostic.config({
+            severity_sort = true,
+            float = { border = "rounded", source = "if_many" },
+            underline = { severity = vim.diagnostic.severity.ERROR },
+            update_in_insert = false,
+
+            signs = vim.g.have_nerd_font and {
+                text = {
+                    [vim.diagnostic.severity.ERROR] = "󰅚 ",
+                    [vim.diagnostic.severity.WARN] = "󰀪 ",
+                    [vim.diagnostic.severity.INFO] = "󰋽 ",
+                    [vim.diagnostic.severity.HINT] = "󰌶 ",
+                },
+            } or {},
+
+            virtual_text = {
+                source = "if_many",
+                spacing = 2,
+                severity = { min = vim.diagnostic.severity.WARN },
+                prefix = "", -- ■ 
+                suffix = "",
+                format = function(diagnostic)
+                    -- local diagnostic_message = {
+                    --     [vim.diagnostic.severity.ERROR] = diagnostic.message,
+                    --     [vim.diagnostic.severity.WARN] = diagnostic.message,
+                    --     [vim.diagnostic.severity.INFO] = diagnostic.message,
+                    --     [vim.diagnostic.severity.HINT] = diagnostic.message,
+                    -- }
+                    -- return " " .. diagnostic_message[diagnostic.severity] .. " "
+                    return " " .. diagnostic.message .. " "
+                end,
+            },
+        })
+
+        vim.lsp.config("lua_ls", {
+            settings = {
+                Lua = {
+                    diagnostics = {
+                        globals = {
+                            "vim",
+                        },
+                    },
+                },
             },
         })
     end,
