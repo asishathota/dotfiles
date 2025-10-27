@@ -26,17 +26,6 @@ return {
         "folke/lazydev.nvim",
     },
     opts = {
-        keymap = {
-            preset = "default",
-            ["<C-y>"] = { "select_and_accept", "fallback" }, -- works in this Blink version
-            ["<Tab>"] = { "snippet_forward", "select_and_accept", "fallback" },
-            ["<S-Tab>"] = { "snippet_backward", "fallback" },
-            ["<C-j>"] = { "select_next", "fallback" },
-            ["<C-k>"] = { "select_prev", "fallback" },
-            ["<CR>"] = { "select_and_accept", "fallback" },
-            ["<C-space>"] = { "show", "cancel", "fallback" },
-        },
-
         appearance = {
             nerd_font_variant = "mono",
         },
@@ -70,8 +59,10 @@ return {
 
         completion = {
             accept = { auto_brackets = { enabled = true } },
-            documentation = { auto_show = true, auto_show_delay_ms = 500 },
-            ghost_text = { enabled = vim.g.ai_cmp or false },
+            documentation = { auto_show = true },
+            -- documentation = { auto_show = true, auto_show_delay_ms = 500 },
+            ghost_text = { enabled = true },
+            -- ghost_text = { enabled = vim.g.ai_cmp or false },
             trigger = {
                 show_on_insert_on_trigger_character = false,
                 show_on_keyword = true,
@@ -81,8 +72,31 @@ return {
             },
         },
 
+        cmdline = {
+            keymap = {
+                ["<Tab>"] = { "accept" },
+                ["<CR>"] = { "accept_and_enter", "fallback" },
+                ["<c-j>"] = { "select_next", "fallback" },
+                ["<c-k>"] = { "select_prev", "fallback" },
+                ["<C-space>"] = { "show", "cancel", "fallback" },
+            },
+            -- (optionally) automatically show the menu
+            completion = { menu = { auto_show = true } },
+        },
+
+        keymap = {
+            preset = "default",
+            ["<C-y>"] = { "select_and_accept", "fallback" }, -- works in this Blink version
+            ["<Tab>"] = { "snippet_forward", "select_and_accept", "fallback" },
+            ["<S-Tab>"] = { "snippet_backward", "fallback" },
+            ["<c-j>"] = { "select_next", "fallback" },
+            ["<c-k>"] = { "select_prev", "fallback" },
+            ["<CR>"] = { "select_and_accept", "fallback" },
+            ["<C-space>"] = { "show", "cancel", "fallback" },
+        },
+
         sources = {
-            default = { "lsp", "lazydev", "snippets", "path", "buffer" },
+            default = { "lsp", "path", "snippets", "buffer" },
             providers = {
                 lsp = { score_offset = 1000 },
                 lazydev = { module = "lazydev.integrations.blink", score_offset = 700 },
