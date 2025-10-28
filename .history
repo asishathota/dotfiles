@@ -998,3 +998,47 @@ nvim .
 : 1761629534:0;nvim .
 : 1761630008:0;cd ..
 : 1761630011:0;git add .
+: 1761630033:0;git commit -m "added neovim runtime files to lua_ls server"
+: 1761630041:0;cat ~/gitPass
+: 1761630049:0;git push
+: 1761630216:0;lazygit
+: 1761630248:0;rm nvim/kickstart.lua
+: 1761630753:0;cd nvim
+: 1761630755:0;n
+: 1761630785:0;nvim .
+: 1761631455:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761631464:0;nvim .
+: 1761631686:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761631740:0;nvim .
+: 1761632953:0;rustup self uninstall
+: 1761632974:0;ls -d ~/.cargo
+: 1761632985:0;ls -d ~/.cargo\
+ls -d ~/.rustup
+: 1761632998:0;rm -rf ~/.cargo\
+rm -rf ~/.rustup
+: 1761633006:0;nvim ~/.zshrc
+: 1761633017:0;szsh
+: 1761633028:0;ll ~
+: 1761633175:0;cd ~
+: 1761633177:0;curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+: 1761633421:0;nvim ~/.zshrc
+: 1761633442:0;szsh
+: 1761633666:0;nvim .
+: 1761633671:0;cd .config/nvim
+: 1761633672:0;nvim .
+: 1761633793:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761633803:0;n
+: 1761633969:0;cd ..
+: 1761633970:0;rustup component add cargo
+: 1761633979:0;rustup toolchain install nightly
+: 1761634016:0;rustup toolchain uninstall nightly
+: 1761634021:0;rustup toolchain install nightly
+: 1761634101:0;nvim nvim
+: 1761634127:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761634132:0;cd nvim
+: 1761634134:0;nvim .
+: 1761634274:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761634277:0;nvim .
+: 1761634508:0;cd ..
+: 1761634511:0;cat ~/gitPass
+: 1761634515:0;ga .

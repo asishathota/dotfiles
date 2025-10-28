@@ -72,7 +72,6 @@ export PATH="$PATH:$HOME/.local/bin"
 
 . "$HOME/.cargo/env"
 
-
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 export NVM_DIR="$HOME/.nvm"

@@ -1,8 +1,9 @@
 return {
     "saghen/blink.cmp",
     event = "VimEnter",
-    version = "v0.11.0",
-    build = "cargo build --release",
+    -- version = "v0.11.0",
+    version = "1.*",
+    -- build = "cargo +nightly build --release",
     dependencies = {
         {
             "L3MON4D3/LuaSnip",
@@ -75,12 +76,10 @@ return {
         cmdline = {
             keymap = {
                 ["<Tab>"] = { "accept" },
-                ["<CR>"] = { "accept_and_enter", "fallback" },
                 ["<c-j>"] = { "select_next", "fallback" },
                 ["<c-k>"] = { "select_prev", "fallback" },
                 ["<C-space>"] = { "show", "cancel", "fallback" },
             },
-            -- (optionally) automatically show the menu
             completion = { menu = { auto_show = true } },
         },
 

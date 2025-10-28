@@ -13,6 +13,15 @@ return {
         "saghen/blink.cmp",
         "L3MON4D3/LuaSnip",
         "rafamadriz/friendly-snippets",
+        {
+            "folke/lazydev.nvim",
+            ft = "lua", -- only load on lua files
+            opts = {
+                library = {
+                    { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+                },
+            },
+        }
     },
     config = function()
         vim.api.nvim_create_autocmd("LspAttach", {
@@ -117,32 +126,32 @@ return {
             end
         end
 
-        vim.lsp.config("lua_ls", {
-            settings = {
-                Lua = {
-                    runtime = {
-                        version = { "LuaJIT" },
-                    },
-                    completion = {
-                        callSnippet = "Replace",
-                    },
-                    workspace = {
-                        -- library = filtered_runtime_files,
-                        library = {
-                            [vim.fn.expand "$VIMRUNTIME/lua"] = true,
-                            [vim.fn.expand "$VIMRUNTIME/lua/vim/lsp"] = true,
-                        },
-                        checkThirdParty = false,
-                    },
-                    diagnostics = {
-                        globals = { "vim" },
-                    },
-                    telemetry = {
-                        enable = false,
-                    },
-                },
-            },
-        })
+        -- vim.lsp.config("lua_ls", {
+        --     settings = {
+        --         Lua = {
+        --             runtime = {
+        --                 version = { "LuaJIT" },
+        --             },
+        --             completion = {
+        --                 callSnippet = "Replace",
+        --             },
+        --             workspace = {
+        --                 -- library = filtered_runtime_files,
+        --                 library = {
+        --                     [vim.fn.expand "$VIMRUNTIME/lua"] = true,
+        --                     [vim.fn.expand "$VIMRUNTIME/lua/vim/lsp"] = true,
+        --                 },
+        --                 checkThirdParty = false,
+        --             },
+        --             diagnostics = {
+        --                 globals = { "vim" },
+        --             },
+        --             telemetry = {
+        --                 enable = false,
+        --             },
+        --         },
+        --     },
+        -- })
 
         vim.diagnostic.config({
             severity_sort = true,
