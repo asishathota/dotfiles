@@ -99,7 +99,6 @@ return {
             default = { "lsp", "path", "snippets", "buffer" },
             providers = {
                 lsp = { score_offset = 1000 },
-                lazydev = { module = "lazydev.integrations.blink", score_offset = 700 },
                 snippets = { score_offset = 500 },
                 path = { score_offset = 250 },
                 buffer = { score_offset = 100 },

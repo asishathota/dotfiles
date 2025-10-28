@@ -80,6 +80,7 @@ return {
             "black",
             "pylint",
             "eslint_d",
+            "google-java-format",
         })
         require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
@@ -91,6 +92,7 @@ return {
                 "tailwindcss",
                 "svelte",
                 "lua_ls",
+                "jdtls",
                 "graphql",
                 "emmet_ls",
                 "prismals",
@@ -103,6 +105,42 @@ return {
                     server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
                     vim.lsp[server_name].setup(server)
                 end,
+            },
+        })
+
+        local runtime_files = vim.api.nvim_get_runtime_file("", true)
+        local filtered_runtime_files = {}
+
+        for k, v in ipairs(runtime_files) do
+            if v ~= vim.fn.stdpath("config") and v ~= vim.fn.stdpath("config") .. "/after" then
+                table.insert(filtered_runtime_files, v)
+            end
+        end
+
+        vim.lsp.config("lua_ls", {
+            settings = {
+                Lua = {
+                    runtime = {
+                        version = { "LuaJIT" },
+                    },
+                    completion = {
+                        callSnippet = "Replace",
+                    },
+                    workspace = {
+                        -- library = filtered_runtime_files,
+                        library = {
+                            [vim.fn.expand "$VIMRUNTIME/lua"] = true,
+                            [vim.fn.expand "$VIMRUNTIME/lua/vim/lsp"] = true,
+                        },
+                        checkThirdParty = false,
+                    },
+                    diagnostics = {
+                        globals = { "vim" },
+                    },
+                    telemetry = {
+                        enable = false,
+                    },
+                },
             },
         })
 
@@ -138,21 +176,6 @@ return {
             },
         })
 
-        vim.lsp.config("lua_ls", {
-            settings = {
-                Lua = {
-                    completion = {
-                        callSnippet = "Replace",
-                    },
-                    diagnostics = {
-                        globals = { "vim" },
-                    },
-                    telemetry = {
-                        enable = false,
-                    },
-                },
-            },
-        })
 
         local keymap = vim.keymap
 
@@ -162,7 +185,7 @@ return {
                 local opts = { buffer = ev.buf, silent = true }
 
                 opts.desc = "Show LSP references"
-                keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts)
+                keymap.set("n", "gr", "<cmd>Telescope lsp_references<CR>", opts)
 
                 opts.desc = "Go to declaration"
                 keymap.set("n", "gD", vim.lsp.buf.declaration, opts)

@@ -978,3 +978,23 @@ nvim .
 : 1761597227:0;cd ~/.config/nvim
 : 1761597229:0;cd ..
 : 1761597231:0;ga .
+: 1761597249:0;gc "modified blink-cmp"
+: 1761597255:0;cat ~/gitPass
+: 1761597266:0;git push
+: 1761597276:0;gs
+: 1761597717:0;cd .config/nvim
+: 1761597717:0;nvim .
+: 1761618347:0;cd projects/fullstack-mern/Auth
+: 1761618348:0;nvim .
+: 1761619291:0;cd ~/.config/nvim
+: 1761619292:0;nvim .
+: 1761627458:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761627466:0;nvim .
+: 1761628011:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761628017:0;nvim .
+: 1761629258:0;vi ~/gitPass
+: 1761629261:0;nvim .
+: 1761629532:0;nv 
+: 1761629534:0;nvim .
+: 1761630008:0;cd ..
+: 1761630011:0;git add .
