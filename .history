@@ -842,3 +842,23 @@ rm nvim -rf
 : 1761732400:0;nvim .
 : 1761735294:0;cd ..
 : 1761735296:0;ga .
+: 1761735319:0;gc "added nvim-cmp capabilities\
+"
+: 1761735328:0;cat ~/gitPass
+: 1761735337:0;git push
+: 1761735353:0;cd nvim 
+: 1761735354:0;ls
+: 1761735357:0;nvim .
+: 1761735401:0;n
+: 1761735408:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761735419:0;n
+: 1761736310:0;nvim .
+: 1761745917:0;n
+: 1761745976:0;cd ~/projects/fullstack-mern/Auth
+: 1761745979:0;nvim .
+: 1761756603:0;n
+: 1761756661:0;cd -
+: 1761756663:0;n
+: 1761759496:0;..
+: 1761759498:0;cat ~/gitPass
+: 1761759503:0;ga .
