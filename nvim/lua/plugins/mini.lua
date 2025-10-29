@@ -14,28 +14,6 @@ return {
         end,
     },
     {
-        "nvim-mini/mini.pairs",
-        version = "*",
-        config = function()
-            require("mini.pairs").setup({
-                modes = { insert = true, command = false, terminal = false },
-                mappings = {
-                    ["("] = { action = "open", pair = "()", neigh_pattern = "[^\\]." },
-                    ["["] = { action = "open", pair = "[]", neigh_pattern = "[^\\]." },
-                    ["{"] = { action = "open", pair = "{}", neigh_pattern = "[^\\]." },
-
-                    [")"] = { action = "close", pair = "()", neigh_pattern = "[^\\]." },
-                    ["]"] = { action = "close", pair = "[]", neigh_pattern = "[^\\]." },
-                    ["}"] = { action = "close", pair = "{}", neigh_pattern = "[^\\]." },
-
-                    ['"'] = { action = "closeopen", pair = '""', neigh_pattern = "[^\\].", register = { cr = false } },
-                    ["'"] = { action = "closeopen", pair = "''", neigh_pattern = "[^%a\\].", register = { cr = false } },
-                    ["`"] = { action = "closeopen", pair = "``", neigh_pattern = "[^\\].", register = { cr = false } },
-                },
-            })
-        end,
-    },
-    {
         "nvim-mini/mini.indentscope",
         version = false, -- wait till new 0.7.0 release to put it back on semver
         opts = {

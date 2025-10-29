@@ -201,9 +201,11 @@ return {
                 -- look at `toggle_ghost_text()` function below.
                 ghost_text = false,
             },
+
             completion = {
                 completeopt = "menu,menuone,noinsert",
             },
+
             window = {
                 documentation = {
                     border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
@@ -214,11 +216,13 @@ return {
                     winhighlight = "Normal:PopMenu,FloatBorder:FloatBorder,CursorLine:Visual,Search:None",
                 },
             },
+
             snippet = {
                 expand = function(args)
                     luasnip.lsp_expand(args.body)
                 end,
             },
+
             sources = cmp.config.sources({
                 { name = "nvim_lsp" },
                 { name = "luasnip" }, -- snippets
@@ -236,6 +240,7 @@ return {
                     },
                 },
             }),
+
             -- mapping = cmp.mapping.preset.insert({
             --     ["<C-j>"] = cmp.mapping.select_next_item(),
             --     ["<C-k>"] = cmp.mapping.select_prev_item(),
@@ -246,11 +251,10 @@ return {
             --     ["<CR>"] = cmp.mapping.confirm({ select = false }),
             -- }),
 
-            -- NOTE: ! Experimenting with Customized Mappings ! --
             mapping = cmp.mapping.preset.insert({
-                -- ['<BS>'] = cmp.mapping(function(_fallback)
+                -- ["<BS>"] = cmp.mapping(function(_fallback)
                 --     smart_bs()
-                -- end, { 'i', 's' }),
+                -- end, { "i", "s" }),
 
                 ["<C-e>"] = cmp.mapping.abort(),
                 ["<C-d>"] = cmp.mapping(function()
