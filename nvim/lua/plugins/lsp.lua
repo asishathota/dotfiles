@@ -1,6 +1,8 @@
 return {
     "neovim/nvim-lspconfig",
+
     event = { "BufReadPre" },
+
     dependencies = {
         { "mason-org/mason.nvim", opts = {} },
         "mason-org/mason-lspconfig.nvim",
@@ -21,8 +23,9 @@ return {
                     { path = "${3rd}/luv/library", words = { "vim%.uv" } },
                 },
             },
-        }
+        },
     },
+
     config = function()
         vim.api.nvim_create_autocmd("LspAttach", {
             group = vim.api.nvim_create_augroup("kickstart-lsp-attach", { clear = true }),
@@ -68,6 +71,7 @@ return {
             end,
         })
 
+        -- assigning capabilities to completion engine
         local original_capabilities = vim.lsp.protocol.make_client_capabilities()
         local capabilities = require("blink.cmp").get_lsp_capabilities(original_capabilities)
 
@@ -117,53 +121,19 @@ return {
             },
         })
 
-        local runtime_files = vim.api.nvim_get_runtime_file("", true)
-        local filtered_runtime_files = {}
-
-        for k, v in ipairs(runtime_files) do
-            if v ~= vim.fn.stdpath("config") and v ~= vim.fn.stdpath("config") .. "/after" then
-                table.insert(filtered_runtime_files, v)
-            end
-        end
-
-        -- vim.lsp.config("lua_ls", {
-        --     settings = {
-        --         Lua = {
-        --             runtime = {
-        --                 version = { "LuaJIT" },
-        --             },
-        --             completion = {
-        --                 callSnippet = "Replace",
-        --             },
-        --             workspace = {
-        --                 -- library = filtered_runtime_files,
-        --                 library = {
-        --                     [vim.fn.expand "$VIMRUNTIME/lua"] = true,
-        --                     [vim.fn.expand "$VIMRUNTIME/lua/vim/lsp"] = true,
-        --                 },
-        --                 checkThirdParty = false,
-        --             },
-        --             diagnostics = {
-        --                 globals = { "vim" },
-        --             },
-        --             telemetry = {
-        --                 enable = false,
-        --             },
-        --         },
-        --     },
-        -- })
-
         vim.diagnostic.config({
             severity_sort = true,
             float = { border = "rounded", source = "if_many" },
             underline = { severity = vim.diagnostic.severity.ERROR },
             update_in_insert = false,
-            signs = vim.g.have_nerd_font and {
+            -- signs = vim.g.have_nerd_font and {
+            -- 󰅚 󰀪 󰋽 󰌶
+            signs = {
                 text = {
-                    [vim.diagnostic.severity.ERROR] = "󰅚 ",
-                    [vim.diagnostic.severity.WARN] = "󰀪 ",
-                    [vim.diagnostic.severity.INFO] = "󰋽 ",
-                    [vim.diagnostic.severity.HINT] = "󰌶 ",
+                    [vim.diagnostic.severity.ERROR] = " ",
+                    [vim.diagnostic.severity.WARN] = " ",
+                    [vim.diagnostic.severity.INFO] = " ",
+                    [vim.diagnostic.severity.HINT] = " ",
                 },
             } or {},
             virtual_text = {
@@ -184,7 +154,6 @@ return {
                 end,
             },
         })
-
 
         local keymap = vim.keymap
 
