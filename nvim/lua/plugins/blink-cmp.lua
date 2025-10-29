@@ -1,6 +1,7 @@
 return {
     "saghen/blink.cmp",
-    event = "VimEnter",
+    enabled = false,
+    event = "VimEnte",
     -- version = "v0.11.0",
     version = "1.*",
     -- build = "cargo +nightly build --release",

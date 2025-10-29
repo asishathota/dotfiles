@@ -67,7 +67,6 @@ rm -rf .git
 git commit -m "added lazyvim plugin"
 git push 
 vi gitPass
-rm nvim
 cp old_nvim.bak nvim -rf
 cd lua/
 rm -rf plugins
@@ -143,8 +142,6 @@ ga
 gc "configured neovim (
 gc "configured neovim (\!lsp)"
 gp
-nvim nvim
-nvim .zshrc
 where python3
 sudo apt install ffmpeg
 sudo apt remove ffmpeg
@@ -158,7 +155,6 @@ tar xzvf nvim-linux-x86_64.tar.gz
 mv nvim-linux-x86_64 neovim
 mv neovim /opt
 sudo mv neovim /opt
-szh
 c:q
 cd b:q
 cd ...
@@ -182,7 +178,6 @@ gc "modified colorscheme"
 vi lua/config/options.lua
 rm so
 cd ~/projects/fullstack-mern/Auth/d
-nvim ,
 python3
 rm tailwindcss.lua
 npm install -g typescript
@@ -222,7 +217,6 @@ cd nvim | nvim .
 cat gitPass
 git commit -m "fuck what have i done"
 exit
-l
 lllllll
 mv * ../../chatbot-dev/ -p
 mkdir chatbot-dev
@@ -310,7 +304,6 @@ rm ~/.config/tmux/.tmux.conf
 touch ~/.config/tmux/.tmux.conf
 chmod 600 ~/.tmux.conf
 q
-cd~
 cd dev
 cd net
 cat nul
@@ -329,7 +322,6 @@ cd /mnt/c/PlayGround/Projects/NewsAggregator
 cd projects/frontend/newsAggregator
 kk
 npm clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
-tmux ls
 ls .config/tmux/plugins/tpm
 cd ashunotes
 ls media
@@ -406,9 +398,7 @@ sudo apt-add-repository --remove ppa:fish-shell/release-3
 sudo apt update
 sudo apt autoremove
 ffmpeg -i Red-Samurai-4K.mp4 -ss 00:00:08 -frames:v 1 -vf scale=1920:1080 output.png
-cd .config/
 rm fish -rf
-ga .
 rm dotfiles -rf
 git submodule update --init --recursive
 git config submodule.recurse true
@@ -455,7 +445,6 @@ cat "Striver's A2Z DSA Sheet.txt"
 cd /mnt
 cd /
 cp cd src
-cd src
 cp App.jsx ~/test
 nvim App.jsx
 systemctl ssh enable
@@ -478,9 +467,7 @@ rm tpm -rf
 tmux source-file ~/.tmux.conf
 nvim ~/.tmux.conf
 vi ~/.tmux.conf
-nvm
 node
-nvm ls
 nvm -V
 nvm ls-remote
 nvm install 22.20.0
@@ -497,7 +484,6 @@ node -V
 node --version
 sudo apt install default-jdk
 java
-javac
 cd 2.\ Arrays
 java LeaderInAnArray.java
 javac MajorityElement.java
@@ -514,9 +500,7 @@ rm public src -rf
 rm .gitignore
 cat lsp.log
 gm 
-home
 cat ~/.config/.aliases
-gs
 gc "initialized frontend-react"
 nvim ~/.local/state/nvim/lsp.log
 cd test
@@ -530,7 +514,6 @@ cd ~/test
 nvim test.pyt
 nvim test.py
 mv test.py ~/projects/python
-cd ~/projects
 cd python
 python venv venv
 python3 venv venv
@@ -547,10 +530,8 @@ cd
 LS
 mv ~/.config/nvim ~/.config/nvim.cfk
 mv ~/.config/nvim.cfk ~/.config/nvim
-nvim.
 deactivate
 ezsh
-nvim ~/.zshrc
 cat lua/plugins/colorscheme.lua
 cat -v
 pwd
@@ -559,7 +540,6 @@ cd intern
 cd ~/.local/state/nvim/
 nvim lsp.log
 npm i react-icons
-npm i tailwindcss @tailwindcss/vite
 sudo apt update\
 sudo apt install wget unzip -y\
 wget https://github.com/equalsraf/win32yank/releases/download/v0.1.1/win32yank-x64.zip\
@@ -571,7 +551,6 @@ win32yank.exe -?
 win32yank.exe -V
 10;rgb:d3d3/d7d7/cfcf
 cd projects/intern/chatbot
-nv 
 ls ~/.local/share/nvim/lazy/lazy.nvim
 npm install -g neovim
 cp lua/lazy.lua lua/config
@@ -594,9 +573,7 @@ npm init -y
 npm install express jsonwebtoken nodemon mongoose cookie-parser bcryptjs
 npm i cors
 cd .c
-cd projects
 cd fullstack/Auth
-tmux attach
 tmux new -s chat
 npm i dotenv
 npm run dev
@@ -604,8 +581,6 @@ npm create vite@latest
 nvim ~/.config/nvim
 nvim ~/test/
 nvim ~/.config/nvim 
-nv
-cd projects/fullstack-mern/Auth
 cd intern/chatbot
 cp ~/projects/frontend/newsAggregator /mnt/c/playGround/_projects/temp
 cp ~/projects/frontend/newsAggregator /mnt/c/playGround/_projects/temp -r
@@ -614,8 +589,6 @@ cp chatbot /mnt/c/PlayGround/Projects/temp -r
 cd chatbot
 rm node_modules -rf
 cp chatbot /mnt/c/playGround/_projects/temp -rf
-nvim 
-cd fullstack-mern/Auth
 nvim ~/projects/fullstack-mern/Auth
 nvi 
 git remote add origin https://github.com/asishathota/dotfiles.git
@@ -626,8 +599,6 @@ git config --global user.email "asishathota@gmail.com\
 git config --global user.name "asish"
 git push --help
 git push -f origin main
-clear
-time nvim --headless +q
 cd ~/projects/fullstack/Auth
 cd lua/plugins
 git status
@@ -635,12 +606,9 @@ rm old_nvim.bak nvim.bak -rf
 rm ~/.local/{state, share}/nvim -rf
 git commit -m "nvim -> nvim.bak"
 git push --ser-upstream origin main
-vi ~/gitPass
 nvim ~/gitPass
 git push -u origin main
 rm -rf ~/.config/nvim/.git
-nvim
-update
 sudo apt install build-essentials
 sudo apt install build-essential
 npm install -g tree-sitter-cli
@@ -651,7 +619,6 @@ cd lazy
 cd lazyVim
 cd LazyVim
 cd extras
-..
 rm -rf ~/.local/{share, state}/nvim ~/.cache/nvim 
 rm -f ~/.local/share/nvim ~/.local/state/nvim
 cd ~/.local/share/nvim
@@ -661,524 +628,217 @@ cat lazyvim.json
 sudo apt install tree
 tree ../nvim.bak/
 cd ~/.local/share/nvim/lazy/LazyVim
-cd lua
 cd lazyvim
-cd plugins
-la
-ll
 cd lsp
-cd ~
 mv ~/.local/share/nvim{,.bak}
-cd .config
 mv nvim.bak nvim 
 rm -f ~/.local/share/nvim ~/.local/state/nvim -rf
 nvim . 
-szsh
-cd nvim
 nvim .aliases
 rm ~/.cache/nvim -rf
 rm package.json package-lock.json node_modules
 rm package.json package-lock.json node_modules -rf
-cd frontend
 npm install eslint
 nvim. 
 cd backend
 npm i
 npm i eslint
-cd ..
-git add .
 git commit -m "reconfigured neovim"
-cat ~/gitPass
-git push
-ls
 mv nvim nvim.bak
 mv lazyNVIM.bak nvim
-rm nvim -rf
-git clone https://github.com/LazyVim/starter ~/.config/nvim
-cd nvim 
 rm .git -rf
 rm lua/plugins/*
-cd .config/nvim
 nvim lua/config/lazy.lua
 rm lua/plugins/* -rf
 ls lua/plugins
-cd ~/projects/fullstack-mern/Auth
-cd ~/.config
-mv nvim lazyNVIM.bak
 mv nvim.bak nvim
-rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
-cd -
-cd ~/.config/nvim
-n
-nvim .
-: 1761479595:0;clear
-: 1761479671:0;nvim .
-: 1761482312:0;nvim.
-: 1761482314:0;nvim .
-: 1761482457:0;cd ~/projects/fullstack-mern/Auth
-: 1761482458:0;nvim .
-: 1761482890:0;cd -
-: 1761482894:0;cd ~/.config
-: 1761482901:0;ga .
-: 1761482916:0;gc "configured blink-cmp"
-: 1761482921:0;cat ~/gitPass
-: 1761482924:0;git push
-: 1761482950:0;gs
-: 1761483503:0;cd nvim
-: 1761483508:0;n
-: 1761483713:0;nvim .
-: 1761485983:0;nvim
-: 1761486116:0;nvim 
-: 1761486158:0;nvim .
-: 1761487622:0;cd ~/projects/fullstack-mern/Auth
-: 1761487624:0;nvim .
-: 1761488698:0;cd -
-: 1761488701:0;nvim .
-: 1761491261:0;nvim
-: 1761491509:0;nvim 
-: 1761491656:0;nvim .
-: 1761491830:0;ls ~/.local/share/nvim/lazy/blink.cmp/build.rs 
-: 1761491834:0;ls ~/.local/share/nvim/lazy/blink.cmp/
-: 1761491840:0;nvim .
-: 1761491895:0;time nvim --headless +q
-: 1761492009:0;lazygit
-: 1761492028:0;cat ~/gitPass
-: 1761492031:0;ga .
-: 1761492033:0;cd ..
-: 1761492035:0;ga .
-: 1761492043:0;gc "added some functionality"
-: 1761492050:0;git push
-: 1761492310:0;cd nvim
-: 1761492312:0;nvim .
-: 1761494811:0;cd projects
-: 1761494817:0;cd fullstack-mern/Auth
-: 1761494818:0;nvim .
-: 1761494993:0;cd projects/fullstack-mern/Auth
-: 1761494996:0;nvim .
-: 1761563367:0;cleaar
-: 1761563370:0;clear
-: 1761563371:0;ls
-: 1761563386:0;cd .config/
-: 1761563387:0;ls
-: 1761563404:0;mv nvim myNVIM.bak
-: 1761563421:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
-: 1761563435:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
-: 1761563442:0;cd nvim 
-: 1761563446:0;n
-: 1761563529:0;nvim .
-: 1761563740:0;tmux new -s neovim
-: 1761563753:0;cd ..
-: 1761563757:0;cd myNVIM.bak
-: 1761563761:0;n
-: 1761563766:0;nvim .
-: 1761564588:0;n
-: 1761565021:0;update
-: 1761565030:0;apt install cmake g++ pkg-config libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
-: 1761565039:0;sudo apt install cmake g++ pkg-config libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
-: 1761565124:0;git clone https://github.com/alacritty/alacritty.git
-: 1761565144:0;cd alacritty
-: 1761565163:0;cargo --version
-: 1761565168:0;curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-: 1761565324:0;rustup override set stable
-: 1761565357:0;nvim ~/.zshrc
-: 1761565373:0;szsh
-: 1761565377:0;rustup override set stable
-: 1761565385:0;rustup update stable
-: 1761565398:0;apt install cmake g++ pkg-config libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
-: 1761565401:0;sudo apt install cmake g++ pkg-config libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
-: 1761565428:0;cargo build --release
-: 1761565544:0;sudo cp target/release/alacritty /usr/local/bin
-: 1761565564:0;nvim ~/.zshrc
-: 1761565581:0;cp extra/completions/_alacritty ${ZDOTDIR:-~}/.zsh_functions/_alacritty
-: 1761565684:0;${ZDOTDIR:-~}
-: 1761565726:0;echo "${ZDOTDIR: -~}"
-: 1761565737:0;echo "${ZDOTDIR}"
-: 1761565753:0;szsh
-: 1761565757:0;cp extra/completions/_alacritty ${ZDOTDIR:-~}/.zsh_functions/_alacritty
-: 1761565776:0;alacritty
-: 1761565864:0;nvim ~/.zshrc
-: 1761565875:0;szsh
-: 1761566405:0;alacritty
-: 1761566408:0;cd
-: 1761566410:0;ls
-: 1761566413:0;nvim .
-: 1761566430:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
-: 1761566434:0;cd .config
-: 1761566435:0;ls
-: 1761566444:0;rm nvim -rf
-: 1761566457:0;cp myNVIM.bak nvim 
-: 1761566461:0;cp myNVIM.bak nvim -rf
-: 1761566464:0;nvim .
-: 1761566568:0;sudo apt remove alacritty
-: 1761566576:0;cd ..
-: 1761566577:0;ls
-: 1761566578:0;cd alacritty
-: 1761566579:0;ls
-: 1761566581:0;cd ..
-: 1761566587:0;rm alacritty -rm
-: 1761566595:0;rm alacritty -rf
-: 1761566597:0;ls
-: 1761566605:0;which alacritty
-: 1761566610:0;alacritty
-: 1761566623:0;nvim .zshr
-: 1761566629:0;nvim .zshrc
-: 1761566645:0;ls
-: 1761566647:0;la
-: 1761566670:0;rm .zsh_functions -rf
-: 1761566678:0;ls
-: 1761566681:0;la
-: 1761566682:0;ll
-: 1761566705:0;szh
-: 1761566708:0;szsh
-: 1761566713:0;which alacritty
-: 1761566733:0;cat /usr/local/bin/alacritty
-: 1761566746:0;rm /usr/local/bin/alacritty -rf
-: 1761566765:0;sudo rm /usr/local/bin/alacritty -rf
-: 1761566769:0;which alacritty
-: 1761571063:0;cd .config
-: 1761571064:0;l
-: 1761571065:0;sls
-: 1761571066:0;ls
-: 1761571068:0;cd nvim
-: 1761571070:0;n
-: 1761571410:0;nvim
-: 1761571414:0;n
-: 1761572218:0;nvim
-: 1761572227:0;nvim .
-: 1761574195:0;sudo apt-cache search neovide
-: 1761574207:0;apt-cache search neovide
-: 1761574215:0;sudo apt install neovide
-: 1761574273:0;cargo install --git https://github.com/neovide/neovide
-: 1761574892:0;cd ~/.cargo
-: 1761574893:0;ls
-: 1761574896:0;cd bin
-: 1761574896:0;ls
-: 1761574909:0;rm neovide -rf
-: 1761574920:0;cd ~
-: 1761574921:0;ls
-: 1761574932:0;cd .config/nvim
-: 1761574934:0;n
-: 1761575077:0;cd ~/projects/fullstack-mern/Auth
-: 1761575079:0;nvim .
-: 1761575137:0;cd -
-: 1761575139:0;nvim .
-: 1761576116:0;cat /home/ashu/.local/state/nvim/lsp.log
-: 1761576124:0;cat -help
-: 1761576129:0;cat --help
-: 1761576171:0;cat /home/ashu/.local/state/nvim/lsp.log
-: 1761576176:0;nvim /home/ashu/.local/state/nvim/lsp.log
-: 1761576245:0;clear
-: 1761576248:0;nvim .
-: 1761577109:0;n
-: 1761577326:0;nvim ,
-: 1761577331:0;nvim .
-: 1761577692:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
-: 1761577705:0;nvim .
-: 1761578141:0;nv 
-: 1761578143:0;nvim .
-: 1761579388:0;n
-: 1761579552:0;ls
-: 1761579554:0;nvim .
-: 1761580480:0;n
-: 1761580556:0;nvim .
-: 1761580599:0;nvim /home/ashu/.local/state/nvim/conform.log
-: 1761580608:0;nvim .
-: 1761581269:0;cd ..
-: 1761581275:0;git add .
-: 1761581333:0;gc "added surround.lua auto-session.lua"
-: 1761581339:0;cat ~/gitPass
-: 1761581351:0;git push
-: 1761581360:0;cd nvim
-: 1761581363:0;n
-: 1761584106:0;nvim .
-: 1761587726:0;cd ..
-: 1761587731:0;mv nvim myNVIM.bak
-: 1761587734:0;ls
-: 1761587751:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
-: 1761587759:0;nvim .
-: 1761587800:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
-: 1761587811:0;nvim .
-: 1761587877:0;cd nvim
-: 1761587878:0;nvim .
-: 1761587895:0;cd ..
-: 1761587902:0;cd myNVIM.bak
-: 1761587904:0;nvim .
-: 1761588067:0;cd ..
-: 1761588069:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
-: 1761588079:0;mv nvim lazyNVIM.bak
-: 1761588090:0;cp myNVIM.bak nvim -rf
-: 1761588091:0;ls
-: 1761588104:0;ga .
-: 1761588122:0;rm lazyNVIM.bak -rf
-: 1761588124:0;ga .
-: 1761588143:0;gc "configured diagnostics"
-: 1761588147:0;cat ~/gitPass
-: 1761588152:0;git push
-: 1761588170:0;cd nvim
-: 1761588171:0;nvim .
-: 1761588254:0;ls
-: 1761588266:0;rm nvim
-: 1761588269:0;rm nvim -rf
-: 1761588272:0;nvim .
-: 1761588309:0;lazygit
-: 1761588347:0;ls
-: 1761588355:0;cd ..
-: 1761588356:0;ls
-: 1761588361:0;nvim myNVIM.bak
-: 1761588385:0;cd nvim
-: 1761588387:0;nvim .
-: 1761589284:0;cd .config/nvim
-: 1761589285:0;nvim .
-: 1761590542:0;cd ..
-: 1761590543:0;ls
-: 1761590550:0;ga .
-: 1761590555:0;gc "configured diagnostics"
-: 1761590567:0;cat ~/gitPass
-: 1761590572:0;git push
-: 1761592256:0;cd nvim
-: 1761592258:0;nvim .
-: 1761592266:0;n
-: 1761592299:0;nvim .
-: 1761592360:0;n
-: 1761592709:0;nvim .
-: 1761593329:0;cd ~/projects
-: 1761593343:0;cd -
-: 1761593345:0;nvim .
-: 1761593478:0;cd -
-: 1761593483:0;touch sample.c
-: 1761593488:0;nvim sample.c
-: 1761593626:0;gcc sample.c
-: 1761593629:0;./a.out
-: 1761593642:0;rm sample.c a.out
-: 1761593644:0;cd -
-: 1761593646:0;nvim .
-: 1761593681:0;cd -
-: 1761593689:0;touch main.rs
-: 1761593695:0;nvim .
-: 1761593702:0;nvim main.rs
-: 1761594057:0;rm main.rs
-: 1761594063:0;mkdir rust
-: 1761594065:0;cd rust
-: 1761594077:0;cargo new test
-: 1761594088:0;cargo new test_rust
-: 1761594093:0;cd test_rust
-: 1761594095:0;ls
-: 1761594096:0;la
-: 1761594102:0;nvim .
-: 1761594345:0;cd ~/.config/nvim
-: 1761594347:0;nvim .
-: 1761596451:0;cd -
-: 1761596454:0;cd ..
-: 1761596456:0;..
-: 1761596457:0;ls
-: 1761596459:0;cd fullstack-mern/Auth
-: 1761596462:0;n
-: 1761596664:0;nvim .
-: 1761597224:0;cd -
-: 1761597227:0;cd ~/.config/nvim
-: 1761597229:0;cd ..
-: 1761597231:0;ga .
-: 1761597249:0;gc "modified blink-cmp"
-: 1761597255:0;cat ~/gitPass
-: 1761597266:0;git push
-: 1761597276:0;gs
-: 1761597717:0;cd .config/nvim
-: 1761597717:0;nvim .
-: 1761618347:0;cd projects/fullstack-mern/Auth
-: 1761618348:0;nvim .
-: 1761619291:0;cd ~/.config/nvim
-: 1761619292:0;nvim .
-: 1761627458:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
-: 1761627466:0;nvim .
-: 1761628011:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
-: 1761628017:0;nvim .
-: 1761629258:0;vi ~/gitPass
-: 1761629261:0;nvim .
-: 1761629532:0;nv 
-: 1761629534:0;nvim .
-: 1761630008:0;cd ..
-: 1761630011:0;git add .
-: 1761630033:0;git commit -m "added neovim runtime files to lua_ls server"
-: 1761630041:0;cat ~/gitPass
-: 1761630049:0;git push
-: 1761630216:0;lazygit
-: 1761630248:0;rm nvim/kickstart.lua
-: 1761630753:0;cd nvim
-: 1761630755:0;n
-: 1761630785:0;nvim .
-: 1761631455:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
-: 1761631464:0;nvim .
-: 1761631686:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
-: 1761631740:0;nvim .
-: 1761632953:0;rustup self uninstall
-: 1761632974:0;ls -d ~/.cargo
-: 1761632985:0;ls -d ~/.cargo\
+nvim.
+cd ~/.config
+gc "configured blink-cmp"
+nvim 
+ls ~/.local/share/nvim/lazy/blink.cmp/build.rs 
+ls ~/.local/share/nvim/lazy/blink.cmp/
+time nvim --headless +q
+gc "added some functionality"
+cd projects
+cleaar
+cd .config/
+update
+git clone https://github.com/alacritty/alacritty.git
+cargo --version
+rustup override set stable
+rustup update stable
+apt install cmake g++ pkg-config libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
+sudo apt install cmake g++ pkg-config libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
+cargo build --release
+sudo cp target/release/alacritty /usr/local/bin
+${ZDOTDIR:-~}
+echo "${ZDOTDIR: -~}"
+echo "${ZDOTDIR}"
+cp extra/completions/_alacritty ${ZDOTDIR:-~}/.zsh_functions/_alacritty
+cd
+cp myNVIM.bak nvim 
+sudo apt remove alacritty
+cd alacritty
+rm alacritty -rm
+rm alacritty -rf
+alacritty
+nvim .zshr
+nvim .zshrc
+rm .zsh_functions -rf
+ll
+szh
+cat /usr/local/bin/alacritty
+rm /usr/local/bin/alacritty -rf
+sudo rm /usr/local/bin/alacritty -rf
+which alacritty
+l
+sls
+nvim
+sudo apt-cache search neovide
+apt-cache search neovide
+sudo apt install neovide
+cargo install --git https://github.com/neovide/neovide
+cd ~/.cargo
+cd bin
+rm neovide -rf
+cat -help
+cat --help
+cat /home/ashu/.local/state/nvim/lsp.log
+nvim /home/ashu/.local/state/nvim/lsp.log
+nvim ,
+nvim /home/ashu/.local/state/nvim/conform.log
+gc "added surround.lua auto-session.lua"
+mv nvim myNVIM.bak
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+cd myNVIM.bak
+mv nvim lazyNVIM.bak
+cp myNVIM.bak nvim -rf
+rm lazyNVIM.bak -rf
+rm nvim
+nvim myNVIM.bak
+gc "configured diagnostics"
+cd ~/projects
+touch sample.c
+nvim sample.c
+gcc sample.c
+./a.out
+rm sample.c a.out
+touch main.rs
+nvim main.rs
+rm main.rs
+mkdir rust
+cd rust
+cargo new test
+cargo new test_rust
+cd test_rust
+la
+cd fullstack-mern/Auth
+gc "modified blink-cmp"
+gs
+vi ~/gitPass
+nv 
+git add .
+git commit -m "added neovim runtime files to lua_ls server"
+rm nvim/kickstart.lua
+rustup self uninstall
+ls -d ~/.cargo
+ls -d ~/.cargo\
 ls -d ~/.rustup
-: 1761632998:0;rm -rf ~/.cargo\
+rm -rf ~/.cargo\
 rm -rf ~/.rustup
-: 1761633006:0;nvim ~/.zshrc
-: 1761633017:0;szsh
-: 1761633028:0;ll ~
-: 1761633175:0;cd ~
-: 1761633177:0;curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-: 1761633421:0;nvim ~/.zshrc
-: 1761633442:0;szsh
-: 1761633666:0;nvim .
-: 1761633671:0;cd .config/nvim
-: 1761633672:0;nvim .
-: 1761633793:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
-: 1761633803:0;n
-: 1761633969:0;cd ..
-: 1761633970:0;rustup component add cargo
-: 1761633979:0;rustup toolchain install nightly
-: 1761634016:0;rustup toolchain uninstall nightly
-: 1761634021:0;rustup toolchain install nightly
-: 1761634101:0;nvim nvim
-: 1761634127:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
-: 1761634132:0;cd nvim
-: 1761634134:0;nvim .
-: 1761634274:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
-: 1761634277:0;nvim .
-: 1761634508:0;cd ..
-: 1761634511:0;cat ~/gitPass
-: 1761634515:0;ga .
-: 1761634542:0;gc "added prebuilt binaries"
-: 1761634548:0;git push
-: 1761634567:0;cd nvim
-: 1761634568:0;nvim .
-: 1761635279:0;cd ~
-: 1761635286:0;dpkg -l | less
-: 1761635360:0;apt-mark showmanual
-: 1761635408:0;javac
-: 1761635412:0;nvm
-: 1761635420:0;nm
-: 1761635422:0;nvm
-: 1761635433:0;tmux new -s neovim
-: 1761635438:0;nvm
-: 1761635441:0;npm
-: 1761635443:0;nvm
-: 1761635459:0;nvm cache clear
-: 1761635465:0;nvm ls
-: 1761641203:0;cd .config/nvim
-: 1761641204:0;nv
-: 1761641205:0;n
-: 1761642840:0;nvim .
-: 1761642910:0;n
-: 1761642980:0;nvim .
-: 1761662968:0;cd ..
-: 1761662971:0;cd lazygit
-: 1761662972:0;ls
-: 1761662984:0;nvim config.yml
-: 1761663020:0;cd ..
-: 1761663023:0;cd nvim
-: 1761663026:0;n
-: 1761663064:0;lazygit
-: 1761663141:0;ls
-: 1761663469:0;nvim ~/.config/tmux/.tmux.conf
-: 1761663640:0;tmux new -s neovim
-: 1761663644:0;tmux ls
-: 1761663647:0;tmux attach
-: 1761663665:0;tmux new -s neovim
-: 1761663669:0;tmux attach
-: 1761663673:0;clear
-: 1761663765:0;tmux attach
-: 1761663838:0;ls
-: 1761663844:0;tmux attach
-: 1761663858:0;tmux attach $TMUX
-: 1761663872:0;$TMUX
-: 1761663878:0;clear
-: 1761663898:0;nvim ~/.config/tmux/.tmux.conf
-: 1761663926:0;ls ~/.tmux
-: 1761663927:0;ls
-: 1761663928:0;cd lua
-: 1761663932:0;cd~
-: 1761663935:0;hoe
-: 1761663936:0;home
-: 1761663944:0;cd .tmux
-: 1761663944:0;ls
-: 1761663946:0;cd plugins
-: 1761663946:0;ls
-: 1761663956:0;cd ~/.config/tmux
-: 1761663957:0;ls
-: 1761663958:0;cd plugins
-: 1761663960:0;ls
-: 1761663969:0;cd tpm
-: 1761663970:0;ls
-: 1761663973:0;cd ~
-: 1761663987:0;nvim ~/.config/tmux/.tmux.conf
-: 1761664010:0;tmux attach
-: 1761664013:0;clear
-: 1761664090:0;nvim ~/.config/tmux/.tmux.conf
-: 1761664422:0;\
+ll ~
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+szsh
+rustup component add cargo
+rustup toolchain uninstall nightly
+rustup toolchain install nightly
+nvim nvim
+rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+gc "added prebuilt binaries"
+dpkg -l | less
+apt-mark showmanual
+javac
+nm
+npm
+nvm
+nvm cache clear
+nvm ls
+nv
+nvim config.yml
+tmux ls
+tmux new -s neovim
+tmux attach $TMUX
+$TMUX
+ls ~/.tmux
+cd lua
+cd~
+hoe
+home
+cd .tmux
+cd ~/.config/tmux
+cd plugins
+cd tpm
+cd ~
+nvim ~/.config/tmux/.tmux.conf
+\
 ΃�¥» nvim ~/.config/tmux/.tmux.conf\
 \
 ~/\
 ΃�¥»
-: 1761664441:0;cd .config
-: 1761664442:0;ls
-: 1761664477:0;lazygit
-: 1761664572:0;cd lazygit
-: 1761664575:0;nvim .
-: 1761665297:0;clear
-: 1761665310:0;cd .config/nvim
-: 1761665312:0;nvim .
-: 1761669115:0;n
-: 1761669385:0;nvim .
-: 1761670243:0;cd ~/projects/fullstack-mern/Auth
-: 1761670245:0;nvim .
-: 1761670660:0;cd -
-: 1761670663:0;nvim .
-: 1761670848:0;cd 0
-: 1761670849:0;cd -
-: 1761670851:0;nvim .
-: 1761703062:0;cd -
-: 1761703063:0;nvim .
-: 1761703085:0;cd -
-: 1761703087:0;nvim .
-: 1761703456:0;cd -
-: 1761703457:0;nvim .
-: 1761703496:0;cd -
-: 1761703498:0;nvim .
-: 1761703522:0;cd -
-: 1761703524:0;nvim .
-: 1761708656:0;cd -
-: 1761708657:0;n
-: 1761708711:0;tmux attach
-: 1761708715:0;clea 
-: 1761708717:0;clear
-: 1761708723:0;cd projects/fullstack-mern/Auth
-: 1761708729:0;cd -
-: 1761708733:0;cd ~/projects/fullstack-mern/Auth
-: 1761708734:0;ls
-: 1761708736:0;cd frontend
-: 1761708737:0;ls
-: 1761708741:0;cd src
-: 1761708743:0;ls
-: 1761708748:0;cd components
-: 1761708749:0;ls
-: 1761708752:0;cd ..
-: 1761708753:0;..
-: 1761708756:0;cd frontend
-: 1761708757:0;ls
-: 1761708762:0;npm i tailwindcss @tailwindcss/vite
-: 1761708780:0;n
-: 1761709154:0;nvim .
-: 1761709429:0;n
-: 1761710179:0;nvim .
-: 1761711066:0;n
-: 1761711246:0;cd ~/.config/nvimm
-: 1761711253:0;cd ~/.config/nvim
-: 1761711259:0;n
-: 1761712114:0;nvim .
-: 1761712122:0;n
-: 1761717077:0;cd ~/.local/share/nvim/lazy/blink.cmp/target/release
-: 1761717078:0;ls
-: 1761717086:0;cat version
-: 1761717248:0;cd ~/.local/state/nvim/blink/cmp/
-: 1761717249:0;ls
-: 1761717254:0;cat frecency.dat
-: 1761717293:0;nano frecency.dat
-: 1761717318:0;nvim frecency.dat
-: 1761718488:0;n
-: 1761729470:0;cd ..
-: 1761729471:0;ga .
+cd .config
+cd lazygit
+cd .config/nvim
+tmux attach
+clea 
+clear
+cd projects/fullstack-mern/Auth
+cd src
+cd components
+..
+cd frontend
+npm i tailwindcss @tailwindcss/vite
+cd ~/.config/nvimm
+nvim .
+cd ~/.local/share/nvim/lazy/blink.cmp/target/release
+cat version
+cd ~/.local/state/nvim/blink/cmp/
+cat frecency.dat
+nano frecency.dat
+nvim frecency.dat
+ga .
+gc "changes in blink-cmp"
+cat ~/gitPass
+git push
+nvim ~/.zshrc
+rm myNVIM.bak
+rm myNVIM.bak -rf
+cp nvim myNVIM.bak -rf
+lazygit
+cd nvim
+cd 0
+cd ~/projects/fullstack-mern/Auth
+cd fronten
+cd frontend 
+n
+cd -
+cd ~/.config/nvim
+ls
+cd nvim 
+cat coc-settings.json
+cd ..
+rm nvim -rf
+: 1761731786:0;ls
+: 1761731789:0;rm coc -rf
+: 1761731804:0;cp myNVIM.bak nvim -rf
+: 1761731808:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761731820:0;cd nvim 
+: 1761731821:0;nvim 
+: 1761731873:0;n
+: 1761732033:0;cd ~/projects/fullstack-mern/Auth
+: 1761732035:0;n
+: 1761732085:0;nvim ~/.config/nvim/lua/plugins/blink-cmp.lua
+: 1761732398:0;cd ~/.config/nvim
+: 1761732400:0;nvim .
+: 1761735294:0;cd ..
+: 1761735296:0;ga .

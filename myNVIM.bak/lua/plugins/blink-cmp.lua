@@ -1,8 +1,9 @@
 return {
     "saghen/blink.cmp",
     event = "VimEnter",
-    version = "v0.11.0",
-    build = "cargo build --release",
+    -- version = "v0.11.0",
+    version = "1.*",
+    -- build = "cargo +nightly build --release",
     dependencies = {
         {
             "L3MON4D3/LuaSnip",
@@ -26,17 +27,6 @@ return {
         "folke/lazydev.nvim",
     },
     opts = {
-        keymap = {
-            preset = "default",
-            ["<C-y>"] = { "select_and_accept", "fallback" }, -- works in this Blink version
-            ["<Tab>"] = { "snippet_forward", "select_and_accept", "fallback" },
-            ["<S-Tab>"] = { "snippet_backward", "fallback" },
-            ["<C-j>"] = { "select_next", "fallback" },
-            ["<C-k>"] = { "select_prev", "fallback" },
-            ["<CR>"] = { "select_and_accept", "fallback" },
-            ["<C-space>"] = { "show", "cancel", "fallback" },
-        },
-
         appearance = {
             nerd_font_variant = "mono",
         },
@@ -69,8 +59,14 @@ return {
         end,
 
         completion = {
-            accept = { auto_brackets = { enabled = true } },
-            documentation = { auto_show = true, auto_show_delay_ms = 500 },
+            accept = {
+                auto_brackets = { enabled = true },
+            },
+            documentation = {
+                auto_show = true,
+                auto_show_delay_ms = 200,
+            },
+            -- ghost_text = { enabled = false },
             ghost_text = { enabled = vim.g.ai_cmp or false },
             trigger = {
                 show_on_insert_on_trigger_character = false,
@@ -81,21 +77,56 @@ return {
             },
         },
 
+        cmdline = {
+            keymap = {
+                ["<Tab>"] = { "accept" },
+                ["<c-j>"] = { "select_next", "fallback" },
+                ["<c-k>"] = { "select_prev", "fallback" },
+                ["<C-space>"] = { "show", "cancel", "fallback" },
+            },
+            completion = { menu = { auto_show = true } },
+        },
+
+        keymap = {
+            preset = "default",
+            ["<C-y>"] = { "select_and_accept", "fallback" }, -- works in this Blink version
+            ["<C-j>"] = { "select_next", "fallback" },
+            ["<C-k>"] = { "select_prev", "fallback" },
+            ["<Up>"] = { "select_prev", "fallback" },
+            ["<Down>"] = { "select_next", "fallback" },
+            ["<Tab>"] = { "snippet_forward", "select_and_accept", "fallback" },
+            ["<S-Tab>"] = { "snippet_backward", "fallback" },
+            ["<CR>"] = { "select_and_accept", "fallback" },
+            ["<C-space>"] = { "show", "cancel", "fallback" },
+            ["<C-b>"] = { "scroll_documentation_up", "fallback" },
+            ["<C-f>"] = { "scroll_documentation_down", "fallback" },
+        },
+
         sources = {
-            default = { "lsp", "lazydev", "snippets", "path", "buffer" },
+            default = { "lsp", "path", "snippets", "buffer" },
             providers = {
-                lsp = { score_offset = 1000 },
-                lazydev = { module = "lazydev.integrations.blink", score_offset = 700 },
-                snippets = { score_offset = 500 },
+                lsp = {
+                    opts = { tailwind_color_icon = "󱓻" },
+                    score_offset = 1000,
+                },
                 path = { score_offset = 250 },
-                buffer = { score_offset = 100 },
+                snippets = { score_offset = 500 },
+                buffer = { score_offset = -3 },
+            },
+            per_filetype = {
+                vim = { inherit_defaults = true, "cmdline" },
             },
         },
 
-        snippets = { preset = "luasnip" },
+        snippets = {
+            preset = "luasnip",
+            score_offset = -3,
+        },
 
         fuzzy = {
-            implementation = "lua",
+            -- implementation = "lua",
+            -- implementation = "prefer_rust_with_warning",
+            implementation = "prefer_rust",
         },
 
         signature = { enabled = true },
