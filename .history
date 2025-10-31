@@ -883,3 +883,262 @@ rm nvim -rf
 : 1761761339:0;gs
 : 1761761341:0;cd ..
 : 1761761343:0;ga .
+: 1761761357:0;gc "removed mini-pairs"
+: 1761761360:0;cat ~/gitPass
+: 1761761367:0;git push
+: 1761762580:0;cd .config/nvim
+: 1761762583:0;nvim
+: 1761762662:0;n
+: 1761856019:0;cd .config/
+: 1761856020:0;ls
+: 1761856027:0;rm startup startup.log
+: 1761856031:0;nvim --startuptime startup.log
+: 1761856041:0;nvim startup.log
+: 1761856103:0;rm startup startup.log
+: 1761856105:0;ls
+: 1761856109:0;cd nvim 
+: 1761856111:0;nvim .
+: 1761856326:0;cd ~/projects/fullstack-mern/Auth
+: 1761856327:0;n
+: 1761856420:0;cd -
+: 1761856421:0;n
+: 1761856688:0;cd -
+: 1761856689:0;n
+: 1761856850:0;cd -
+: 1761856851:0;n
+: 1761856967:0;cd -
+: 1761856968:0;n
+: 1761857021:0;cd - 
+: 1761857042:0;cd ~/projects/intern/chatbot
+: 1761857043:0;n
+: 1761857126:0;cd -
+: 1761857127:0;n
+: 1761857482:0;cd -
+: 1761857483:0;n
+: 1761857493:0;cd -
+: 1761857494:0;n
+: 1761857517:0;cd -
+: 1761857518:0;n
+: 1761857547:0;cd -
+: 1761857548:0;n
+: 1761857562:0;cd -
+: 1761857562:0;n
+: 1761859312:0;cd .config
+: 1761859313:0;ls
+: 1761859315:0;cd nvim
+: 1761859316:0;nv
+: 1761859317:0;n
+: 1761883588:0;cd -
+: 1761883594:0;cd ~/projects/intern/chatbot
+: 1761883595:0;n
+: 1761883723:0;cd -
+: 1761883723:0;n
+: 1761884541:0;ls
+: 1761884542:0;cd ..
+: 1761884543:0;ls
+: 1761884558:0;cp nvim myNVIM.bak -rf
+: 1761884559:0;ls
+: 1761884572:0;mv nvim old_nvim.bak
+: 1761884575:0;ls
+: 1761884583:0;cd ~
+: 1761884584:0;ls
+: 1761884585:0;cd test
+: 1761884586:0;ls
+: 1761884591:0;rm -rf .
+: 1761884596:0;ls
+: 1761884599:0;rm terminal-app -rf
+: 1761884600:0;ls
+: 1761884601:0;la
+: 1761884608:0;git clone https://github.com/mimikun/dotfiles/tree/master/dot_config/nvim
+: 1761884620:0;git clone https://github.com/mimikun/dotfiles
+: 1761884634:0;cd dotfiles
+: 1761884635:0;ls
+: 1761884657:0;cd dot_config
+: 1761884657:0;ls
+: 1761884660:0;cd nvim
+: 1761884660:0;ls
+: 1761884664:0;cd ..
+: 1761884676:0;cp nvim ~/.config -rf
+: 1761884682:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761884693:0;nvim .
+: 1761884708:0;cd ~/.config
+: 1761884709:0;ls
+: 1761884711:0;cd nvim
+: 1761884712:0;ls
+: 1761884718:0;cd snippets
+: 1761884726:0;cd ..
+: 1761884729:0;cat init.lua
+: 1761884737:0;cd co
+: 1761884745:0;cd lua
+: 1761884745:0;ls
+: 1761884749:0;cd config
+: 1761884750:0;ls
+: 1761884754:0;cat init.lua
+: 1761884778:0;cat plugin-manager.lua
+: 1761884826:0;nvim .
+: 1761885107:0;cd .config/nvim
+: 1761885109:0;n
+: 1761885323:0;ll ~/.local/share/nvim 
+: 1761885334:0;ll ~/.local/share
+: 1761885340:0;ll ~/.local/share -h
+: 1761885347:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761885369:0;rm ~/.config/nvim
+: 1761885373:0;rm ~/.config/nvim -rf
+: 1761885394:0;cp ~/.config/old_nvim.bak ~/.config/nvim -rf
+: 1761885395:0;n
+: 1761885405:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761885406:0;n
+: 1761885417:0;k
+: 1761885419:0;cd ..
+: 1761885420:0;n
+: 1761890023:0;cd nvim
+: 1761890023:0;n
+: 1761890687:0;cd ..
+: 1761890691:0;nvim --startuptime startup.log
+: 1761890696:0;nvim startup.log
+: 1761890706:0;n
+: 1761890719:0;cd nvim
+: 1761890719:0;n
+: 1761890811:0;cd .config/nvim
+: 1761890813:0;..
+: 1761890815:0;nvim startup.log
+: 1761890903:0;cd nvim
+: 1761890904:0;n
+: 1761891031:0;cd -
+: 1761891036:0;cd ~/projects/intern/chatbot
+: 1761891037:0;n
+: 1761891058:0;cd -
+: 1761891059:0;n
+: 1761891366:0;cd -
+: 1761891366:0;n
+: 1761891385:0;cd -
+: 1761891388:0;n
+: 1761891473:0;cd -
+: 1761891474:0;n
+: 1761891517:0;cd -
+: 1761891518:0;n
+: 1761891541:0;cd -
+: 1761891542:0;n
+: 1761891875:0;cd -
+: 1761891876:0;n
+: 1761894670:0;gs
+: 1761905739:0;cd -
+: 1761905741:0;n
+: 1761906417:0;cd -
+: 1761906417:0;n
+: 1761906622:0;cd -
+: 1761906623:0;n
+: 1761911071:0;which nvim
+: 1761911195:0;nvim ~/.zshrc
+: 1761911271:0;szsh
+: 1761911275:0;n
+: 1761911278:0;nvim
+: 1761911282:0;n
+: 1761911947:0;which nvim
+: 1761911954:0;nvim --version
+: 1761912145:0;NVIM_LISTEN_ADDRESS=127.0.0.1:6666 nvim
+: 1761912665:0;ln -s ~/.config/nvim /mnt/c/Users/asish/nvim
+: 1761912971:0;whoami
+: 1761913835:0;cd ~/projects/intern/chatbot
+: 1761913838:0;code .
+: 1761913976:0;code
+: 1761913982:0;code .
+: 1761914086:0;cd -
+: 1761914094:0;cd ~/.config/nv
+: 1761914099:0;cd ~/.config/nvim
+: 1761914100:0;n
+: 1761914658:0;..
+: 1761914659:0;ls
+: 1761914664:0;rm nvim -rf
+: 1761914669:0;cd ~/test
+: 1761914670:0;ls
+: 1761914672:0;rm dotfiles -rf
+: 1761914678:0;git clone https://github.com/hendrikmi/dotfiles
+: 1761914685:0;rm ~/.local/share/nvim -rf ~/.local/state/nvim ~/.cache/nvim
+: 1761914695:0;cd dotfiles/
+: 1761914695:0;ls
+: 1761914704:0;cp nvim ~/.config 
+: 1761914706:0;nvim .
+: 1761914722:0;cd ~/.config/nvim
+: 1761914723:0;ls
+: 1761914745:0;cp nvim ~/.config -rf
+: 1761914749:0;nvim .
+: 1761914900:0;ls
+: 1761914923:0;cd ~/.config/nvim
+: 1761914923:0;n
+: 1761914949:0;ls
+: 1761914955:0;n
+: 1761920794:0;code .
+: 1761920859:0;cd ..
+: 1761920862:0;rm nvim -rf
+: 1761920867:0;cp old_nvim.bak nvim -r
+: 1761920869:0;code .
+: 1761921662:0;n
+: 1761921690:0;cd nvim
+: 1761921690:0;n
+: 1761921699:0;cd ..
+: 1761921700:0;n
+: 1761921756:0;nvim --startuptime startup.log
+: 1761921761:0;nvim startup.log
+: 1761922596:0;ls
+: 1761922612:0;zip projects.zip projects -r
+: 1761922633:0;ls
+: 1761922635:0;la
+: 1761922642:0;sudo apt autoremove
+: 1761922647:0;update
+: 1761922658:0;sudo apt autoremove
+: 1761922665:0;npx np-kill
+: 1761922677:0;npx npkill
+: 1761922714:0;ls
+: 1761922717:0;cd learn_dsa 
+: 1761922718:0;ls
+: 1761922720:0;cd ...
+: 1761922722:0;..
+: 1761922723:0;cd projects
+: 1761922724:0;ls
+: 1761922726:0;cd frontend/ls
+: 1761922728:0;cd frontend/
+: 1761922729:0;ls
+: 1761922733:0;cd chatbot
+: 1761922733:0;ls
+: 1761922736:0;cd backend
+: 1761922736:0;ls
+: 1761922739:0;cd ..
+: 1761922745:0;npx npkill
+: 1761922756:0;cd ..
+: 1761922757:0;ls
+: 1761922759:0;cd fullstack
+: 1761922759:0;ls
+: 1761922761:0;npx npkill
+: 1761922770:0;..
+: 1761922773:0;cd fullstack-mern
+: 1761922776:0;npx npkill
+: 1761922783:0;..
+: 1761922787:0;cd intern
+: 1761922788:0;npx npkill
+: 1761922794:0;cd..
+: 1761922795:0;..
+: 1761922798:0;cd python
+: 1761922800:0;ls
+: 1761922805:0;rm venv -rf
+: 1761922812:0;cd CollegeGrade
+: 1761922813:0;ls
+: 1761922816:0;...
+: 1761922817:0;ls
+: 1761922820:0;cd rust
+: 1761922821:0;ls
+: 1761922825:0;cd ..
+: 1761922827:0;rm rust -rf
+: 1761922829:0;cd ~
+: 1761922833:0;zip projects.zip projects -r
+: 1761922844:0;ls
+: 1761922891:0;mkdir /mnt/c/fuckWindows
+: 1761924779:0;cp projects.zip /mnt/c/fuckWindows
+: 1761924803:0;zip learn_dsa.zip learn_dsa
+: 1761924807:0;zip learn_dsa.zip learn_dsa -rf
+: 1761924831:0;cp learn_dsa.zip /mnt/c/fuckWindows
+: 1761924849:0;zip .config.zip .config -rf
+: 1761924861:0;zip ~/.config.zip .config -rf
+: 1761924870:0;cd .config
+: 1761924871:0;ls
+: 1761924874:0;ga .

@@ -67,7 +67,7 @@ zstyle ':completion:*' globbing_directories ignore
 
 export PATH=/snap/bin:$PATH
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="/opt/neovim/bin:$PATH"
+export PATH="$PATH:/opt/neovim/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
 . "$HOME/.cargo/env"
