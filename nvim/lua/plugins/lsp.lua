@@ -7,8 +7,8 @@ return {
                 "mason-org/mason.nvim",
                 opts = {},
             },
-            "hrsh7th/cmp-nvim-lsp",
-            -- "saghen/blink.cmp",
+            -- "hrsh7th/cmp-nvim-lsp",
+            "saghen/blink.cmp",
             "mason-org/mason-lspconfig.nvim",
             {
                 "j-hui/fidget.nvim",
@@ -83,14 +83,14 @@ return {
 
             -- blink-cmp
 
-            -- local original_capabilities = vim.lsp.protocol.make_client_capabilities()
-            -- local capabilities = require("blink.cmp").get_lsp_capabilities(original_capabilities)
+            local original_capabilities = vim.lsp.protocol.make_client_capabilities()
+            local capabilities = require("blink.cmp").get_lsp_capabilities(original_capabilities)
 
             -- nvim-cmp
 
-            local original_capabilities = vim.lsp.protocol.make_client_capabilities()
-            local cmp_capabilities = require("cmp_nvim_lsp").default_capabilities()
-            local capabilities = vim.tbl_deep_extend("force", original_capabilities, cmp_capabilities)
+            -- local original_capabilities = vim.lsp.protocol.make_client_capabilities()
+            -- local cmp_capabilities = require("cmp_nvim_lsp").default_capabilities()
+            -- local capabilities = vim.tbl_deep_extend("force", original_capabilities, cmp_capabilities)
 
             local servers = {
                 cssls = {},
@@ -125,7 +125,7 @@ return {
                     "lua_ls",
                     "jdtls",
                     "graphql",
-                    "emmet_ls",
+                    "emmet_language_server",
                     "prismals",
                     "pyright",
                     "eslint",
@@ -135,8 +135,23 @@ return {
                     function(server_name)
                         local server = servers[server_name] or {}
                         server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
-                        vim.lsp[server_name].setup(server)
+                        require("lspconfig")[server_name].setup(server)
                     end,
+                },
+            })
+
+            vim.lsp.config("ts_ls", {
+                settings = {
+                    typescript = {
+                        preferences = {
+                            disableSuggestions = true,
+                        },
+                    },
+                    javascript = {
+                        preferences = {
+                            disableSuggestions = true,
+                        },
+                    },
                 },
             })
 

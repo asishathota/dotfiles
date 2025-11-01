@@ -1,7 +1,7 @@
 return {
     "saghen/blink.cmp",
-    enabled = false,
-    event = "VimEnte",
+    -- enabled = true,
+    event = "VimEnter",
     -- version = "v0.11.0",
     version = "1.*",
     -- build = "cargo +nightly build --release",
@@ -48,7 +48,7 @@ return {
                 "DressingSelect",
             }
             local bufnr = vim.api.nvim_get_current_buf()
-            local filetype = vim.api.nvim_buf_get_option(bufnr, "filetype")
+            local filetype = vim.bo[bufnr].filetype
 
             for _, ft in ipairs(blacklist_ft) do
                 if ft == filetype then
