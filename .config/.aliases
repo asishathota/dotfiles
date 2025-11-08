@@ -15,12 +15,15 @@ alias l='ls -CF'
 
 alias n='nvim .'
 
+alias lg="lazygit"
+
 alias fd='fdfind'
 
 alias home="cd ~"
+alias config="cd ~/.config/"
 alias update="sudo apt update && sudo apt upgrade -y"
 
-alias ezsh="vi ~/.zshrc"
+alias ezsh="nvim ~/.zshrc"
 alias szsh="source ~/.zshrc"
 
 alias ebash="nvim ~/.bashrc"

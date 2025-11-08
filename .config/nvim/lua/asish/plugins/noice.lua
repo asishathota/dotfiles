@@ -19,14 +19,14 @@ return {
                 },
                 signature = { enabled = false },
                 hover = { enabled = true },
+                filter = {
+                    event = "notify",
+                    find = "No information available",
+                },
             },
             -- cmdline = {
             -- 	view = "cmdline",
             -- },
-            filter = {
-                event = "notify",
-                find = "No information available",
-            },
             routes = {
                 {
                     filter = { event = "msg_show", kind = "search_count" },
@@ -45,11 +45,10 @@ return {
 
         notify.setup({
             background_colour = "#00000000",
-            timeout = 3000,
+            timeout = 5000,
             max_width = 80,
-            max_height = 20,
             render = "wrapped-compact",
-            stages = "fade_in_slide_out",
+            stages = "fade",
             merge_duplicates = false,
             on_open = function(win)
                 vim.api.nvim_win_set_config(win, { focusable = false })
