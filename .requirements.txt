@@ -1,0 +1,21 @@
+1. wget
+2. curl
+3. git
+4. stow
+5. zsh
+6. fzf, fd-find, ripgrep
+7. build-essential (c/c++)
+8. python (latest version)
+9. rust (rust-up)
+10. default-jdk
+11. lazygit
+12. xclip
+13. nvm
+14. tmux
+15. neovim
+
+
+
+
+sudo apt install wget curl git stow zsh fzf fd-find ripgrep build-essential default-jdk lazygit xclip tmux
+npm i -g neovim tree-sitter-cli

@@ -1,0 +1,45 @@
+alias gs="git status"
+alias gi="git init"
+alias ga="git add"
+alias gc="git commit -m"
+
+alias ys="yadm status"
+alias ya="yadm add"
+
+alias ..="cd .."
+alias ...="cd ../.."
+
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+alias n='nvim .'
+
+alias fd='fdfind'
+
+alias home="cd ~"
+alias update="sudo apt update && sudo apt upgrade -y"
+
+alias ezsh="vi ~/.zshrc"
+alias szsh="source ~/.zshrc"
+
+alias ebash="nvim ~/.bashrc"
+alias sbash="source ~/.bashrc"
+
+alias ealias="nvim ~/.config/.aliases"
+
+alias pya="source ~/playGround/work_py/env/bin/activate"
+alias pip="pip3"
+alias pyd="deactivate"
+
+if [ -x /usr/bin/dircolors ]; then
+  test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+  alias ls='ls --color=auto'
+  alias dir='dir --color=auto'
+  alias vdir='vdir --color=auto'
+
+  alias grep='grep --color=auto'
+  alias fgrep='fgrep --color=auto'
+  alias egrep='egrep --color=auto'
+fi
+

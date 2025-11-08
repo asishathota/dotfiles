@@ -1,0 +1,6 @@
+.config/.history
+
+.config/zsh/*
+!.config/zsh/.zshrc.bak
+
+.config/tmux/plugins/*
