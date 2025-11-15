@@ -5,12 +5,9 @@ return {
     dependencies = {
         "hrsh7th/cmp-buffer", -- source for text in buffer
         "hrsh7th/cmp-path", -- source for file system paths
-        "f3fora/cmp-spell",
         {
             "L3MON4D3/LuaSnip",
-            -- follow latest release.
             version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
-            -- install jsregexp (optional!).
             build = "make install_jsregexp",
         },
         "saadparwaiz1/cmp_luasnip", -- autocompletion
@@ -59,7 +56,7 @@ return {
         }
         -- Returns the current column number.
         local column = function()
-            local _line, col = unpack(vim.api.nvim_win_get_cursor(0))
+            local _, col = table.unpack(vim.api.nvim_win_get_cursor(0))
             return col
         end
 
@@ -226,22 +223,13 @@ return {
             },
             -- autocompletion sources
             sources = cmp.config.sources({
-                { name = "copilot", group_index = 1 },
+                -- { name = "copilot", group_index = 1 },
                 { name = "luasnip" }, -- snippets
                 { name = "lazydev" },
                 { name = "nvim_lsp" },
                 { name = "buffer" }, -- text within current buffer
                 { name = "path" }, -- file system paths
                 { name = "tailwindcss-colorizer-cmp" },
-                {
-                    name = "spell", -- for markdown spellchecks completions
-                    option = {
-                        enable_in_context = function()
-                            local ft = vim.bo.filetype
-                            return ft == "markdown" or ft == "text"
-                        end,
-                    },
-                },
             }),
             -- mapping = cmp.mapping.preset.insert({
             --     ["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion

@@ -19,3 +19,16 @@
 
 sudo apt install wget curl git stow zsh fzf fd-find ripgrep build-essential default-jdk lazygit xclip tmux
 npm i -g neovim tree-sitter-cli
+
+
+
+
+=================================
+=============NEOVIDE=============
+=================================
+
+neovide installation in windows....
+
+--- environment variable adding
+key : NEOVIDE_WSL
+value : true

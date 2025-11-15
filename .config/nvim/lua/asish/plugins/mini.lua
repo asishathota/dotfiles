@@ -1,10 +1,13 @@
 return {
     {
         "echasnovski/mini.pairs",
-        event = "InsertEnter",
+        enabled = false,
+        event = "VeryLazy",
         config = function()
             require("mini.pairs").setup()
+
             local cmp = require("cmp")
+
             cmp.event:on("confirm_done", function(event)
                 local kinds = require("cmp.types").lsp.CompletionItemKind
                 local kind = event.entry:get_kind()
@@ -47,6 +50,7 @@ return {
     --indent blankline
     {
         "nvim-mini/mini.indentscope",
+        enabled = not vim.g.vscode,
         event = { "BufReadPost", "BufNewFile" },
         opts = {
             symbol = "▏",

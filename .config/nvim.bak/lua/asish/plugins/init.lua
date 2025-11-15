@@ -1,8 +1,19 @@
 return {
-	"nvim-lua/plenary.nvim",
-	"christoomey/vim-tmux-navigator",
-	{
-		"nvim-tree/nvim-web-devicons",
-		event = "VeryLazy",
-	},
+    "christoomey/vim-tmux-navigator",
+    {
+        "nvim-lua/plenary.nvim",
+        lazy = true,
+    },
+    {
+        "nvim-tree/nvim-web-devicons",
+        event = "VeryLazy",
+    },
+    {
+        "windwp/nvim-ts-autotag",
+        event = "InsertEnter",
+        opts = {},
+    },
+    -- {
+    --     "vimpostor/vim-tpipeline",
+    -- },
 }

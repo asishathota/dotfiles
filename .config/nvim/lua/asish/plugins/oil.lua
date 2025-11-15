@@ -1,5 +1,7 @@
 return {
     "stevearc/oil.nvim",
+    event = "VimEnter",
+    -- cmd = "Oil",
     -- dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
         require("oil").setup({
@@ -28,5 +30,5 @@ return {
         })
         vim.keymap.set("n", "-", "<CMD>Oil<CR>")
         vim.keymap.set("n", "<leader>-", require("oil").toggle_float)
-    end
+    end,
 }

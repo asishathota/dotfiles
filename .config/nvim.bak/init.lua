@@ -1,5 +1,11 @@
+if vim.g.neovide then
+    require("asish.config.neovide")
+    vim.cmd("cd ~")
+end
+
 if vim.env.VSCODE then
-    vim.g.vscode = true
+    if vim.g.vscode then
+    end
 end
 
 if vim.loader then

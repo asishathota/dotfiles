@@ -35,19 +35,22 @@ opt.backspace = "indent,eol,start" -- allow backspace over indent, eol, and inse
 
 -- clipboard
 opt.clipboard = "unnamedplus"
-vim.g.clipboard = {
-    name = "xclip",
-    copy = {
-        ["+"] = "xclip -selection clipboard",
-        ["*"] = "xclip -selection primary",
-    },
-    paste = {
-        ["+"] = "xclip -selection clipboard -o",
-        ["*"] = "xclip -selection primary -o",
-    },
-    cache_enabled = 1,
-}
--- vim.g.loaded_clipboard_provider = 1
+
+if not vim.g.neovide then
+    vim.g.clipboard = {
+        name = "xclip",
+        copy = {
+            ["+"] = "xclip -selection clipboard",
+            ["*"] = "xclip -selection primary",
+        },
+        paste = {
+            ["+"] = "xclip -selection clipboard -o",
+            ["*"] = "xclip -selection primary -o",
+        },
+        cache_enabled = 1,
+    }
+    -- vim.g.loaded_clipboard_provider = 1
+end
 
 -- split window behavior
 opt.splitright = true -- vertical splits open to the right
@@ -72,7 +75,7 @@ opt.sidescrolloff = 10 -- columns of context for horizontal scrolling
 opt.autowrite = true -- enable auto write
 opt.splitright = true -- vertical splits to the right
 opt.showmode = true
-opt.cmdheight = 1
+opt.cmdheight = 0
 opt.laststatus = 3
 opt.path:append({ "**" })
 opt.wildignore:append({ "*/node_modules/*" })
@@ -82,11 +85,3 @@ vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 1
 vim.g.netrw_winsize = 25
 vim.g.netrw_liststyle = 3
-
--- vim.api.nvim_create_autocmd("TextYankPost", {
---     desc = "Highlight when yanking (copying) text",
---     group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
---     callback = function()
---         vim.hl.on_yank()
---     end,
--- })

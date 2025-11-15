@@ -5,9 +5,20 @@ vim.g.mapleader = " "
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 keymap.set("n", "<C-S-v>", "<C-v>", { desc = "Enter into V-Block mode" })
--- keymap.set("n", "<leader>ee", "<cmd>Ex<CR>")
+
 keymap.set("n", "<leader>ee", "<CMD>Oil<CR>")
+keymap.set("n", "-", "<CMD>Oil<CR>")
+
+if vim.g.neovide then
+    keymap.set("i", "<C-v>", "<C-r>+", { noremap = true, silent = true })
+    keymap.set("n", "<C-v>", '"+p', { noremap = true, silent = true })
+end
+
 -- keymap.set("n", "<leader>ct", "<CMD>Copilot toggle<CR>", { desc = "Toggle Copilot" })
+
+keymap.set("n", "<leader>i", function()
+    vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ 0 }), { 0 })
+end, { desc = "Toggle Inlay Hints" })
 
 keymap.set("n", "rl", "<CMD>%s/\r//g<CR>")
 
@@ -75,55 +86,3 @@ keymap.set("n", "[w", diagnostic_goto(false, "WARN"), { desc = "Prev Warning" })
 keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save File" })
 
 keymap.set("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit All" })
-
-local keymap = vim.keymap
-
-vim.api.nvim_create_autocmd("LspAttach", {
-    group = vim.api.nvim_create_augroup("UserLspConfig", {}),
-    callback = function(ev)
-        local opts = { buffer = ev.buf, silent = true }
-
-        opts.desc = "Show LSP references"
-        keymap.set("n", "gr", "<cmd>Telescope lsp_references<CR>", opts)
-
-        opts.desc = "Go to declaration"
-        keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
-
-        opts.desc = "Show LSP definition"
-        keymap.set("n", "gd", vim.lsp.buf.definition, opts)
-
-        opts.desc = "Show LSP implementations"
-        keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts)
-
-        opts.desc = "Show LSP type definitions"
-        keymap.set("n", "gt", "<cmd>Telescope lsp_type_definitions<CR>", opts)
-
-        opts.desc = "See available code actions"
-        keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
-
-        opts.desc = "Smart rename"
-        keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
-
-        opts.desc = "Show buffer diagnostics"
-        keymap.set("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<CR>", opts)
-
-        opts.desc = "Show line diagnostics"
-        keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts)
-
-        opts.desc = "Go to previous diagnostic"
-        keymap.set("n", "[d", function()
-            vim.diagnostic.jump({ count = -1, float = true })
-        end, opts)
-
-        opts.desc = "Go to next diagnostic"
-        keymap.set("n", "]d", function()
-            vim.diagnostic.jump({ count = 1, float = true })
-        end, opts)
-
-        opts.desc = "Show documentation for what is under cursor"
-        keymap.set("n", "K", vim.lsp.buf.hover, opts)
-
-        opts.desc = "Restart LSP"
-        keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts)
-    end,
-})
