@@ -21,9 +21,9 @@ return {
                 signature = { enabled = false },
                 hover = { enabled = false },
             },
-            cmdline = {
-                view = "cmdline",
-            },
+            -- cmdline = {
+            --     view = "cmdline",
+            -- },
             routes = {
                 {
                     filter = { event = "msg_show", kind = "search_count" },

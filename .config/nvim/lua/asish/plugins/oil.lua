@@ -10,6 +10,7 @@ return {
                 ["<C-h>"] = false,
                 ["<C-c>"] = false,
                 ["<M-h>"] = "actions.select_split",
+                ["cd"] = "actions.cd",
                 ["q"] = "actions.close",
             },
             win_options = {
