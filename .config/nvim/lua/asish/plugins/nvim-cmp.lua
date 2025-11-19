@@ -12,7 +12,6 @@ return {
         },
         "saadparwaiz1/cmp_luasnip", -- autocompletion
         "rafamadriz/friendly-snippets", -- snippets
-        "nvim-treesitter/nvim-treesitter",
         "onsails/lspkind.nvim", -- vs-code pictograms
         "roobert/tailwindcss-colorizer-cmp.nvim",
     },
@@ -221,25 +220,17 @@ return {
                     luasnip.lsp_expand(args.body)
                 end,
             },
+
             -- autocompletion sources
             sources = cmp.config.sources({
                 -- { name = "copilot", group_index = 1 },
                 { name = "luasnip" }, -- snippets
-                { name = "lazydev" },
+                -- { name = "lazydev" },
                 { name = "nvim_lsp" },
                 { name = "buffer" }, -- text within current buffer
                 { name = "path" }, -- file system paths
                 { name = "tailwindcss-colorizer-cmp" },
             }),
-            -- mapping = cmp.mapping.preset.insert({
-            --     ["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
-            --     ["<C-j>"] = cmp.mapping.select_next_item(), -- next suggestion
-            --     ["<C-b>"] = cmp.mapping.scroll_docs(-4),
-            --     ["<C-f>"] = cmp.mapping.scroll_docs(4),
-            --     ["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
-            --     ["<C-e>"] = cmp.mapping.abort(), -- close completion window
-            --     ["<CR>"] = cmp.mapping.confirm({ select = false }),
-            -- }),
 
             -- NOTE: ! Experimenting with Customized Mappings ! --
             mapping = cmp.mapping.preset.insert({

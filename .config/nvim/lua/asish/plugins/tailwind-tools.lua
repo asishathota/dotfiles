@@ -1,29 +1,26 @@
 return {
-    "roobert/tailwindcss-colorizer-cmp.nvim",
+    -- {
+    --     "NvChad/nvim-colorizer.lua",
+    --     event = { "BufReadPost", "BufNewFile" },
+    --     opts = {
+    --         user_default_options = {
+    --             names = false, -- no named colors (optional)
+    --             RGB = true,
+    --             RRGGBB = true,
+    --             RRGGBBAA = true,
+    --             tailwind = true, -- important for Tailwind classes
+    --             css = true,
+    --             mode = "virtualtext",
+    --         },
+    --     },
+    -- },
+
+    -- Tailwind colorized completion ONLY (NOT buffer highlighting)
     {
-        "nvchad/nvim-colorizer.lua",
-        event = { "BufReadPost", "BufNewFile" },
-        dependencies = { "nvim-treesitter/nvim-treesitter" },
-        opts = {},
+        "roobert/tailwindcss-colorizer-cmp.nvim",
         config = function()
-            local nvchadcolorizer = require("colorizer")
-            local tailwindcolorizer = require("tailwindcss-colorizer-cmp")
-
-            nvchadcolorizer.setup({
-                user_default_options = {
-                    tailwind = true,
-                },
-                filetypes = { "html", "css", "javascript", "typescript", "jsx", "tsx", "vue", "svelte" },
-            })
-
-            tailwindcolorizer.setup({
+            require("tailwindcss-colorizer-cmp").setup({
                 color_square_width = 2,
-            })
-
-            vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
-                callback = function()
-                    vim.cmd("ColorizerAttachToBuffer")
-                end,
             })
         end,
     },

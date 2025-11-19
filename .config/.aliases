@@ -1,3 +1,27 @@
+ls() {
+  if command -v eza >/dev/null 2>&1; then
+    eza --icons --color=always --group-directories-first "$@"
+  else
+    command ls --color=auto "$@"
+  fi
+}
+
+ll() {
+  if command -v eza >/dev/null 2>&1; then
+    eza -l --icons --color=always --group-directories-first "$@"
+  else
+    command ls -l --color=auto "$@"
+  fi
+}
+
+la() {
+  if command -v eza >/dev/null 2>&1; then
+    eza -la --icons --color=always --group-directories-first "$@"
+  else
+    command ls -la --color=auto "$@"
+  fi
+}
+
 alias gs="git status"
 alias gi="git init"
 alias ga="git add"
@@ -8,10 +32,6 @@ alias ya="yadm add"
 
 alias ..="cd .."
 alias ...="cd ../.."
-
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
 
 alias n='nvim'
 
