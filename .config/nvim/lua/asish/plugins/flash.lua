@@ -13,7 +13,7 @@ return {
                 enabled = false,
             },
             remote = {
-                enabled = true,
+                enabled = false,
             },
         },
     },

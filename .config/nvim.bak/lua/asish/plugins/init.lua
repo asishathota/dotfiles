@@ -13,7 +13,8 @@ return {
         event = "InsertEnter",
         opts = {},
     },
-    -- {
-    --     "vimpostor/vim-tpipeline",
-    -- },
+    {
+        "vimpostor/vim-tpipeline",
+        event = "VimEnter",
+    },
 }
