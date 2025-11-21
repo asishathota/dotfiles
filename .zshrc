@@ -1,13 +1,16 @@
 bindkey -e
 
 HISTFILE=~/.config/.history
-SAVEHIST=5000
-HISTSIZE=4999
+SAVEHIST=100000
+HISTSIZE=100000
 
+setopt BANG_HIST
+setopt EXTENDED_HISTORY
+setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 setopt HIST_IGNORE_DUPS
-setopt HIST_SAVE_NO_DUPS
-setopt HIST_REDUCE_BLANKS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
 
 autoload -Uz compinit
 compinit -i -d ~/.cache/zsh/.zcompdump
@@ -30,5 +33,33 @@ bindkey '^ ' autosuggest-accept
 
 
 #================prompt================#
-[ -f ~/.config/zsh/.zshprompt ] && source ~/.config/zsh/.zshprompt
+[ -f ~/.config/zsh/prompt.zsh ] && source ~/.config/zsh/prompt.zsh
+# eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zshprompt.toml)"
 
+
+
+
+#================config================#
+
+
+#-------yazi-------#
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
+
+#--------fzf-------#
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+#-------xterm------#
+# case "$TERM" in
+#     xterm-color|*-256color) color_prompt=yes;;
+# esac
+
+#---------custom----------#
+function cd(){
+    builtin cd "$@" && ls;
+}

@@ -1,2 +1,2 @@
 #=================paths================#
-[ -f ~/.config/zsh/.zshpaths ] && source ~/.config/zsh/.zshpaths
+[ -f ~/.config/zsh/paths.zsh ] && source ~/.config/zsh/paths.zsh

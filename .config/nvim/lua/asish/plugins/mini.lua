@@ -74,6 +74,16 @@ return {
                 enable_autocmd = false,
             })
 
+            local allowed_ft = {
+                javascript = true,
+                javascriptreact = true,
+                typescript = true,
+                typescriptreact = true,
+                html = true,
+                svelte = true,
+                vue = true,
+            }
+
             require("mini.comment").setup({
                 -- tsx, jsx, html , svelte comment support
                 options = {
