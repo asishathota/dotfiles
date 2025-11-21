@@ -18,6 +18,10 @@ return {
             telemetry = {
                 enable = false,
             },
+            completion = {
+                callSnippet = "Disable",
+                keywordSnippet = "Disable",
+            },
         },
     },
 }

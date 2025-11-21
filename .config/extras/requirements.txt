@@ -15,18 +15,16 @@ install a nerd font (FiraCode Nerd Font)
 12. xclip
 13. nvm
 14. tmux
-15. neovim
+15. neovim (from the source)
+16. eza
+17. yazi (from the source)
+18. oh-my-posh
 
 
 
 
-sudo apt install wget curl git stow zsh fzf fd-find ripgrep build-essential default-jdk lazygit xclip tmux
+sudo apt install wget curl git stow zsh fzf fd-find ripgrep build-essential default-jdk lazygit xclip tmux eza
 npm i -g neovim tree-sitter-cli
-
-
-#-----install starship------
-curl -sS https://starship.rs/install.sh | sh
-
 
 #-----tmux plugins-----
 under ~/plugins/tmux/
@@ -37,7 +35,7 @@ under ~/plugins/zsh/
 zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting
 
 
-#=============NEOVIDE=============
+#-------------NEOVIDE---------------
 
 neovide installation in windows....
 

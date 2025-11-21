@@ -24,14 +24,24 @@ return {
     },
 
     config = function()
-        -- local original_capabilities = vim.lsp.protocol.make_client_capabilities()
+        local original_capabilities = vim.lsp.protocol.make_client_capabilities()
+
+        --blink cmp
         -- local capabilities = require("blink.cmp").get_lsp_capabilities(original_capabilities)
 
         -- nvim-cmp
-
-        local original_capabilities = vim.lsp.protocol.make_client_capabilities()
         local cmp_capabilities = require("cmp_nvim_lsp").default_capabilities()
         local capabilities = vim.tbl_deep_extend("force", original_capabilities, cmp_capabilities)
+
+        capabilities.textDocument = {
+            foldingRange = {
+                dynamicRegistration = false,
+                lineFoldingOnly = true,
+            },
+            completionItem = {
+                snippetSupport = false,
+            },
+        }
 
         local servers = {
             cssls = {},

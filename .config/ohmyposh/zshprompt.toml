@@ -1,0 +1,78 @@
+console_title_template = '{{ .Shell }} in {{ .Folder }}'
+version = 3
+final_space = true
+
+[secondary_prompt]
+  template = '❯❯ '
+  foreground = '#ffffff'   # magenta
+  background = 'transparent'
+
+[transient_prompt]
+  template = '❯ '
+  background = 'transparent'
+  foreground_templates = [
+    '{{if gt .Code 0}}#ff0000{{end}}',   # red on error
+    '{{if eq .Code 0}}#ffffff{{end}}'    # magenta on success
+  ]
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+  newline = true
+
+  [[blocks.segments]]
+    type = 'path'
+    style = 'plain'
+    template = '{{ .Path }}'
+    background = 'transparent'
+    foreground = '#00afff'   # bright cyan for current dir
+
+    [blocks.segments.properties]
+      style = 'full'
+      cache_duration = 'none'
+
+  [[blocks.segments]]
+    type = 'git'
+    style = 'plain'
+    background = 'transparent'
+    template = ' {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} <cyan>{{ if gt .Behind 0 }}⇣{{ end }}{{ if gt .Ahead 0 }}⇡{{ end }}</>'
+    foreground = '#627E97'  # neutral grey-ish like your previous prompt used
+
+    [blocks.segments.properties]
+      branch_icon = ''
+      commit_icon = '@'
+      fetch_status = true
+      cache_duration = 'none'
+
+[[blocks]]
+  type = 'rprompt'
+  overflow = 'hidden'
+
+  [[blocks.segments]]
+    type = 'executiontime'
+    style = 'plain'
+    template = '{{ .FormattedMs }}'
+    background = 'transparent'
+    foreground = '#ffd700'  # yellow (same as old prompt)
+
+    [blocks.segments.properties]
+      threshold = 5000
+      cache_duration = 'none'
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+  newline = true
+
+  [[blocks.segments]]
+    type = 'text'
+    style = 'plain'
+    template = '❯'
+    background = 'transparent'
+    foreground_templates = [
+      '{{if gt .Code 0}}#ff0000{{end}}',   # red on fail
+      '{{if eq .Code 0}}#ffffff{{end}}'    # magenta on ok
+    ]
+
+    [blocks.segments.properties]
+      cache_duration = 'none'

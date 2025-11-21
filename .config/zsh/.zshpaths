@@ -14,6 +14,9 @@ export PATH=/snap/bin:$PATH
 # neovim application path
 export PATH="$PATH:/opt/neovim/bin"
 
+# yazi path
+export PATH="/opt/yazi:$PATH"
+
 # rust binaries
 . "$HOME/.cargo/env"
 

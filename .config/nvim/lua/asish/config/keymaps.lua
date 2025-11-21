@@ -20,9 +20,12 @@ keymap.set("n", "<leader>i", function()
     vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ 0 }), { 0 })
 end, { desc = "Toggle Inlay Hints" })
 
-keymap.set("n", "rl", "<CMD>%s/\r//g<CR>")
-
 keymap.set("n", "<leader>ll", "<cmd>Lazy<CR>")
+keymap.set("n", "<leader>lp", "<cmd>Lazy profile<CR>")
+keymap.set("n", "<leader>lr", "<cmd>restart<CR>")
+
+keymap.set("v", "<Tab>", ">gv", { desc = "Indent visual selection right" })
+keymap.set("v", "<S-Tab>", "<gv", { desc = "Indent visual selection left" })
 
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })

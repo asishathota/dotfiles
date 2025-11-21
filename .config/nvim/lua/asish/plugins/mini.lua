@@ -1,23 +1,23 @@
 return {
-    {
-        "echasnovski/mini.pairs",
-        enabled = false,
-        event = "VeryLazy",
-        config = function()
-            require("mini.pairs").setup()
-
-            local cmp = require("cmp")
-
-            cmp.event:on("confirm_done", function(event)
-                local kinds = require("cmp.types").lsp.CompletionItemKind
-                local kind = event.entry:get_kind()
-                if kind == kinds.Function or kind == kinds.Method then
-                    vim.api.nvim_feedkeys("()", "i", false)
-                    vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Left>", true, true, true), "n", true)
-                end
-            end)
-        end,
-    },
+    -- {
+    --     "echasnovski/mini.pairs",
+    --     enabled = false,
+    --     event = "VeryLazy",
+    --     config = function()
+    --         require("mini.pairs").setup()
+    --
+    --         local cmp = require("cmp")
+    --
+    --         cmp.event:on("confirm_done", function(event)
+    --             local kinds = require("cmp.types").lsp.CompletionItemKind
+    --             local kind = event.entry:get_kind()
+    --             if kind == kinds.Function or kind == kinds.Method then
+    --                 vim.api.nvim_feedkeys("()", "i", false)
+    --                 vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Left>", true, true, true), "n", true)
+    --             end
+    --         end)
+    --     end,
+    -- },
     {
         "nvim-mini/mini.ai",
         event = { "BufReadPost", "BufNewFile" },

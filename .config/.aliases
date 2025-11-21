@@ -1,3 +1,7 @@
+unalias ls 2>/dev/null
+unalias ll 2>/dev/null
+unalias la 2>/dev/null
+
 ls() {
   if command -v eza >/dev/null 2>&1; then
     eza --icons --color=always --group-directories-first "$@"
