@@ -19,6 +19,7 @@ install a nerd font (FiraCode Nerd Font)
 16. eza
 17. yazi (from the source)
 18. oh-my-posh
+19. bat
 
 
 

@@ -1,0 +1,26 @@
+return {
+    "folke/snacks.nvim",
+    opts = {
+        dashboard = { enabled = false },
+        explorer = { enabled = false },
+        indent = { enabled = false },
+        profiler = { enabled = false },
+        scroll = { enabled = false },
+        animate = { enabled = false },
+        word = { enabled = false },
+        statuscolumn = { enabled = false },
+        notifier = {
+            timeout = 5000,
+            width = { min = 40 },
+            height = { min = 1 },
+            margin = { top = 0 },
+            gap = 0,
+            level = vim.log.levels.INFO,
+            style = "wrapped-compact",
+            top_down = true,
+            date_format = "%R",
+            more_format = " ↓ %d lines ",
+            merge_duplicates = false,
+        },
+    },
+}

@@ -37,8 +37,6 @@ alias ya="yadm add"
 alias ..="cd .."
 alias ...="cd ../.."
 
-alias n='nvim'
-
 alias lg="lazygit"
 
 alias fd='fdfind'
@@ -47,6 +45,12 @@ alias home="cd ~"
 alias config="cd ~/.config/"
 alias update="sudo apt update && sudo apt upgrade -y"
 alias cc="clear"
+
+# alias nvim-main="NVIM_APPNAME=nvim-main nvim"
+# alias nvim-lazy="NVIM_APPNAME=nvim-lazy nvim"
+
+# alias nm="NVIM_APPNAME=nvim-main nvim"
+alias nl="NVIM_APPNAME=nvim-lazy nvim"
 
 alias ezsh="nvim ~/.zshrc"
 alias szsh="source ~/.zshrc"

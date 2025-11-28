@@ -1,7 +1,0 @@
-require("asish.config.options")
-require("asish.config.keymaps")
-require("asish.config.autocmds")
-require("asish.config.registers")
-require("asish.config.statusline")
-require("asish.config.config")
-require("asish.config.lazy")
