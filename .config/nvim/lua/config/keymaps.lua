@@ -3,12 +3,20 @@ local map = vim.keymap.set
 vim.g.maplocalleader = "\\"
 vim.g.mapleader = " "
 
+--folding
+map("n", "fo", "za", { desc = "Toggle Code Folding" })
+
 map("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 map("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 map("n", "<C-S-v>", "<C-v>", { desc = "Enter into V-Block mode" })
+
+-- lazy
 map("n", "<leader>ll", "<cmd>Lazy<CR>")
 map("n", "<leader>lp", "<cmd>Lazy profile<CR>")
 map("n", "<leader>lr", "<cmd>restart<CR>")
+
+-- toggle copilot
+map("n", "<leader>ct", require("utils.copilot").toggle_copilot, { desc = "Toggle Copilot (Persistent)" })
 
 -- split window
 map("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })

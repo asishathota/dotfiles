@@ -50,7 +50,9 @@ alias cc="clear"
 # alias nvim-lazy="NVIM_APPNAME=nvim-lazy nvim"
 
 # alias nm="NVIM_APPNAME=nvim-main nvim"
-alias nl="NVIM_APPNAME=nvim-lazy nvim"
+# alias nl="NVIM_APPNAME=nvim-lazy nvim"
+
+alias n="nvim"
 
 alias ezsh="nvim ~/.zshrc"
 alias szsh="source ~/.zshrc"

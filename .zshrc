@@ -23,9 +23,9 @@ export EZA_COLORS="di=38;5;75:ln=38;5;117:so=38;5;75:pi=38;5;168:ex=38;5;81:bd=3
 
 
 #=======zsh plugin configuration=======#
-[ -f ~/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ] && source ~/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-[ -f ~/plugins/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh ] && source ~/plugins/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
-[ -f ~/plugins/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source ~/plugins/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ] && source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+[ -f ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh ] && source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
+[ -f ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 bindkey '^J' history-substring-search-down
 bindkey '^K' history-substring-search-up
@@ -33,10 +33,8 @@ bindkey '^ ' autosuggest-accept
 
 
 #================prompt================#
-[ -f ~/.config/zsh/prompt.zsh ] && source ~/.config/zsh/prompt.zsh
+[ -f ~/.config/zsh/zshpormpt ] && source ~/.config/zsh/zshpormpt
 # eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zshprompt.toml)"
-
-
 
 
 #================config================#

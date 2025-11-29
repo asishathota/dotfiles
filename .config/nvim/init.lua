@@ -4,6 +4,7 @@ if vim.g.neovide then
 end
 
 if vim.env.VSCODE then
+    vim.g.vscode = true
 end
 
 if vim.loader then
@@ -11,4 +12,5 @@ if vim.loader then
 end
 
 require("config.lazy")
+require("config.config")
 -- require("config.statusline")

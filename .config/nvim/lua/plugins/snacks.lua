@@ -7,8 +7,8 @@ return {
         profiler = { enabled = false },
         scroll = { enabled = false },
         animate = { enabled = false },
-        word = { enabled = false },
         statuscolumn = { enabled = false },
+        words = { enabled = false },
         notifier = {
             timeout = 5000,
             width = { min = 40 },
