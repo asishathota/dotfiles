@@ -1,40 +1,133 @@
 install a nerd font (FiraCode Nerd Font)
 
 
-01. wget
-02. curl
-03. git
-04. stow
-05. zsh
-06. fzf, fd-find, ripgrep
-07. build-essential (c/c++)
-08. python (latest version)
-09. rust (rust-up)
-10. default-jdk
-11. lazygit
-12. xclip
-13. nvm
-14. tmux
-15. neovim (from the source)
-16. eza
-17. yazi (from the source)
-18. oh-my-posh
-19. bat
-20. Copilot authentication setup for neovim
+====================================================
+ FULL SYSTEM SETUP — ORDERED, CLEAN, DEPENDENCY-SAFE
+====================================================
 
+---------------------------
+1) Install System Packages
+---------------------------
+sudo apt update
+sudo apt install -y \
+  git fd-find ripgrep fzf default-jdk build-essential stow \
+  curl wget zsh lazygit xclip eza tmux bat python3 python3-pip
 
-sudo apt install wget curl git stow zsh fzf fd-find ripgrep build-essential default-jdk lazygit xclip tmux eza
-npm i -g neovim tree-sitter-cli
-
+# Fix command names (Ubuntu renames these)
 sudo ln -s $(which fdfind) /usr/local/bin/fd
+sudo ln -s /usr/bin/batcat /usr/local/bin/bat
 
-#-----tmux plugins-----
-under ~/plugins/tmux/
-tmux-continuum  tmux-prefix-highlight  tmux-resurrect  tmux-sensible  tpm  vim-tmux-navigator
 
-#-----zsh plugins-----
-under ~/plugins/zsh/
-zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting
+---------------------------
+2) Clone Dotfiles + Apply
+---------------------------
+cd ~
+git clone https://github.com/asishathota/dotfiles
+cd dotfiles
+
+# remove conflicting files
+rm -f ~/.bash_history ~/.bash_logout ~/.bashrc
+
+# apply dotfiles
+stow .
+
+
+---------------------------
+3) Install NVM + Node.js
+---------------------------
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+# load nvm without restarting
+export NVM_DIR="$HOME/.nvm"
+source "$NVM_DIR/nvm.sh"
+
+nvm install --lts
+nvm use --lts
+
+
+---------------------------
+4) Install Rust (Rustup)
+---------------------------
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source $HOME/.cargo/env
+
+
+---------------------------
+5) Switch to Zsh Shell
+---------------------------
+chsh -s $(which zsh)
+
+
+---------------------------
+6) Install Zsh Plugins
+---------------------------
+cd ~
+git clone https://github.com/zsh-users/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-history-substring-search
+git clone https://github.com/zsh-users/zsh-syntax-highlighting
+
+mkdir -p ~/.zsh
+mv zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting ~/.zsh/
+
+
+---------------------------
+7) Install tmux + Plugins
+---------------------------
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+cd ~
+git clone https://github.com/tmux-plugins/tmux-continuum
+git clone https://github.com/tmux-plugins/tmux-prefix-highlight
+git clone https://github.com/tmux-plugins/tmux-resurrect
+git clone https://github.com/tmux-plugins/tmux-sensible
+git clone https://github.com/christoomey/vim-tmux-navigator
+
+mv tmux-continuum tmux-prefix-highlight tmux-resurrect tmux-sensible vim-tmux-navigator ~/.tmux/plugins/
+
+
+---------------------------
+8) Install Neovim (Nightly)
+---------------------------
+mkdir -p ~/test && cd ~/test
+
+wget https://github.com/neovim/neovim/releases/download/nightly/nvim-linux-x86_64.tar.gz
+tar -xzvf nvim-linux-x86_64.tar.gz
+
+sudo mv nvim-linux-x86_64 /opt/neovim
+sudo ln -s /opt/neovim/bin/nvim /usr/local/bin/nvim
+
+
+---------------------------
+9) Install Yazi (File Manager)
+---------------------------
+git clone https://github.com/sxyazi/yazi.git
+cd yazi
+cargo build --release --locked
+
+sudo mv target/release/yazi target/release/ya /usr/local/bin/
+
+
+---------------------------
+10) Fix Python venv
+---------------------------
+sudo apt install -y python3-venv
+python3 -m ensurepip --upgrade
+
+# create a sample venv
+mkdir -p ~/projects/python
+cd ~/projects/python
+python3 -m venv venv
+
+
+---------------------------
+11) Activate venv (optional)
+---------------------------
+source ~/projects/python/venv/bin/activate
+
+
+====================================================
+   SETUP COMPLETE! Logout & login to activate zsh.
+====================================================
 
 
 #-------------NEOVIDE---------------
