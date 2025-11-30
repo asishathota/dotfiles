@@ -26,6 +26,8 @@ install a nerd font (FiraCode Nerd Font)
 sudo apt install wget curl git stow zsh fzf fd-find ripgrep build-essential default-jdk lazygit xclip tmux eza
 npm i -g neovim tree-sitter-cli
 
+sudo ln -s $(which fdfind) /usr/local/bin/fd
+
 #-----tmux plugins-----
 under ~/plugins/tmux/
 tmux-continuum  tmux-prefix-highlight  tmux-resurrect  tmux-sensible  tpm  vim-tmux-navigator

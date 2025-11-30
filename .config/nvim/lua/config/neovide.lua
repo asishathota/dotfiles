@@ -1,4 +1,4 @@
-vim.o.guifont = "FiraCode Nerd Font:h12"
+vim.o.guifont = "JetBrainsMono Nerd Font:h12"
 
 vim.g.neovide_large_file_warning = false
 

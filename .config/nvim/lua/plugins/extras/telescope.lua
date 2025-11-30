@@ -1,32 +1,38 @@
 return {
     "nvim-telescope/telescope.nvim",
     opts = function(_, opts)
-        local telescope = require("telescope")
-        local builtin = require("telescope.builtin")
         local actions = require("telescope.actions")
 
-        opts.defaults = {
-            file_ignore_patterns = {
-                "node_modules",
-                ".git/",
-                "venv/",
-                ".venv/",
-                "__pycache__/",
-                "dist/",
-                "build/",
-            },
-            path_display = { "smart" },
-            mappings = {
-                i = {
-                    ["<C-k>"] = actions.move_selection_previous, -- move to prev result
-                    ["<C-j>"] = actions.move_selection_next, -- move to next result
-                    ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
-                    ["<esc>"] = require("telescope.actions").close,
-                    ["<leader>"] = require("telescope.actions").close,
-                },
+        opts.defaults.mappings = {
+            i = {
+                ["<C-k>"] = actions.move_selection_previous, -- move to prev result
+                ["<C-j>"] = actions.move_selection_next, -- move to next result
+                ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+                ["<esc>"] = require("telescope.actions").close,
+                ["<leader>"] = require("telescope.actions").close,
             },
         }
-        telescope.load_extension("fzf")
+
+        -- opts.pickers = opts.pickers or {}
+        -- opts.pickers.find_files = {
+        --     find_command = {
+        --         "fd",
+        --         "--type",
+        --         "f",
+        --         "--color",
+        --         "never",
+        --         "--exclude",
+        --         "node_modules",
+        --         "--exclude",
+        --         ".git",
+        --         "--exclude",
+        --         "dist",
+        --         "--exclude",
+        --         "build",
+        --     },
+        -- }
+        --
+        -- return opts
     end,
     keys = {
         { "<leader>,", "<cmd>Telescope buffers sort_mru=true sort_lastused=true<cr>", desc = "Switch Buffer" },

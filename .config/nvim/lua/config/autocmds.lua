@@ -83,21 +83,28 @@ vim.api.nvim_create_autocmd("FileType", {
     end,
 })
 
--- copilot toggle on startup based on previous state
-vim.api.nvim_create_autocmd("VimEnter", {
-    callback = function()
-        -- Check the global variable persisted from the last session
-        if vim.g.copilot_enabled_on_startup == false then
-            require("copilot.command").disable()
-        else
-            -- Optional: Ensure it's enabled if the variable is true or nil (default state)
-            require("copilot.command").enable()
-        end
-    end,
-})
+-- disable copilot every time Neovim starts
+-- vim.api.nvim_create_autocmd("VimEnter", {
+--     callback = function()
+--         require("copilot.command").disable()
+--     end,
+-- })
 
+-- copilot toggle on startup based on previous state
+-- vim.api.nvim_create_autocmd("VimEnter", {
+--     callback = function()
+--         -- Check the global variable persisted from the last session
+--         if vim.g.copilot_enabled_on_startup == false then
+--             require("copilot.command").disable()
+--         else
+--             -- Optional: Ensure it's enabled if the variable is true or nil (default state)
+--             require("copilot.command").enable()
+--         end
+--     end,
+-- })
+--
 -- diagnostic config
-vim.api.nvim_create_autocmd("User", {
+vim.api.nvim_create_autocmd("LspAttach", {
     group = vim.api.nvim_create_augroup("DiagnosticConfig", { clear = true }),
     callback = function()
         vim.diagnostic.config({

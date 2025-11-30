@@ -15,8 +15,11 @@ map("n", "<leader>ll", "<cmd>Lazy<CR>")
 map("n", "<leader>lp", "<cmd>Lazy profile<CR>")
 map("n", "<leader>lr", "<cmd>restart<CR>")
 
--- toggle copilot
-map("n", "<leader>ct", require("utils.copilot").toggle_copilot, { desc = "Toggle Copilot (Persistent)" })
+-- toggle inlay hints
+map("n", "<leader>p", function()
+    local enabled = vim.lsp.inlay_hint.is_enabled({})
+    vim.lsp.inlay_hint.enable(not enabled)
+end, { desc = "Toggle Inlay Hints" })
 
 -- split window
 map("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })

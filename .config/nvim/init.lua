@@ -11,6 +11,8 @@ if vim.loader then
     vim.loader.enable()
 end
 
+vim.env.PATH = vim.env.PATH .. ":" .. vim.fn.expand("/usr/local/bin")
+
 require("config.lazy")
 require("config.config")
 -- require("config.statusline")

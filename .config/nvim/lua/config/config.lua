@@ -5,7 +5,7 @@ vim.api.nvim_set_hl(0, "LineNr", { fg = "#B4D0E9", bold = true })
 vim.api.nvim_set_hl(0, "YankHighlight", { bg = "#696969", fg = "#FFFFFF" })
 
 -- highlight the borders
-vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#0A64AC" })
+vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#0DB9D7" })
 
 -- vim.diagnostic.config({
 --     severity_sort = true,

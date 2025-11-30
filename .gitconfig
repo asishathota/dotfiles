@@ -1,0 +1,7 @@
+[user]
+	email = asishathota@gmail.com
+	name = asish
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
