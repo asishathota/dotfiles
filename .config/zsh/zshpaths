@@ -27,5 +27,5 @@ export PATH="/opt/helix:$PATH"
 export PATH="/usr/lib/jvm/java-21-openjdk-amd64/bin:$PATH"
 
 # node binaries
-export PATH="$HOME/.nvm/versions/node/v24.11.0/bin:$PATH"
+export PATH="$HOME/.nvm/versions/node/v24.11.1/bin:$PATH"
 

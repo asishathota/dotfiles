@@ -1,0 +1,438 @@
+
+
+   <CR>        *@<Lua 345: ~/.local/share/nvim/lazy/oil.nvim/lua/oil/actions.lua:16>
+                 Open the entry under the cursor
+n  -           *@<Lua 332: ~/.local/share/nvim/lazy/oil.nvim/lua/oil/init.lua:374>
+                 Navigate to the parent path
+n  _           *@<Lua 330: ~/.local/share/nvim/lazy/oil.nvim/lua/oil/actions.lua:206>
+                 Open oil in Neovim's current working directory
+n  `           *@<Lua 339: ~/.local/share/nvim/lazy/oil.nvim/lua/oil/actions.lua:174>
+                 :cd to the current oil directory
+   cd          *@<Lua 335: ~/.local/share/nvim/lazy/oil.nvim/lua/oil/actions.lua:174>
+                 :cd to the current oil directory
+n  gs          *@<Lua 344: ~/.local/share/nvim/lazy/oil.nvim/lua/oil/actions.lua:466>
+                 Change the sort order
+n  g?          *@<Lua 343: ~/.local/share/nvim/lazy/oil.nvim/lua/oil/actions.lua:7>
+                 Show default keymaps
+n  g.          *@<Lua 342: ~/.local/share/nvim/lazy/oil.nvim/lua/oil/actions.lua:213>
+                 Toggle hidden files and directories
+n  g\          *@<Lua 340: ~/.local/share/nvim/lazy/oil.nvim/lua/oil/actions.lua:505>
+                 Jump to and from the trash for the current directory
+   gx          *@<Lua 337: ~/.local/share/nvim/lazy/oil.nvim/lua/oil/actions.lua:286>
+                 Open the entry under the cursor in an external program
+   q           *@<Lua 333: ~/.local/share/nvim/lazy/oil.nvim/lua/oil/actions.lua:146>
+                 Close oil and restore original buffer
+n  ~           *@<Lua 334: ~/.local/share/nvim/lazy/oil.nvim/lua/oil/keymap_util.lua:53>
+                 :cd to the current oil directory { scope = "tab" }
+   <C-L>       *@<Lua 341: ~/.local/share/nvim/lazy/oil.nvim/lua/oil/actions.lua:311>
+                 Refresh current directory list
+   <C-P>       *@<Lua 338: ~/.local/share/nvim/lazy/oil.nvim/lua/oil/actions.lua:86>
+                 Open the entry under the cursor in a preview window, or close the preview window if already open
+   <M-h>       *@<Lua 336: ~/.local/share/nvim/lazy/oil.nvim/lua/oil/actions.lua:57>
+                 Open the entry under the cursor in a horizontal split
+   <C-S>       *@<Lua 331: ~/.local/share/nvim/lazy/oil.nvim/lua/oil/keymap_util.lua:53>
+                 Open the entry under the cursor { vertical = true }
+   <C-T>       *@<Lua 417: ~/.local/share/nvim/lazy/oil.nvim/lua/oil/keymap_util.lua:53>
+                 Open the entry under the cursor { tab = true }
+v  <Tab>       * >gv
+                 Indent visual selection right
+n  <Space>sT   * <Cmd>TodoTelescope keywords=TODO,FIX,FIXME<CR>
+                 Todo/Fix/Fixme
+n  <Space>st   * <Cmd>TodoTelescope<CR>
+                 Todo
+n  <Space>xT   * <Cmd>Trouble todo toggle filter = {tag = {TODO,FIX,FIXME}}<CR>
+                 Todo/Fix/Fixme (Trouble)
+n  <Space>cm   * <Cmd>Mason<CR>
+                 Mason
+n  <Space>uG   * <Lua 442: ~/.local/share/nvim/lazy/snacks.nvim/lua/snacks/toggle.lua:120>
+                 Toggle Git Signs
+n  <Space>qq   * <Cmd>qa<CR>
+                 Quit All
+n  <Space>gG   * <Lua 388: ~/.config/nvim/lua/config/keymaps.lua:141>
+                 Lazygit (cwd)
+n  <Space>cd   * <Lua 154: /opt/neovim/share/nvim/runtime/lua/vim/diagnostic.lua:2334>
+                 Line Diagnostics
+n  <Space>K    * <Cmd>norm! K<CR>
+                 Keywordprg
+n  <Space>ui   * <Cmd>nohlsearch|diffupdate|normal! <C-L><CR>
+                 Redraw / Clear hlsearch / Diff Update
+n  <Space>bD   * <Cmd>:bd<CR>
+                 Delete Buffer and Window
+n  <Space>bo   * <Lua 61: ~/.config/nvim/lua/config/keymaps.lua:72>
+                 Delete Other Buffers
+n  <Space>bd   * <Lua 62: ~/.config/nvim/lua/config/keymaps.lua:69>
+                 Delete Buffer
+n  <Space>tf   * <Cmd>tabnew %<CR>
+                 Open current buffer in new tab
+n  <Space>tp   * <Cmd>tabp<CR>
+                 Go to previous tab
+n  <Space>tn   * <Cmd>tabn<CR>
+                 Go to next tab
+n  <Space>tx   * <Cmd>tabclose<CR>
+                 Close current tab
+n  <Space>to   * <Cmd>tabnew<CR>
+                 Open new tab
+n  <Space>sx   * <Cmd>close<CR>
+                 Close current split
+n  <Space>so   * <C-W>v<Cmd>Telescope find_files<CR>
+                 Make splits equal size
+n  <Space>se   * <C-W>=v
+                 Make splits equal size
+n  <Space>sh   * <C-W>s
+                 Split window horizontally
+n  <Space>sv   * <C-W>v
+                 Split window vertically
+n  <Space>p    * <Lua 112: ~/.config/nvim/lua/config/keymaps.lua:19>
+                 Toggle Inlay Hints
+n  <Space>lr   * <Cmd>restart<CR>
+n  <Space>lp   * <Cmd>Lazy profile<CR>
+n  <Space>ll   * <Cmd>Lazy<CR>
+n  <Space>nh   * :nohl<CR>
+                 Clear search highlights
+n  <Space>up   * <Lua 373: ~/.local/share/nvim/lazy/snacks.nvim/lua/snacks/toggle.lua:120>
+                 Toggle Mini Pairs
+n  <Space>hn   * <Cmd>NoiceDismiss<CR>
+n  <Space>m    * :Floaterminal<CR>
+n  <Space>-    * <Lua 88: ~/.local/share/nvim/lazy/oil.nvim/lua/oil/init.lua:345>
+n  <Space>xd   * <Lua 163: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Open trouble document diagnostics
+n  <Space>xw   * <Lua 162: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Open trouble workspace diagnostics
+n  <Space>xQ   * <Lua 161: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Quickfix List (Trouble)
+n  <Space>xL   * <Lua 160: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Location List (Trouble)
+n  <Space>cS   * <Lua 159: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 LSP references/definitions/... (Trouble)
+n  <Space>cs   * <Lua 158: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Symbols (Trouble)
+n  <Space>xX   * <Lua 157: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Buffer Diagnostics (Trouble)
+n  <Space>xx   * <Lua 156: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Diagnostics (Trouble)
+n  <Space>xl   * <Lua 39: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Open trouble location list
+n  <Space>xt   * <Lua 40: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Open todos in trouble
+n  <Space>xq   * <Lua 33: ~/.config/nvim/lua/config/keymaps.lua:109>
+                 Quickfix List
+x  <Space>fr   * <Lua 142: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Search and Replace
+n  <Space>fr   * <Lua 141: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Search and Replace
+x  <Space>sr   * <Lua 140: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Search and Replace
+n  <Space>sm   * <Lua 139: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+n  <Space>wd   * <Lua 130: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+n  <Space>wf   * <Lua 129: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+n  <Space>ws   * <Lua 128: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+n  <Space>wr   * <Lua 127: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+n  <Space>u    * <Lua 123: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+n  <Space>fu   * <Lua 103: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+n  <Space>,    * <Lua 102: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Switch Buffer
+n  <Space>cF   * <Lua 96: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Format Injected Langs
+x  <Space>cF   * <Lua 95: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Format Injected Langs
+x  #           * <Lua 10: vim/_defaults.lua:0>
+                 :help v_#-default
+o  %             <Plug>(MatchitOperationForward)
+x  %             <Plug>(MatchitVisualForward)
+n  %             <Plug>(MatchitNormalForward)
+n  &           * :&&<CR>
+                 :help &-default
+x  *           * <Lua 7: vim/_defaults.lua:0>
+                 :help v_star-default
+n  -           * <Cmd>Oil<CR>
+n  ;g          * <Lua 389: ~/.config/nvim/lua/config/keymaps.lua:138>
+                 Lazygit (Root Dir)
+n  ;f          * <Lua 105: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+n  ;s          * <Lua 104: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+n  ;c          * <Lua 101: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+n  ;a          * <Lua 98: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+n  H           * <Cmd>bprevious<CR>
+                 Prev Buffer
+n  L           * <Cmd>bnext<CR>
+                 Next Buffer
+o  N           * 'nN'[v:searchforward]
+                 Prev Search Result
+x  N           * 'nN'[v:searchforward]
+                 Prev Search Result
+n  N           * 'nN'[v:searchforward].'zv'
+                 Prev Search Result
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+n  Y           * y$
+                 :help Y-default
+n  [t          * <Lua 172: ~/.local/share/nvim/lazy/LazyVim/lua/lazyvim/plugins/editor.lua:264>
+                 Previous Todo Comment
+n  [w          * <Lua 390: ~/.config/nvim/lua/config/keymaps.lua:120>
+                 Prev Warning
+n  [e          * <Lua 28: ~/.config/nvim/lua/config/keymaps.lua:120>
+                 Prev Error
+o  [i          * <Cmd>lua MiniIndentscope.operator('top')<CR>
+                 Go to indent scope top
+x  [i          * <Cmd>lua MiniIndentscope.operator('top')<CR>
+                 Go to indent scope top
+n  [i          * <Cmd>lua MiniIndentscope.operator('top', true)<CR>
+                 Go to indent scope top
+o  [%            <Plug>(MatchitOperationMultiBackward)
+x  [%            <Plug>(MatchitVisualMultiBackward)
+n  [%            <Plug>(MatchitNormalMultiBackward)
+n  [<Space>    * <Lua 65: vim/_defaults.lua:0>
+                 Add empty line above cursor
+n  [B          * <Lua 63: vim/_defaults.lua:0>
+                 :brewind
+n  [b          * <Cmd>bprevious<CR>
+                 Prev Buffer
+n  [<C-T>      * <Lua 59: vim/_defaults.lua:0>
+                 :ptprevious
+n  [T          * <Lua 57: vim/_defaults.lua:0>
+                 :trewind
+n  [A          * <Lua 53: vim/_defaults.lua:0>
+                 :rewind
+n  [a          * <Lua 51: vim/_defaults.lua:0>
+                 :previous
+n  [<C-L>      * <Lua 49: vim/_defaults.lua:0>
+                 :lpfile
+n  [L          * <Lua 47: vim/_defaults.lua:0>
+                 :lrewind
+n  [l          * <Lua 45: vim/_defaults.lua:0>
+                 :lprevious
+n  [<C-Q>      * <Lua 43: vim/_defaults.lua:0>
+                 :cpfile
+n  [Q          * <Lua 41: vim/_defaults.lua:0>
+                 :crewind
+n  [q          * <Lua 153: vim/_editor.lua:0>
+                 Previous Quickfix
+n  [D          * <Lua 37: vim/_defaults.lua:0>
+                 Jump to the first diagnostic in the current buffer
+n  [d          * <Lua 34: ~/.config/nvim/lua/config/keymaps.lua:120>
+                 Prev Diagnostic
+n  ]t          * <Lua 55: ~/.local/share/nvim/lazy/LazyVim/lua/lazyvim/plugins/editor.lua:263>
+                 Next Todo Comment
+n  ]w          * <Lua 391: ~/.config/nvim/lua/config/keymaps.lua:120>
+                 Next Warning
+n  ]e          * <Lua 35: ~/.config/nvim/lua/config/keymaps.lua:120>
+                 Next Error
+o  ]i          * <Cmd>lua MiniIndentscope.operator('bottom')<CR>
+                 Go to indent scope bottom
+x  ]i          * <Cmd>lua MiniIndentscope.operator('bottom')<CR>
+                 Go to indent scope bottom
+n  ]i          * <Cmd>lua MiniIndentscope.operator('bottom', true)<CR>
+                 Go to indent scope bottom
+o  ]%            <Plug>(MatchitOperationMultiForward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+n  ]%            <Plug>(MatchitNormalMultiForward)
+n  ]<Space>    * <Lua 66: vim/_defaults.lua:0>
+                 Add empty line below cursor
+n  ]B          * <Lua 64: vim/_defaults.lua:0>
+                 :blast
+n  ]b          * <Cmd>bnext<CR>
+                 Next Buffer
+n  ]<C-T>      * <Lua 60: vim/_defaults.lua:0>
+                 :ptnext
+n  ]T          * <Lua 58: vim/_defaults.lua:0>
+                 :tlast
+n  ]A          * <Lua 54: vim/_defaults.lua:0>
+                 :last
+n  ]a          * <Lua 52: vim/_defaults.lua:0>
+                 :next
+n  ]<C-L>      * <Lua 50: vim/_defaults.lua:0>
+                 :lnfile
+n  ]L          * <Lua 48: vim/_defaults.lua:0>
+                 :llast
+n  ]l          * <Lua 46: vim/_defaults.lua:0>
+                 :lnext
+n  ]<C-Q>      * <Lua 44: vim/_defaults.lua:0>
+                 :cnfile
+n  ]Q          * <Lua 42: vim/_defaults.lua:0>
+                 :clast
+n  ]q          * <Lua 155: vim/_editor.lua:0>
+                 Next Quickfix
+n  ]D          * <Lua 36: vim/_defaults.lua:0>
+                 Jump to the last diagnostic in the current buffer
+n  ]d          * <Lua 29: ~/.config/nvim/lua/config/keymaps.lua:120>
+                 Next Diagnostic
+o  al            <Lua 24: ~/.local/share/nvim/lazy/mini.ai/lua/mini/ai.lua:1236>
+                 Around last textobject
+x  al            <Lua 23: ~/.local/share/nvim/lazy/mini.ai/lua/mini/ai.lua:1236>
+                 Around last textobject
+o  a             <Lua 254: ~/.local/share/nvim/lazy/mini.ai/lua/mini/ai.lua:1236>
+                 Around textobject
+x  a             <Lua 75: ~/.local/share/nvim/lazy/mini.ai/lua/mini/ai.lua:1236>
+                 Around textobject
+o  ai          * <Cmd>lua MiniIndentscope.textobject(true)<CR>
+                 Object scope with border
+x  ai          * <Cmd>lua MiniIndentscope.textobject(true)<CR>
+                 Object scope with border
+x  a%            <Plug>(MatchitVisualTextObject)
+o  an            <Lua 354: ~/.local/share/nvim/lazy/mini.ai/lua/mini/ai.lua:1236>
+                 Around next textobject
+x  an            <Lua 352: ~/.local/share/nvim/lazy/mini.ai/lua/mini/ai.lua:1236>
+                 Around next textobject
+n  fo          * za
+                 Toggle Code Folding
+x  gs          * <Lua 151: ~/.config/nvim/lua/plugins/flash.lua:23>
+                 Remote Flash
+o  gs          * <Lua 150: ~/.config/nvim/lua/plugins/flash.lua:23>
+                 Remote Flash
+n  gs          * <Lua 149: ~/.config/nvim/lua/plugins/flash.lua:23>
+                 Remote Flash
+o  g]            <Lua 89: ~/.local/share/nvim/lazy/mini.ai/lua/mini/ai.lua:1233>
+                 Move to right "around"
+x  g]            <Lua 326: ~/.local/share/nvim/lazy/mini.ai/lua/mini/ai.lua:1233>
+                 Move to right "around"
+n  g]            <Lua 325: ~/.local/share/nvim/lazy/mini.ai/lua/mini/ai.lua:1233>
+                 Move to right "around"
+o  g[            <Lua 324: ~/.local/share/nvim/lazy/mini.ai/lua/mini/ai.lua:1232>
+                 Move to left "around"
+x  g[            <Lua 323: ~/.local/share/nvim/lazy/mini.ai/lua/mini/ai.lua:1232>
+                 Move to left "around"
+n  g[            <Lua 322: ~/.local/share/nvim/lazy/mini.ai/lua/mini/ai.lua:1232>
+                 Move to left "around"
+o  g%            <Plug>(MatchitOperationBackward)
+x  g%            <Plug>(MatchitVisualBackward)
+n  g%            <Plug>(MatchitNormalBackward)
+n  gO          * <Lua 27: vim/_defaults.lua:0>
+                 vim.lsp.buf.document_symbol()
+n  grt         * <Lua 22: vim/_defaults.lua:0>
+                 vim.lsp.buf.type_definition()
+n  gri         * <Lua 21: vim/_defaults.lua:0>
+                 vim.lsp.buf.implementation()
+n  grr         * <Lua 20: vim/_defaults.lua:0>
+                 vim.lsp.buf.references()
+x  gra         * <Lua 19: vim/_defaults.lua:0>
+                 vim.lsp.buf.code_action()
+n  gra         * <Lua 18: vim/_defaults.lua:0>
+                 vim.lsp.buf.code_action()
+n  grn         * <Lua 17: vim/_defaults.lua:0>
+                 vim.lsp.buf.rename()
+o  gc          * <Lua 16: vim/_defaults.lua:0>
+                 Comment textobject
+n  gcc         * <Lua 15: vim/_defaults.lua:0>
+                 Toggle comment line
+x  gc          * <Lua 14: vim/_defaults.lua:0>
+                 Toggle comment
+n  gc          * <Lua 13: vim/_defaults.lua:0>
+                 Toggle comment
+x  gx          * <Lua 12: vim/_defaults.lua:0>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+n  gx          * <Lua 11: vim/_defaults.lua:0>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+o  il            <Lua 26: ~/.local/share/nvim/lazy/mini.ai/lua/mini/ai.lua:1236>
+                 Inside last textobject
+x  il            <Lua 25: ~/.local/share/nvim/lazy/mini.ai/lua/mini/ai.lua:1236>
+                 Inside last textobject
+o  i             <Lua 351: ~/.local/share/nvim/lazy/mini.ai/lua/mini/ai.lua:1236>
+                 Inside textobject
+x  i             <Lua 74: ~/.local/share/nvim/lazy/mini.ai/lua/mini/ai.lua:1236>
+                 Inside textobject
+o  ii          * <Cmd>lua MiniIndentscope.textobject(false)<CR>
+                 Object scope
+x  ii          * <Cmd>lua MiniIndentscope.textobject(false)<CR>
+                 Object scope
+o  in            <Lua 355: ~/.local/share/nvim/lazy/mini.ai/lua/mini/ai.lua:1236>
+                 Inside next textobject
+x  in            <Lua 353: ~/.local/share/nvim/lazy/mini.ai/lua/mini/ai.lua:1236>
+                 Inside next textobject
+x  j           * v:count == 0 ? 'gj' : 'j'
+                 Down
+n  j           * v:count == 0 ? 'gj' : 'j'
+                 Down
+x  k           * v:count == 0 ? 'gk' : 'k'
+                 Up
+n  k           * v:count == 0 ? 'gk' : 'k'
+                 Up
+o  n           * 'Nn'[v:searchforward]
+                 Next Search Result
+x  n           * 'Nn'[v:searchforward]
+                 Next Search Result
+n  n           * 'Nn'[v:searchforward].'zv'
+                 Next Search Result
+n  sa          * <Lua 138: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Add Surrounding
+x  sa          * <Lua 137: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Add Surrounding
+n  sr          * <Lua 136: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Replace Surrounding
+n  sF          * <Lua 135: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Find Left Surrounding
+n  sn          * <Lua 134: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Update `MiniSurround.config.n_lines`
+n  sf          * <Lua 133: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Find Right Surrounding
+n  sh          * <Lua 132: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Highlight Surrounding
+n  sd          * <Lua 131: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:121>
+                 Delete Surrounding
+v  <Plug>BlinkCmpDotRepeatHack * <Lua 764: ~/.local/share/nvim/lazy/blink.cmp/lua/blink/cmp/lib/text_edits.lua:316>
+n  <Plug>BlinkCmpDotRepeatHack * <Lua 766: ~/.local/share/nvim/lazy/blink.cmp/lua/blink/cmp/lib/text_edits.lua:316>
+n  <C-S>       * <Cmd>w<CR><Esc>
+                 Save File
+x  <C-S>       * <Cmd>w<CR><Esc>
+                 Save File
+v  <M-k>       * :<C-U>execute "'<,'>move '<-" . (v:count1 + 1)<CR>gv=gv
+                 Move Up
+v  <M-j>       * :<C-U>execute "'<,'>move '>+" . v:count1<CR>gv=gv
+                 Move Down
+n  <M-k>       * <Cmd>execute 'move .-' . (v:count1 + 1)<CR>==
+                 Move Up
+n  <M-j>       * <Cmd>execute 'move .+' . v:count1<CR>==
+                 Move Down
+n  <C-Right>   * <Cmd>vertical resize +2<CR>
+                 Increase Window Width
+n  <C-Left>    * <Cmd>vertical resize -2<CR>
+                 Decrease Window Width
+n  <C-Down>    * <Cmd>resize -2<CR>
+                 Decrease Window Height
+n  <C-Up>      * <Cmd>resize +2<CR>
+                 Increase Window Height
+n  <C-K>         <C-W>k
+                 Go to Upper Window
+n  <C-J>         <C-W>j
+                 Go to Lower Window
+n  <C-H>         <C-W>h
+                 Go to Left Window
+x  <Up>        * v:count == 0 ? 'gk' : 'k'
+                 Up
+n  <Up>        * v:count == 0 ? 'gk' : 'k'
+                 Up
+x  <Down>      * v:count == 0 ? 'gj' : 'j'
+                 Down
+n  <Down>      * v:count == 0 ? 'gj' : 'j'
+                 Down
+n  <C-S-V>     * <C-V>
+                 Enter into V-Block mode
+n  <C-Space>   * <Lua 152: ~/.config/nvim/lua/plugins/flash.lua:31>
+                 Treesitter Incremental Selection
+x  <C-Space>   * <Lua 148: ~/.config/nvim/lua/plugins/flash.lua:31>
+                 Treesitter Incremental Selection
+o  <C-Space>   * <Lua 146: ~/.config/nvim/lua/plugins/flash.lua:31>
+                 Treesitter Incremental Selection
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+o  <Plug>(MatchitOperationMultiForward) * :<C-U>call matchit#MultiMatch("W",  "o")<CR>
+o  <Plug>(MatchitOperationMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "o")<CR>
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+n  <Plug>(MatchitNormalMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>
+n  <Plug>(MatchitNormalMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>
+o  <Plug>(MatchitOperationBackward) * :<C-U>call matchit#Match_wrapper('',0,'o')<CR>
+o  <Plug>(MatchitOperationForward) * :<C-U>call matchit#Match_wrapper('',1,'o')<CR>
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+n  <Plug>(MatchitNormalBackward) * :<C-U>call matchit#Match_wrapper('',0,'n')<CR>
+n  <Plug>(MatchitNormalForward) * :<C-U>call matchit#Match_wrapper('',1,'n')<CR>
+n  <C-W><C-D>    <C-W>d
+                 Show diagnostics under the cursor
+n  <C-W>d      * <Lua 38: vim/_defaults.lua:0>
+                 Show diagnostics under the cursor
+v  <S-Tab>     * <gv
+                 Indent visual selection left
+s  <C-S>       * <Cmd>w<CR><Esc>
+                 Save File
+n  <C-L>         <C-W>l
+                 Go to Right Window
